@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>AccionaSeguridad.Presentation</AssemblyName>
+    <RootNamespace>AccionaSeguridad.Presentation</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BasePresentation\BasePresentation.csproj" />
+    <ProjectReference Include="..\Acciona.Domain\Acciona.Domain.csproj" />
+    <ProjectReference Include="..\ServiceLocator\ServiceLocator.csproj" />
+    <ProjectReference Include="..\Messenger\Messenger.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UI\Features\Manual\" />
+    <Folder Include="UI\Features\ManualResult\" />
+    <Folder Include="UI\Features\Language\" />
+    <Folder Include="UI\Features\Config\" />
+    <Folder Include="UI\Features\WorkingCenter\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AppCenter" Version="3.2.1" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="3.2.1" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="3.2.1" />
+  </ItemGroup>
+</Project>

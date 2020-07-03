@@ -1,0 +1,100 @@
+<resources>
+  <string name="app_name">COVID Seguridad</string>    
+  <string name="filter_date_format">dd/MM/yyyy</string>
+  <string name="msg_ok">OK</string>
+  <string name="msg_yes">Sí</string>
+  <string name="msg_no">No</string>
+  <string name="msg_cancel">Cancelar</string>
+  <string name="login_error">Se ha producido un error, por favor verifique user y password</string>
+  <string name="no_permission">La aplicación no tiene los permisos necesarios para realizar esta operación. Revise los ajustes y vuelva a probar.</string>  
+  <string name="host_error">Por favor verifique su conexión</string>
+  <string name="generic_error">Se ha producido un error realizando la operación</string>
+  <string name="close">Cerrar</string>
+  <string name="no_connection">La aplicación parece no tener conexión, por favor revise los ajustes de red.</string>
+  <string name="error_401">La sesión ha caducado. Por favor vuelva a identificarse</string>
+  <string name="error_401_user">El usuario no tiene permiso para usar la aplicación, por favor pongase en contacto con un administrador.</string>
+  <string name="error_401_key">La aplicación no tiene autorización para usar los servicios web, por favor contacte con un administrador.</string>
+  <string name="no_file_permission">La aplicación no tiene los permisos necesarios para gestionar ficheros. Revise los ajustes y vuelva a probar.</string>
+  <string name="listedittext_search_hint">Buscar...</string>
+  <string name="listedittext_cancel">Cancelar</string>
+
+  <!-- Splash -->
+  <string name="recomended_update">Hay una nueva versión de la aplicación, te recomendamos actualizar antes de continuar</string>
+  <string name="mandatory_update">Hay una nueva versión de la aplicación, tienes que actualizarla para poder entrar</string>
+  <string name="msg_continue">Continuar</string>
+  <string name="msg_download">Descargar</string>
+
+    <!-- Login -->
+  <string name="wellcome">BIENVENID@</string>
+  <string name="username">NOMBRE DE USUARIO</string>
+  <string name="username_hint">Usuario</string>
+  <string name="password">CONTRASEÑA</string>
+  <string name="password_hint">Contraseña</string>
+  <string name="init_session">Iniciar sesión</string>
+
+  
+  <!-- Main -->
+  <string name="disconnect_ask">¿Seguro que desea desconectar?</string>
+  <string name="qr_no_valid">"El código leido no parece un pasaporte valido"</string>
+    <string name="manual_button">Declaración en papel</string>
+    <string name="touch_start">Toca la pantalla para empezar</string>
+    <string name="qr_closer">Acerca el escáner al código QR</string>
+
+  <!-- Result -->
+    <string name="title_pasar">Acceso permitido</string>
+    <string name="title_mascarilla">Acceso permitido</string>
+    <string name="title_nopasar">Acceso denegado</string>
+    <string name="subtitle_pasar">Este empleado tiene permitido el libre acceso por las instalaciones</string>
+    <string name="subtitle_mascarilla"></string>
+    <string name="subtitle_nopasar">No puede acceder al centro. Contacte con un centro sanitario para que le realicen una valoración</string>
+    <string name="needs_protection">Uso de protección obligatorio</string>
+    <string name="temperature">Temperatura</string>
+    <string name="temperature_help">Indica si la temperatura del empleado es menor o mayor a 37 ºC</string>
+    <string name="temperature_low">Menor o igual a 37 ºC</string>
+    <string name="temperature_high">Mayor de 37 ºC</string>
+    <string name="temperature_skip">No se puede tomar, omitir dato</string>
+    <string name="subtitle_caducado">El empleado debe renovar el pasaporte</string>
+    <string name="scan_another">Toca la pantalla para escanear otro código QR</string>
+
+    <!-- Manual -->
+    <string name="personal_data">Datos personales</string>
+    <string name="personal_data_help">Introduce DNI y/o teléfono móvil del trabajador para continuar</string>
+    <string name="mandatory_document">DNI</string>
+    <string name="mandatory">Obligatorio</string>
+    <string name="document_hint">DNI con número y letra</string>
+    <string name="document_error">El campo DNI es obligatorio</string>
+    <string name="phone">Teléfono móvil</string>
+    <string name="phone_hint">Introduce tu móvil personal</string>
+    <string name="next">Siguiente</string>
+
+    <!-- ManualResult -->
+    <string name="ask_symptoms">¿Presenta alguno de los siguientes síntomas?</string>
+    <string name="result_temperature"><![CDATA[¿Ha tenido hoy una <b>temperatura corporal mayor de 37º</b>?]]></string>
+    <string name="result_sympthoms"><![CDATA[¿<b>Ha tenido hoy alguno de los siguientes síntomas</b> relacionados con COVID-19: tos persistente, dificultad respiratoria, dolor de garganta, pérdida del olfato o del gusto, dolor de cabeza intenso, diarrea, erupciones en la piel?]]></string>
+    <string name="result_contact"><![CDATA[¿Ha tenido <b>contacto estrecho con alguna persona infectada</b> confirmada en los últimos 14 días?<br/>(Si dispone de una valoración médica que haya descartado el riesgo asociado a ese contacto estrecho, deberá marcar ‘NO’)]]></string>
+    <string name="help_contact_1"></string>
+    <string name="help_contact_2"></string>
+
+    <!-- Language -->
+    <string name="language_title">Idioma</string>
+    <string name="language_modify">Modificar idioma</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_english">Inglés</string>
+    <string name="language_confirm">Se va a proceder a reiniciar la aplicación para aplicar los cambios</string>
+
+    <!-- Config -->
+    <string name="config_title">Configuración</string>
+    <string name="version">Versión {0}</string>
+    <string name="config_language">Selecciona idioma</string>
+    <string name="config_center">Selecciona centro de trabajo</string>
+
+    <!-- Working center -->
+    <string name="center_title">Centro de trabajo</string>
+    <string name="center_modify">Guardar</string>
+    <string name="center_country">"País *"</string>
+    <string name="center_city">Ciudad</string>
+    <string name="center_center">Centro *</string>
+    <string name="center_other">Otro</string>
+    <string name="center_other_text">Otro, por favor especificar:</string>
+    <string name="center_mandatory">* Campos obligatorios</string>
+</resources>
