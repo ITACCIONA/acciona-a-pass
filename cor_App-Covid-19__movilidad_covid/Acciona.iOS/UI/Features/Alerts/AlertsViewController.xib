@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertsViewController">
+            <connections>
+                <outlet property="TableView" destination="HLh-WX-j1s" id="name-outlet-HLh-WX-j1s"/>
+                <outlet property="TitleViewLabel" destination="266" id="name-outlet-266"/>
+                <outlet property="buttonBack" destination="263" id="name-outlet-263"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="262">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="263">
+                            <rect key="frame" x="16" y="48" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="264"/>
+                                <constraint firstAttribute="width" constant="24" id="265"/>
+                            </constraints>
+                            <color key="tintColor" red="0.84313725490000002" green="0.22352941179999999" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="back"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notificaciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="266">
+                            <rect key="frame" x="117.5" y="49.5" width="140" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="267"/>
+                                <constraint firstAttribute="width" constant="140" id="268"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="269"/>
+                        <constraint firstItem="263" firstAttribute="leading" secondItem="262" secondAttribute="leading" constant="16" id="270"/>
+                        <constraint firstItem="263" firstAttribute="centerY" secondItem="262" secondAttribute="centerY" constant="15" id="271"/>
+                        <constraint firstItem="266" firstAttribute="centerY" secondItem="262" secondAttribute="centerY" constant="15" id="272"/>
+                        <constraint firstItem="266" firstAttribute="centerX" secondItem="262" secondAttribute="centerX" id="273"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="274">
+                    <rect key="frame" x="0.0" y="90" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.90204250812530518" green="0.90201544761657715" blue="0.9020308256149292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="275"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HLh-WX-j1s">
+                    <rect key="frame" x="0.0" y="91" width="375" height="576"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="262" firstAttribute="top" secondItem="2" secondAttribute="top" id="294"/>
+                <constraint firstItem="262" firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="313"/>
+                <constraint firstItem="262" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="332"/>
+                <constraint firstItem="274" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="351"/>
+                <constraint firstItem="274" firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="370"/>
+                <constraint firstItem="274" firstAttribute="top" secondItem="262" secondAttribute="bottom" id="389"/>
+                <constraint firstAttribute="trailing" secondItem="HLh-WX-j1s" secondAttribute="trailing" id="Lon-UX-uzw"/>
+                <constraint firstItem="HLh-WX-j1s" firstAttribute="top" secondItem="274" secondAttribute="bottom" id="hoq-yW-7nV"/>
+                <constraint firstItem="HLh-WX-j1s" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="xQA-iN-j2a"/>
+                <constraint firstAttribute="bottom" secondItem="HLh-WX-j1s" secondAttribute="bottom" id="yp8-h5-dEa"/>
+            </constraints>
+            <point key="canvasLocation" x="40.799999999999997" y="53.523238380809602"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="20" height="20"/>
+    </resources>
+</document>

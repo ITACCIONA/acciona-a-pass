@@ -1,0 +1,239 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+// $alarmeros-primary: mat-palette($mat-indigo);
+$alarmeros_theme_red: (50: #f9e0e0,
+  100: #f0b3b3,
+  200: #e68080,
+  300: #db4d4d,
+  400: #d42626,
+  500: #cc0000,
+  600: #c70000,
+  700: #c00000,
+  800: #b90000,
+  900: #ad0000,
+  A100: #ffd7d7,
+  A200: #ffa4a4,
+  A400: #ff7171,
+  A700: #ff5858,
+  contrast: (50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000));
+
+$alarmeros_theme_white: (50: #ffffff,
+  100: #ffffff,
+  200: #ffffff,
+  300: #ffffff,
+  400: #ffffff,
+  500: #000000,
+  600: #ffffff,
+  700: #ffffff,
+  800: #ffffff,
+  900: #ffffff,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #ffffff,
+  contrast: (50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000));
+
+$custom-typography: mat-typography-config($font-family: 'Open Sans, sans-serif'
+);
+@include mat-core($custom-typography);
+// $alarmeros-primary: mat-palette($mat-indigo);
+$alarmeros-primary: mat-palette($alarmeros_theme_white);
+$alarmeros-accent: mat-palette($alarmeros_theme_red, 500, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$alarmeros-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$alarmeros-theme: mat-light-theme($alarmeros-primary, $alarmeros-accent, $alarmeros-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($alarmeros-theme);
+// @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/* You can add global styles to this file, and also import other style files */
+
+// .mat-button,
+// .mat-raised-button {
+//   background-color: red;
+// }
+
+@mixin titles {
+  font-size: 0.815em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 1.1px;
+}
+
+h2 {
+  @include titles;
+}
+
+.mat-card {
+  padding: 1.875em 1.5em 1.875em 1.5em !important;
+}
+
+.mat-card-header-text {
+  margin: 0 !important;
+  width: 100%;
+
+  .mat-card-title {
+    @include titles;
+  }
+}
+
+.mat-dialog-title {
+  @include titles;
+}
+
+.mat-flat-button {
+  border: 1px solid #000 !important;
+}
+
+.mat-flat-button.mat-accent {
+  border: none !important;
+}
+
+.mat-list-base .mat-list-item .mat-list-item-content,
+.mat-list-base .mat-list-option .mat-list-item-content {
+  padding: 0 !important;
+}
+
+
+textarea {
+  border: 1px solid rgba(0, 0, 0, 0.42)
+}
+
+// TABS
+
+.mat-ink-bar {
+  height: 3px !important;
+  background-color: red !important;
+}
+
+.mat-tab-label {
+  padding: 0 !important;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  font-size: 1em !important;
+  color: #232323 !important;
+}
+
+.mat-tab-label.mat-tab-label-active {
+  font-size: 1.25em !important;
+  opacity: 1 !important;
+  color: black !important;
+}
+
+// STEPPER
+
+.mat-step-header .mat-step-icon-selected,
+.mat-step-header .mat-step-icon-state-done,
+.mat-step-header .mat-step-icon-state-edit {
+  background-color: red !important;
+  color: red !important;
+  width: 1.1em !important;
+  height: 1.1em !important;
+}
+
+.mat-vertical-stepper-header .mat-step-icon {
+  margin-right: 15px !important;
+}
+
+.mat-stepper-vertical-line::before {
+  top: -25px !important;
+  bottom: -25px !important;
+  left: -4px !important;
+}
+
+.mat-vertical-content {
+  padding: 0 !important;
+}
+
+.mat-step-header:hover {
+  background-color: transparent;
+}
+
+// SORT-HEADERS
+
+.mat-sort-header-stem {
+  background: none;
+  display: none !important;
+}
+
+.mat-sort-header-pointer-middle {
+  background: none;
+  display: none !important;
+}
+
+.mat-sort-header-indicator {
+  top: 0px !important;
+  color: red;
+}
+
+//PAGINATOR
+
+.mat-paginator-range-label {
+  color: #666666;
+  font-size: 1.3em;
+  float: left !important;
+  margin-right: 20% !important;
+  width: 50% !important;
+}
+
+.mat-paginator-range-actions {
+  width: 60% !important;
+  margin-left: 0% !important;
+  margin-right: 40% !important;
+}
+
+.mat-paginator-navigation-next,
+.mat-paginator-navigation-previous,
+.mat-paginator-navigation-first,
+.mat-paginator-navigation-last {
+  color: red;
+}
+
+// allow scroll in dialog taller than window
+.cdk-global-overlay-wrapper {
+  overflow-y: auto;
+}

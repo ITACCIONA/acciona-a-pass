@@ -1,0 +1,52 @@
+<a class="accent" mat-dialog-close>
+  <mat-icon>close</mat-icon>
+</a>
+<h1 mat-dialog-title>{{ 'EMPLOYEES.ADDTESTMODAL.TITLE' | i18next }}</h1>
+<mat-divider></mat-divider>
+<app-loading [isLoading]="isLoading">
+  <form [formGroup]="form">
+    <div mat-dialog-content class="add-test-modal__content">
+      <div>
+        <mat-form-field>
+          <mat-label>{{ 'EMPLOYEES.ADDTESTMODAL.DATE' | i18next }}</mat-label>
+          <input matInput [matDatepicker]="picker" formControlName="date" />
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="mb-1">
+        <mat-button-toggle-group formControlName="type" name="fontStyle" aria-label="Font Style">
+          <mat-button-toggle value="fast">{{ 'EMPLOYEES.ADDTESTMODAL.FAST' | i18next }}</mat-button-toggle>
+          <mat-button-toggle value="pcr">{{ 'EMPLOYEES.ADDTESTMODAL.PCR' | i18next }}</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+    </div>
+    <div class="mb-1">
+      <h3>{{ 'EMPLOYEES.ADDTESTMODAL.RESULTSTITLE' | i18next }}</h3>
+      <mat-divider></mat-divider>
+    </div>
+    <div class="mb-1" [formGroupName]="form.get('type').value" *ngFor="let field of controls">
+      <div class="mb-1 flex items-center">
+        {{ getFieldI18n(field) | i18next }}
+        <mat-button-toggle-group [formControlName]="field" class="ml-auto" name="fontStyle" aria-label="Font Style">
+          <mat-button-toggle [value]="true">
+            <mat-icon aria-hidden="false" aria-label="Positive">done</mat-icon>
+            {{ 'EMPLOYEES.ADDTESTMODAL.POSITIVE' | i18next }}
+          </mat-button-toggle>
+          <mat-button-toggle [value]="false">
+            <mat-icon aria-hidden="false" aria-label="Negative">highlight_off</mat-icon>
+            {{ 'EMPLOYEES.ADDTESTMODAL.NEGATIVE' | i18next }}
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <mat-divider></mat-divider>
+    </div>
+    <mat-divider></mat-divider>
+    <div mat-dialog-actions class>
+      <button mat-button (click)="cancel()">{{ 'COMMONS.CANCEL' | i18next }}</button>
+      <button mat-flat-button color="accent" [disabled]="!form.valid" (click)="submit()" class="ml-auto">
+        {{ 'COMMONS.SAVE' | i18next }}
+      </button>
+    </div>
+  </form>
+</app-loading>

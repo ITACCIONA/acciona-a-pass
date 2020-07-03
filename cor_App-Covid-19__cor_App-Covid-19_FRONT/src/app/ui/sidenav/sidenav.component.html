@@ -1,0 +1,14 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav position="end" (openedChange)="change($event)" #sidenav>
+    <div class="sidenav-content">
+      <mat-icon class="close" (click)="close()">close</mat-icon>
+      <div>
+        <ng-template #dynamic></ng-template>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

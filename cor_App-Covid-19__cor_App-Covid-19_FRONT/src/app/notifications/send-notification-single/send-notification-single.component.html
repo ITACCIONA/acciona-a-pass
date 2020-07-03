@@ -1,0 +1,36 @@
+<a class="accent" mat-dialog-close>
+  <mat-icon>close</mat-icon>
+</a>
+<h2 mat-dialog-title>{{ 'NOTIFICATIONS.TITLE_SINGLE' | i18next }}</h2>
+<div mat-dialog-content>
+  <app-loading [isLoading]="isLoading">
+    <form [formGroup]="form">
+      <div>
+        <h3>{{"NOTIFICATIONS.RECEIVER" |i18next }}</h3>
+        <mat-form-field class="w-full">
+          <input matInput formControlName="receiver">
+          <span *ngIf="age" matSuffix>{{ "EMPLOYEES.MEDICAL.PASSPORT.AGE" | i18next : {number: age} }}</span>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <h3>{{"NOTIFICATIONS.FORM.TITLE" |i18next }}</h3>
+        <mat-form-field class="w-full" appearance="outline">
+          <input matInput formControlName="title" [placeholder]="'NOTIFICATIONS.FORM.TITLE_HELP'|i18next">
+        </mat-form-field>
+        <h3>{{"NOTIFICATIONS.FORM.CONTENT" |i18next }}</h3>
+        <mat-form-field class="w-full" appearance="outline">
+
+          <textarea matInput formControlName="comment"
+            [placeholder]="'NOTIFICATIONS.FORM.CONTENT_HELP'|i18next"></textarea>
+        </mat-form-field>
+      </div>
+
+    </form>
+  </app-loading>
+</div>
+<div class="actions" mat-dialog-actions>
+  <button mat-flat-button mat-dialog-close>{{"COMMONS.CANCEL" |i18next }}</button>
+  <button class="btn-right" color="accent" (click)="send()" [disabled]="!form.valid"
+    mat-flat-button>{{"COMMONS.SEND" |i18next }}</button>
+</div>

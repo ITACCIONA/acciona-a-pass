@@ -1,0 +1,65 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rootFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:padding="16dp">
+            <ImageView
+                    android:id="@+id/buttonBack"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/back"
+                    android:adjustViewBounds="true"/>
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+            <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medical_test_title_steps_modify"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"/>
+            <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+            <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/back"
+                    android:adjustViewBounds="true"
+                    android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <include layout="@layout/medical_test_fragment_form_step_one" android:id="@+id/llMedicalTestOne"/>
+            
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,266 @@
+{
+  "BREADCRUMBS": {
+    "MEDICAL_SERVICES": "Medical services",
+    "NOTIFICATIONS": "Notifications",
+    "NEW_USER": "New users",
+    "OUTSOURCING_LIST": "Worker's contractors"
+  },
+  "COMMONS": {
+    "CANCEL": "Cancel",
+    "CLOSE": "Close",
+    "SAVE": "Save",
+    "DATE": "Date",
+    "ADD": "Add",
+    "SEND": "Send",
+    "SUCCESS": "Operation completed successfully",
+    "ERROR": "An error occurred while processing the operation",
+    "ANY": "Any",
+    "ERROR_APP": "An error occurred while loading the application.",
+    "RETRY": "Retry",
+    "BACK": "Back",
+    "REMOVE": "Delete",
+    "REQUIRED_FIELDS": "Required fields",
+    "CONTINUE": "Continue",
+    "OK": "Ok"
+  },
+  "NOTIFICATIONS": {
+    "TITLE": "New notification",
+    "RECEIVER": "Recipient",
+    "TITLE_SINGLE": "New individual notification",
+    "TARGET": {
+      "TITLE": "Target audience",
+      "ALL": "Everybody",
+      "COUNTRY": "By countries",
+      "COUNTRY_TITLE": "Select region",
+      "COUNTRY_PLACEHOLDER": "Select a country from the list",
+      "DIVISION": "By division",
+      "DIVISION_TITLE": "Select by division",
+      "DIVISION_PLACEHOLDER": "Select a division from the list",
+      "WORKCENTER": "By work center",
+      "WORKCENTER_TITLE": "Selection by work center",
+      "WORKCENTER_PLACEHOLDER": "Select a work center from the list"
+    },
+    "FORM": {
+      "INTERACCIONA": "Mark for sending to interAcciona users only",
+      "EMPLOYEE_STATUS": "Employee status",
+      "TITLE": "Title",
+      "TITLE_HELP": "Add a short and concise title to the notification...",
+      "CONTENT": "Content",
+      "CONTENT_HELP": "Write the content of the notification here"
+    },
+    "SUCCESS": "Notification sent successfully."
+  },
+  "PASSPORT": {
+    "COLORS": {
+      "GREY": "Grey",
+      "RED": "Red",
+      "GREEN": "Green"
+    }
+  },
+  "EMPLOYEE": {
+    "TABS": {
+      "MEDICAL": "Medical details",
+      "PERSONAL": "Employee details",
+      "LABOUR": "Employment details",
+      "LOCATION": "Location"
+    },
+    "TABLE": {
+      "NAME": "Name",
+      "ID": "Employee ID",
+      "AGE": "Age",
+      "GENDER": "Sex",
+      "LAST_MOD": "Latest modification",
+      "STATUS": "Status",
+      "COLOR": "Passport color"
+    },
+    "PRL": {
+      "TITLE": "Enter information"
+    }
+  },
+  "SYMPTOMS": {
+    "FIEBRE": "Fever",
+    "DOLORCABEZA": "Headache",
+    "TOS": "Cough",
+    "FATIGA": "Fatigue",
+    "CONTACTO": "Contact",
+    "OTROSSINTOMAS": "Other symptoms"
+  },
+  "GENDERS": {
+    "DESCONOCIDO": "Unknown",
+    "HOMBRE": "Male",
+    "MUJER": "Female"
+  },
+  "RISKFACTORS": {
+    "ALTAEXPOSICION": "High exposure at work",
+    "VULNERABLES": "Risk group",
+    "POSITIVO": "Positive for COVID-19"
+  },
+  "TESTS": {
+    "RAPID": "Rapid",
+    "PCR": "PCR",
+    "CONTROL": "Control",
+    "POSITIVE": "Positive",
+    "IGG_POSITIVE": "IgG Positive",
+    "IGG_NEGATIVE": "IgG Negative",
+    "IGM_POSITIVE": "IgM Positive",
+    "IGM_NEGATIVE": "IgM Negative",
+    "NEGATIVE": "Negative"
+  },
+  "MONITORING": {
+    "LEUCOPENIA": "Leukopenia",
+    "VSG": "ESR",
+    "LDH": "LDH",
+    "DIMEROB": "Dimerob",
+    "PCR": "PCR",
+    "NEUNOMIA2": "Pneumonia 2",
+    "NEUNOMIA1": "Pneumonia 1",
+    "IGG": "IgG",
+    "IGM": "IgM"
+  },
+  "EMPLOYEES": {
+    "SEARCH": {
+      "PLACEHOLDER": "Search by worker name and surname",
+      "SCANQR": "Scan QR",
+      "ORDERBY": "Order by",
+      "FILTERS": "More filters +",
+      "EXPORT": "Export",
+      "COMPLEX_FILTERS": {
+        "DIVISION": "Division",
+        "DIVISION_PLACEHOLDER": "Select divisions from the list",
+        "CENTER": "Location",
+        "CENTER_PLACEHOLDER": "Select locations from the list",
+        "AREAS": "Province",
+        "AREAS_PLACEHOLDER": "Select provinces from the list",
+        "REGIONS": "Region",
+        "REGIONS_PLACEHOLDER": "Select regions from the list",
+        "COUNTRIES": "Country",
+        "COUNTRIES_PLACEHOLDER": "Select countries from the list",
+        "TITLE": "More filters",
+        "ACTION": "Filter"
+      }
+    },
+    "MEDICAL": {
+      "SECTIONS": {
+        "TEST": "Test",
+        "IMAGE": "Image",
+        "ANALYTICS": "Testing",
+        "FEVER_RECORDS": "Fever record",
+        "RESPONSIBLE_STATEMENT": "Responsibility Statement",
+        "RESPONSIBLE_STATEMENT_LONG": "Health responsibility statement",
+        "ADDITIONAL": "Additional medical information"
+      },
+      "ADD_IMAGE": "Add image",
+      "ADD_ANALYTIC": "Add test",
+      "NO_RISK_FACTORS": "No risk factors.",
+      "NO_TESTS_DONE": "No tests conducted.",
+      "NO_IMAGES_DONE": "No image results.",
+      "NO_ANALYTICS_DONE": "No test results available.",
+      "REGISTER_FEVER": "Enter fever",
+      "FEVER": {
+        "LAST_TIME": "Last time temperature threshold exceeded ({{threshold}} °C)",
+        "VIEW_ALL": "See all",
+        "TITLE": "Fever (>{{threshold}} °C)",
+        "HISTORY": "History",
+        "DESCRIPTION": "Days in which the defined temperature threshold of {{threshold}} °C was exceeded."
+      },
+      "ANALITYCS": {
+        "TITLE": "New test",
+        "RESULTS": "Results"
+      },
+      "IMAGES": {
+        "TITLE": "New image",
+        "TYPE": "Image type",
+        "RESULTS": "Results"
+      },
+      "WARNING": {
+        "TITLE": "Review passport status",
+        "SUBTITLE": "Medical details have been changed. Review passport status. Don't forget to change status if necessary."
+      },
+      "PASSPORT": {
+        "WORKCENTER": "Work center",
+        "LOCATION": "Location",
+        "DIVISION": "Division",
+        "AGE": "{{number}} years",
+        "CHANGE_STATUS": "Change status",
+        "GO_RED": "Change to red",
+        "EXPIRE": "Expire",
+        "EXPIRES": "Expires {{number}}",
+        "EXPIRED": "Expired"
+      }
+    },
+    "PERSONAL": {
+      "SECTIONS": {
+        "PERSONAL": "Personal",
+        "LABOR": "Employment",
+        "CONTACT": "Contact"
+      },
+      "NAME": "Name",
+      "SURNAMES": "Surnames",
+      "DNI": "ID",
+      "GENRE": "Sex",
+      "BIRTHDATE": "Date of birth",
+      "DIVISION": "Business / Division",
+      "DEPARTMENT": "Department",
+      "WORKCENTER": "Work center",
+      "WORK": "Work",
+      "RESPONSIBLE": "Immediate superior",
+      "SEND_NOTIFICATION": "Send notification"
+    },
+    "CHANGEPASSPORTMODAL": {
+      "TITLE": "Status selection"
+    },
+    "ADDTESTMODAL": {
+      "TITLE": "New Test",
+      "DATE": "Date",
+      "CANCEL": "Cancel",
+      "ADD": "Add",
+      "LINK": "Add test",
+      "FAST": "Rapid",
+      "PCR": "PCR",
+      "POSITIVE": "Positive",
+      "NEGATIVE": "Negative",
+      "CONTROL": "Control",
+      "IGG": "IgG",
+      "IGM": "IgM",
+      "RESULTSTITLE": "Results"
+    },
+    "REMOVETESTMODAL": {
+      "TITLE": "Delete element",
+      "CONTENT": "Are you sure you want to delete this element?",
+      "SUBCONTENT": "This action may not be reversed. If you delete this, all associated data will also be eliminated."
+    }
+  },
+  "PAGINATOR": {
+    "FIRSTPAGE": "First page",
+    "LASTPAGE": "Last page",
+    "NEXTPAGE": "Next page",
+    "PREVIOUSPAGE": "Previous page",
+    "SEPARATOR": "of",
+    "RESULTS": "results"
+  },
+  "NEW_USER": {
+    "TITLE": "New user",
+    "DNI": "ID Card",
+    "NAME": "Name",
+    "SURNAME": "Primary last name",
+    "SURNAME2": "Second last name",
+    "DIVISION": "Division",
+    "DIVISION_PLACEHOLDER": "Select a division from the list",
+    "WORKCENTER": "Work center",
+    "WORKCENTER_PLACEHOLDER": "Select a work center from the list",
+    "SUPERIOR": "Manager"
+  },
+  "OUTSOURCING": {
+    "EMPLOYEE": {
+      "PASSWORD": "Password",
+      "RESET_PASSWORD": "Reset password",
+      "RESET_PASSWORD_INSTRUCTIONS": "You can reset the worker's password and communicate it personally.",
+      "RESET_PASSWORD_QUESTION": "Are you sure you want to reset this user's password?",
+      "RESET_PASSWORD_MODAL_INFO": "You must write down and communicate to the user the new password generated by the system.",
+      "RESET_PASSWORD_ANNOTATE": "Write down and communicate to the user their one-time password:"
+    },
+    "LIST": {
+      "NEW": "New users"
+    }
+  }
+}

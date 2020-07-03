@@ -1,0 +1,11 @@
+<app-employees-filters (searchEvent)="filter($event)" (export)="export()" [filtersBtn]="true" [exportBtn]="true"
+  [additional]="true">
+  <a [routerLink]="['/outsourcing/new-user']">{{ 'OUTSOURCING.LIST.NEW' | i18next }}</a>
+</app-employees-filters>
+
+<mat-card>
+  <app-loading [isLoading]="isLoading">
+    <app-table [data]="data" [tableDef]="headers" [page]="page" [totalResults]="totalResults" [pageSize]="pageSize"
+      (sortEvent)="sort($event)" (pageChange)="pageChange($event)"></app-table>
+  </app-loading>
+</mat-card>

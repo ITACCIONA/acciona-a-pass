@@ -1,0 +1,28 @@
+::ng-deep .simple-change-status .mat-button-toggle {
+  border: solid 1px rgba(0, 0, 0, 0.12) !important;
+  margin-bottom: 1rem;
+
+  &-button {
+    text-align: left;
+    text-decoration: none;
+    width: 15em;
+  }
+
+  &__red {
+    border-right: 1rem solid var(--test-positive) !important;
+
+    &.selected {
+      background-color: var(--test-positive);
+      text-decoration: underline;
+    }
+  }
+
+  &__green {
+    border-right: 1rem solid var(--test-negative) !important;
+
+    &.selected {
+      background-color: var(--test-negative);
+      text-decoration: underline;
+    }
+  }
+}

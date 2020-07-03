@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.WebApi", "1.WebApi", "{DD74BD8F-3832-47A1-9BD9-7FF4FF2F1495}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Services", "2.Services", "{E0120001-CF61-442C-84A4-7BC3B437A3DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Infrastructure", "3.Infrastructure", "{F9531713-58B7-4D2E-8AD0-ECA17E306A63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Core", "4.Core", "{CA0DF410-F5F0-4B42-97C3-36D2635B2BA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccionaCovid.Application.Core", "src\AccionaCovid.Application.Core\AccionaCovid.Application.Core.csproj", "{CFCDE0D9-1254-473A-AA73-088136FE16B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccionaCovid.Domain.Core", "src\AccionaCovid.Domain.Core\AccionaCovid.Domain.Core.csproj", "{6D5C5F79-0BDE-41EB-B11E-F4C6CE441966}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccionaCovid.WebApi.Core", "src\AccionaCovid.WebApi.Core\AccionaCovid.WebApi.Core.csproj", "{329F9964-86F6-4767-882C-337858915B9B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccionaCovid.Application", "src\AccionaCovid.Application\AccionaCovid.Application.csproj", "{552FE1B3-4E8B-45D9-B13D-9850F9C8AB4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccionaCovid.Domain", "src\AccionaCovid.Domain\AccionaCovid.Domain.csproj", "{7EE64765-0C1D-42C2-81B3-A91B72566C87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccionaCovid.Crosscutting", "src\AccionaCovid.Crosscutting\AccionaCovid.Crosscutting.csproj", "{7B03CB0B-8B8E-4205-BD45-7AB087529172}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccionaCovid.Data", "src\AccionaCovid.Data\AccionaCovid.Data.csproj", "{6EDDA639-4FA8-4F50-A240-41DBADB06918}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccionaCovid.WebApi", "src\AccionaCovid.WebApi\AccionaCovid.WebApi.csproj", "{BFF43783-D1E2-4B81-8B0D-F35D7F954FD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFCDE0D9-1254-473A-AA73-088136FE16B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFCDE0D9-1254-473A-AA73-088136FE16B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFCDE0D9-1254-473A-AA73-088136FE16B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFCDE0D9-1254-473A-AA73-088136FE16B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D5C5F79-0BDE-41EB-B11E-F4C6CE441966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5C5F79-0BDE-41EB-B11E-F4C6CE441966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5C5F79-0BDE-41EB-B11E-F4C6CE441966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D5C5F79-0BDE-41EB-B11E-F4C6CE441966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{329F9964-86F6-4767-882C-337858915B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{329F9964-86F6-4767-882C-337858915B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{329F9964-86F6-4767-882C-337858915B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{329F9964-86F6-4767-882C-337858915B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{552FE1B3-4E8B-45D9-B13D-9850F9C8AB4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{552FE1B3-4E8B-45D9-B13D-9850F9C8AB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{552FE1B3-4E8B-45D9-B13D-9850F9C8AB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{552FE1B3-4E8B-45D9-B13D-9850F9C8AB4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE64765-0C1D-42C2-81B3-A91B72566C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE64765-0C1D-42C2-81B3-A91B72566C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE64765-0C1D-42C2-81B3-A91B72566C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE64765-0C1D-42C2-81B3-A91B72566C87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B03CB0B-8B8E-4205-BD45-7AB087529172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B03CB0B-8B8E-4205-BD45-7AB087529172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B03CB0B-8B8E-4205-BD45-7AB087529172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B03CB0B-8B8E-4205-BD45-7AB087529172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EDDA639-4FA8-4F50-A240-41DBADB06918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDDA639-4FA8-4F50-A240-41DBADB06918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDDA639-4FA8-4F50-A240-41DBADB06918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDDA639-4FA8-4F50-A240-41DBADB06918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF43783-D1E2-4B81-8B0D-F35D7F954FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF43783-D1E2-4B81-8B0D-F35D7F954FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF43783-D1E2-4B81-8B0D-F35D7F954FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF43783-D1E2-4B81-8B0D-F35D7F954FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CFCDE0D9-1254-473A-AA73-088136FE16B5} = {CA0DF410-F5F0-4B42-97C3-36D2635B2BA6}
+		{6D5C5F79-0BDE-41EB-B11E-F4C6CE441966} = {CA0DF410-F5F0-4B42-97C3-36D2635B2BA6}
+		{329F9964-86F6-4767-882C-337858915B9B} = {CA0DF410-F5F0-4B42-97C3-36D2635B2BA6}
+		{552FE1B3-4E8B-45D9-B13D-9850F9C8AB4F} = {E0120001-CF61-442C-84A4-7BC3B437A3DC}
+		{7EE64765-0C1D-42C2-81B3-A91B72566C87} = {E0120001-CF61-442C-84A4-7BC3B437A3DC}
+		{7B03CB0B-8B8E-4205-BD45-7AB087529172} = {F9531713-58B7-4D2E-8AD0-ECA17E306A63}
+		{6EDDA639-4FA8-4F50-A240-41DBADB06918} = {F9531713-58B7-4D2E-8AD0-ECA17E306A63}
+		{BFF43783-D1E2-4B81-8B0D-F35D7F954FD9} = {DD74BD8F-3832-47A1-9BD9-7FF4FF2F1495}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF1A6FEF-42E0-4AA2-B1E1-EDA9DA881AF6}
+	EndGlobalSection
+EndGlobal

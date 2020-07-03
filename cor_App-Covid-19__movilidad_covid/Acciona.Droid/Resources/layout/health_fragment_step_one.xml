@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#FFFFFF">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+            <View
+                    android:layout_width="1dp"
+                    android:layout_height="3dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="4dp"
+                    android:backgroundTint="@color/colorRed"
+                    android:background="@drawable/button_red"/>
+
+            <View
+                    android:layout_width="1dp"
+                    android:layout_height="3dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="4dp"
+                    android:backgroundTint="@color/colorVeryLightPink"
+                    android:background="@drawable/button_red"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="@string/health_title"
+        />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:textColor="#333333"
+                android:text="@string/health_description"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="2"
+                    android:rowCount="2"
+                    android:alignmentMode="alignMargins"
+                    android:padding="16dp"
+            >
+
+                <android.support.v7.widget.CardView
+
+                        android:id="@+id/cvSymptomOne"
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"                     
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp">
+
+                    <include
+
+                            layout="@layout/health_fragment_step_one_cardview_view"
+                            android:id="@+id/cvSymptom1"
+
+                    />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:id="@+id/cvSymptomTwo"
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp">
+
+                    <include
+
+                            layout="@layout/health_fragment_step_one_cardview_view"
+                            android:id="@+id/cvSymptom2"
+
+                    />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"                    
+                        android:visibility="invisible"
+                >
+                    <include
+
+                            layout="@layout/health_fragment_step_one_cardview_view"
+                            android:id="@+id/cvSymptom3"
+                    />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="3dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:visibility="invisible"
+                >
+                    <include
+
+                            layout="@layout/health_fragment_step_one_cardview_view"
+                            android:id="@+id/cvSymptom4"
+
+                    />
+                </android.support.v7.widget.CardView>
+
+
+            </GridLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="#666666"
+        android:layout_margin="8dp"
+        android:text="@string/health_symptom_2_help" />
+    
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="8dp"
+            android:background="#EFEFEF"/>
+
+
+    <TextView
+            android:id="@+id/btNextStep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/health_button_first_no_symptoms"
+            android:background="@drawable/button_white"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+
+</LinearLayout>

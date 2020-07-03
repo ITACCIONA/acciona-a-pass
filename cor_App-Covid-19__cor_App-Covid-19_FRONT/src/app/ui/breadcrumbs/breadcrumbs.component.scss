@@ -1,0 +1,27 @@
+:host {
+  align-items: center;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  font-weight: 500;
+  display: flex;
+  margin: 0;
+}
+
+li {
+  margin: 0 0.5em
+}
+
+li:last-child {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.arrow {
+  color: var(--brand-color)
+}

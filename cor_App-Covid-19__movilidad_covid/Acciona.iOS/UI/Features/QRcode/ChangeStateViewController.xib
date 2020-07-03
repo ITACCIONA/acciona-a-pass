@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeStateViewController">
+            <connections>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="buttonClose" destination="2539" id="name-outlet-2539"/>
+                <outlet property="buttonShow" destination="7530" id="name-outlet-7530"/>
+                <outlet property="content" destination="1214" id="name-outlet-1214"/>
+                <outlet property="labelTitle" destination="4951" id="name-outlet-4951"/>
+                <outlet property="labelSubtitle" destination="6333" id="name-outlet-6333"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <color key="backgroundColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="0" alpha="0.5"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="1214" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="16" y="152" width="382" height="393"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2539" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="348" y="8" width="26" height="26"/>
+                            <color key="tintColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
+                            <state key="normal" image="cruz"/>
+                            <constraints>
+                                <constraint id="3062" firstAttribute="height" constant="26"/>
+                                <constraint id="3110" firstAttribute="width" constant="26"/>
+                            </constraints>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3680" translatesAutoresizingMaskIntoConstraints="NO" image="img_ojo" misplaced="YES">
+                            <rect key="frame" x="71" y="42" width="240" height="240"/>
+                            <constraints>
+                                <constraint id="3918" firstAttribute="height" constant="240"/>
+                                <constraint id="3966" firstAttribute="width" constant="240"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4951" translatesAutoresizingMaskIntoConstraints="NO" text="Tu pasaporte ha cambiado &#xA;de estado." numberOfLines="0">
+                            <rect key="frame" x="8" y="217" width="366" height="54"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                            <constraints>
+                                <constraint id="5988" firstAttribute="height" constant="54" relation="greaterThanOrEqual"/>
+                            </constraints>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6333" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="0" text="No podrás acceder a tu centro de trabajo. Por favor, sigue las indicaciones.">
+                            <rect key="frame" x="8" y="279" width="366" height="47"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <constraints>
+                                <constraint id="6334" firstAttribute="height" constant="47" relation="greaterThanOrEqual"/>
+                            </constraints>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7530">
+                            <rect key="frame" x="8" y="334" width="366" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="7533"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
+                            <state key="normal" title="¿Qué hago ahora?">
+                                <color key="titleColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="1" alpha="1"/>
+                            </state>
+                            <connections>
+                                <action selector="ModifyButton_TouchUpInside:" destination="7532" id="7531" eventType="touchUpInside"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint id="3158" firstItem="2539" firstAttribute="top" secondItem="1214" secondAttribute="top" constant="8"/>
+                        <constraint id="3206" firstAttribute="trailing" secondItem="2539" secondAttribute="trailing" constant="8"/>
+                        <constraint id="3822" firstItem="3680" firstAttribute="centerX" secondItem="1214" secondAttribute="centerX" constant="-16"/>
+                        <constraint id="4108" firstItem="3680" firstAttribute="top" secondItem="1214" secondAttribute="top" constant="42"/>
+                        <constraint id="5892" firstItem="3680" firstAttribute="bottom" secondItem="4951" secondAttribute="top" constant="65"/>
+                        <constraint id="5940" firstItem="4951" firstAttribute="leading" secondItem="1214" secondAttribute="leading" constant="8"/>
+                        <constraint id="6036" firstAttribute="trailing" secondItem="4951" secondAttribute="trailing" constant="8"/>
+                        <constraint id="7229" firstItem="6333" firstAttribute="top" secondItem="4951" secondAttribute="bottom" constant="8"/>
+                        <constraint id="7324" firstItem="6333" firstAttribute="leading" secondItem="1214" secondAttribute="leading" constant="8"/>
+                        <constraint id="7372" firstAttribute="trailing" secondItem="6333" secondAttribute="trailing" constant="8"/>
+                        <constraint id="8641" firstItem="7530" firstAttribute="top" secondItem="6333" secondAttribute="bottom" constant="8"/>
+                        <constraint id="8721" firstAttribute="bottom" secondItem="7530" secondAttribute="bottom" constant="14"/>
+                        <constraint id="8801" firstItem="7530" firstAttribute="leading" secondItem="1214" secondAttribute="leading" constant="8"/>
+                        <constraint id="8881" firstAttribute="trailing" secondItem="7530" secondAttribute="trailing" constant="8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint id="2508" firstItem="1214" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="16"/>
+                <constraint id="2509" firstAttribute="trailing" secondItem="1214" secondAttribute="trailing" constant="16"/>
+                <constraint id="2510" firstItem="1214" firstAttribute="centerY" secondItem="2" secondAttribute="centerY" constant="-19.5"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="cruz" width="20" height="20"/>
+        <image name="img_ojo" width="240" height="217"/>
+    </resources>
+</document>

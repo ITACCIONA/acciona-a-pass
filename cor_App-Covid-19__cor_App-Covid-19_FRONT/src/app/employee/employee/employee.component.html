@@ -1,0 +1,16 @@
+<app-back-btn></app-back-btn>
+<mat-tab-group *ngIf="role === 'ServicioMedico'; else PRL">
+  <mat-tab>
+    <ng-template mat-tab-label>{{ 'EMPLOYEE.TABS.MEDICAL' | i18next }}</ng-template>
+    <app-employee-medical-data [id]="id"></app-employee-medical-data>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label> {{ 'EMPLOYEE.TABS.PERSONAL' | i18next }}</ng-template>
+    <ng-template matTabContent>
+      <app-employee-personal-data [id]="id"></app-employee-personal-data>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
+<ng-template #PRL>
+  <app-prl [id]="id"></app-prl>
+</ng-template>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" android:padding="10dp">
+    <!-- you can use any color you want I used here gray color-->
+    <size android:height="6dp" android:width="6dp"/>
+    <solid android:color="@color/colorRed" />
+    <corners android:radius="50dp"/>
+
+</shape>

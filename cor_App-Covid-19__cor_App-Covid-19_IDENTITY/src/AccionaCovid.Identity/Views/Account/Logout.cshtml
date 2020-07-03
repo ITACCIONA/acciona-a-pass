@@ -1,0 +1,22 @@
+﻿@model LogoutViewModel
+@inject IViewLocalizer Localizer
+
+<div class="logout-page">
+    <div class="page-header">
+        <h3>@Localizer["LOGOUT"]</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <p>@Localizer["WOULD_LIKE_LOGOUT"]</p>
+            <form asp-action="Logout">
+                <input type="hidden" name="logoutId" value="@Model.LogoutId" />
+                <fieldset>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Localizer["YES"]</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

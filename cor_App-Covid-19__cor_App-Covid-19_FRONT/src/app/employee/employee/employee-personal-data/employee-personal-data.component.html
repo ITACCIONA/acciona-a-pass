@@ -1,0 +1,91 @@
+<app-loading [isLoading]="isLoading">
+
+  <div class="flex mt-1">
+    <div class="w-2/3">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title class="card-header-text">{{ 'EMPLOYEES.PERSONAL.SECTIONS.PERSONAL' | i18next }}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-divider></mat-divider>
+          <div class="flex">
+            <div class="w-1/3"><strong>{{ 'EMPLOYEES.PERSONAL.NAME' | i18next }}</strong>
+              <p>{{ data?.nombreEmpleado }}</p>
+            </div>
+            <div class="w-1/3"><strong>{{ 'EMPLOYEES.PERSONAL.SURNAMES' | i18next }}</strong>
+              <p>{{ data?.apellidosEmpleado }}</p>
+            </div>
+            <div class="w-1/3"><strong>{{ 'EMPLOYEES.PERSONAL.DNI' | i18next }}</strong>
+              <p>{{ data?.dni || "--" }}</p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="w-1/3"><strong>{{ 'EMPLOYEES.PERSONAL.GENRE' | i18next }}</strong>
+              <p>{{ data?.generoEmpleado || "--"  }}</p>
+            </div>
+            <div class="w-1/3"><strong>{{ 'EMPLOYEES.PERSONAL.BIRTHDATE' | i18next }}</strong>
+              <p>{{ (data?.fechaNacimiento | dateFormat) || "--"  }}</p>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title class="card-header-text">{{ 'EMPLOYEES.PERSONAL.SECTIONS.LABOR' | i18next }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-divider></mat-divider>
+          <div class="flex">
+            <div class="w-1/3">
+              <strong>{{ 'EMPLOYEES.PERSONAL.DIVISION' | i18next }}</strong>
+              <p>{{ data?.division }}</p>
+            </div>
+            <div class="w-1/3"> <strong>{{ 'EMPLOYEES.PERSONAL.DEPARTMENT' | i18next }}</strong>
+              <p>{{ data?.departamento }}</p>
+            </div>
+            <div class="w-1/3"> <strong>{{ 'EMPLOYEES.PERSONAL.WORKCENTER' | i18next }}</strong>
+              <p>{{ data?.nameLocalizacion }}</p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="w-1/3"> <strong>{{ 'EMPLOYEES.PERSONAL.WORK' | i18next }}</strong>
+              <p>{{ data?.direccion1 }}</p>
+            </div>
+            <div class="w-1/3"> <strong>{{ 'EMPLOYEES.PERSONAL.RESPONSIBLE' | i18next }}</strong>
+              <p>{{ data?.responsable || "--" }}</p>
+            </div>
+          </div>
+        </mat-card-content>
+
+      </mat-card>
+    </div>
+    <div class="ml-1 w-1/3">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title class="card-header-text">{{ 'EMPLOYEES.PERSONAL.SECTIONS.CONTACT' | i18next }}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-list>
+            <mat-list-item>
+              <mat-icon class="additional-icon">phone</mat-icon> {{ data?.telefonoEmpleado || "--" }}
+            </mat-list-item>
+
+            <mat-list-item>
+              <mat-icon class="additional-icon">mail</mat-icon> {{ data?.mailEmpleado || "--" }}
+            </mat-list-item>
+          </mat-list>
+
+          <div class="flex justify-center"> <button class="notifications-button" (click)="openModal()" mat-flat-button
+              color="primary">
+              <mat-icon class="bell" svgIcon="bell"></mat-icon>
+              {{ "EMPLOYEES.PERSONAL.SEND_NOTIFICATION" | i18next }}
+            </button></div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+</app-loading>

@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccionaCovid.Application.Core\AccionaCovid.Application.Core.csproj" />
+    <ProjectReference Include="..\AccionaCovid.Crosscutting\AccionaCovid.Crosscutting.csproj" />
+    <ProjectReference Include="..\AccionaCovid.Domain.Core\AccionaCovid.Domain.Core.csproj" />
+    <ProjectReference Include="..\AccionaCovid.Domain\AccionaCovid.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Data.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Data.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\ValidatorFields.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ValidatorFields.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\ValidatorsMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ValidatorsMessages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Data.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ValidatorFields.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidatorFields.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ValidatorsMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidatorsMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\Admin\Commands\" />
+  </ItemGroup>
+
+</Project>

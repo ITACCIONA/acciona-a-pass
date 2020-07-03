@@ -1,0 +1,21 @@
+<form [formGroup]="form" (ngSubmit)="search()">
+  <mat-grid-list cols="12" rowHeight="80px" gutterSize="20px">
+    <mat-grid-tile [colspan]="additional ? 6 : 8">
+      <mat-form-field class="w-full">
+        <mat-label>{{ 'EMPLOYEES.SEARCH.PLACEHOLDER' | i18next }}</mat-label>
+        <input type="text" formControlName="search" matInput />
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" *ngIf="filtersBtn">
+      <a class="more-filters" (click)="openFilters()">{{ 'EMPLOYEES.SEARCH.FILTERS' | i18next }}</a>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" *ngIf="exportBtn">
+      <a (click)="exportLaunch()">{{ 'EMPLOYEES.SEARCH.EXPORT' | i18next }}</a>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" *ngIf="additional">
+      <ng-content></ng-content>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>

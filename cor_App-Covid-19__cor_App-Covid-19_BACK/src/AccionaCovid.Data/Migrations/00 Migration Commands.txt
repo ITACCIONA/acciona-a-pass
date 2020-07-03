@@ -1,0 +1,22 @@
+﻿
+==================
+COMANDOS MIGRACION
+==================
+
+
+-- Si queremos crear una nueva migración ejecutamos lo siguiente cambiando <NombreMigracion> por el que queramos.
+
+		Add-Migration <NombreMigracion> -Context AccionaCovidContext -StartupProject AccionaCovid.WebApi -Project AccionaCovid.Data -OutputDir Migrations
+
+-- Si queremos que los cambios la migración creada anteriomente se efectuen en la base de datos ejecutamos 
+	lo siguiente, poniendo en <NombreMigracion> el mismo que anteriormente. Si no ponemos <NombreMigracion> actualizará la BBDD a la última versión conocida.
+
+		Update-Database <NombreMigracion> -Context AccionaCovidContext -StartupProject AccionaCovid.WebApi -Project AccionaCovid.Data
+
+-- Para crear el script de 0
+
+		Script-Migration -Context AccionaCovidContext -StartupProject AccionaCovid.WebApi -Project AccionaCovid.Data
+
+-- Script de actualizacion entre dos Migraciones
+
+		Script-Migration <NombreMigracionDesde> <NombreMigracionHasta> -Context AccionaCovidContext -StartupProject AccionaCovid.WebApi -Project AccionaCovid.Data

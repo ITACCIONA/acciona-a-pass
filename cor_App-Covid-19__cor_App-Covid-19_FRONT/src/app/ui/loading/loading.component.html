@@ -1,0 +1,8 @@
+<div *ngIf="isLoading; else elseBlock" class="flex spinner">
+  <mat-progress-spinner class="spinner" mode="indeterminate" color="accent">
+  </mat-progress-spinner>
+</div>
+
+<ng-template #elseBlock>
+  <ng-content></ng-content>
+</ng-template>

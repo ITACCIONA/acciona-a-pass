@@ -1,0 +1,18 @@
+<mat-vertical-stepper linear>
+  <ng-template matStepperIcon="edit">
+    <mat-icon>lens</mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="done">
+    <mat-icon>lens</mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="selected">
+    <mat-icon>lens</mat-icon>
+  </ng-template>
+
+  <mat-step *ngFor="let elem of data" editable="false" state="done">
+    <ng-template matStepLabel>
+      <p class="label">{{ elem.values }}</p>
+      <p class="date">{{ elem.date | dateFormat }}</p>
+    </ng-template>
+  </mat-step>
+</mat-vertical-stepper>

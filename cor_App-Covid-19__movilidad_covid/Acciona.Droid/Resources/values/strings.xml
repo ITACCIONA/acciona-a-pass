@@ -1,0 +1,196 @@
+<resources>
+    <string name="app_name">A-Pass</string>
+    <string name="filter_date_format">MM/dd/yyyy</string>
+    <string name="msg_ok">OK</string>
+    <string name="msg_yes">Yes</string>
+    <string name="msg_no">No</string>
+    <string name="msg_cancel">Cancel</string>
+    <string name="login_error">An error has occurred. Please verify your username and password</string>
+    <string name="no_permission">The application does not have the required authorization for this operation. Check your settings and try again.</string>
+    <string name="host_error">Please check your connection</string>
+    <string name="generic_error">An error occurred while processing the operation</string>
+    <string name="close">Close</string>
+    <string name="no_connection">No connection. Please check network settings.</string>
+    <string name="error_401">Session has expired. Please enter ID again</string>
+    <string name="error_401_user">User is not authorized to use the application. Please contact an administrator.</string>
+    <string name="no_file_permission">The application does not have the required authorization to manage files. Check your settings and try again.</string>
+    <string name="send_email">Send email</string>
+    <string name="version">Version {0}</string>
+    <string name="listedittext_search_hint">Search...</string>
+    <string name="listedittext_cancel">Cancel</string>
+
+    <!-- Splash -->
+    <string name="recomended_update">A new version of the application is available. Please update before continuing</string>
+    <string name="mandatory_update">A new version of the application is available. Please update before entering</string>
+    <string name="msg_continue">Continue</string>
+    <string name="msg_download">Download</string>
+
+    <!-- Login -->
+    <string name="wellcome">WELCOME</string>
+    <string name="username">USERNAME</string>
+    <string name="username_hint">User</string>
+    <string name="password">PASSWORD</string>
+    <string name="password_hint">Password</string>
+    <string name="init_session">Sign in</string>
+    <string name="login_connecting_message">We are working on it...</string>
+    <string name="login_error_message">Something went wrong...</string>
+
+
+    <!-- Main -->
+    <string name="disconnect_ask">Are you sure you want to leave?</string>
+    <string name="main_passport">Passport</string>
+    <string name="main_panic">I\nfeel\nunwell</string>
+    <string name="main_profile">My profile</string>
+
+    <!-- Alarm -->
+    <string name="alarm_contact_title">Video-consultation</string>
+    <string name="alarm_decription_message">Video-consultation service available</string>
+    <string name="alarm_needs_help">Do you need help?</string>
+    <string name="alarm_call_to">Call {0}</string>
+    <string name="alarm_description">El Centro de seguridad de Acciona está operativo y disponible las <b>24 horas</b> durante los <b>365 días</b> del año.</string>
+    <string name="alarm_phone">+34 91 663 01112</string>
+    <string name="alarm_email">seguridadCorporativa@foo.bar</string>
+
+    <!-- Alerts -->
+    <string name="alerts_notifications">Notifications</string>
+    <string name="alerts_not_read">Unread (<b>{0}</b>)</string>
+    <string name="alerts_read">Read (<b>{0}</b>)</string>
+
+    <!-- Alert Detail -->
+
+    <!-- Health -->
+    <string name="health_statement">Responsibility Statement</string>
+    <string name="health_title">Have you had any of the following symptoms related to COVID-19 today?</string>
+    <string name="health_description">Select all current symptoms.\nIf none, click on \'No symptoms\'</string>
+    <string name="health_symptom_1">Fever</string>
+    <string name="health_symptom_2">Other Symptoms</string>
+    <string name="health_symptom_2_help">Fever: A body temperature of over 37°C/98.6ºF.\nOther symptoms: persistent cough, breathing difficulty, throat pain, loss of smell or taste, intense headache, diarrhea, skin rashes</string>
+    <string name="health_symptom_3">Fatigue. Breathing difficulty</string>
+    <string name="health_symptom_4">Cough</string>
+    <string name="health_button_first_no_symptoms">No symptoms</string>
+    <string name="health_button_first_yes_symptoms">Yes, I have symptoms</string>
+    <string name="health_step_two_description">Have you had close contact* with any person with a confirmed infection in the last 14 days?</string>
+    <string name="health_step_two_description_subtitle"><![CDATA[(If you have had a check that rules out the risk associated with this close contact, please select <b><font color="black">NO</font></b>)]]></string>
+    <string name="health_step_two_help1"><![CDATA[*In this context, <b>close contact</b> is understood to mean:]]></string>
+    <string name="health_step_two_help2"><![CDATA[<ul><li>Having been a caregiver to an infected person: healthcare workers who have not used adequate protective measures, family members or persons who have another type of similar physical contact.<br/></li><li>Co-habitants, relatives or persons having been at a distance of less than 2 metres from an infected person for at least 15 minutes.</li></ul>]]></string>
+    <string name="health_step_two_button_yes">Yes</string>
+    <string name="health_step_two_button_no">No</string>
+    <string name="health_fiebre_confirm">"- Fever > 37º"</string>
+    <string name="health_sintomas_confirm">"- Other symptoms"</string>
+    <string name="health_contacto_confirm">"- Close contact"</string>
+    <string name="health_ask_confirm">"Do you want to confirm following symptoms?\n"</string>
+    <string name="health_yes_confirm">"Yes, confirm symptoms"</string>
+
+    <!-- medical test -->
+    <string name="medical_test_title_steps">Registration form</string>
+    <string name="medical_test_title_steps_modify">Modify medical details</string>
+    <string name="medical_test_title_step_final">Confirmation</string>
+
+
+    <string name="medical_test_description_step_one">Do you belong to any of the following groups?</string>
+    <string name="medical_test_description_step_two">Have you ever been diagnosed with COVID-19?</string>
+    <string name="medical_test_description_step_three">Do you work in any of the following jobs?</string>
+    <string name="medical_test_description_step_final">Do you confirm that the details are correct?</string>
+    <string name="medical_test_description_two_step_final">Please click on any incorrect information to change it.</string>
+
+    <string name="medical_test_step_one_symptom_one">People over the age of 60 years</string>
+    <string name="medical_test_step_one_symptom_two">Diabetes</string>
+    <string name="medical_test_step_one_symptom_three">Heart diseases / HBP</string>
+    <string name="medical_test_step_one_symptom_four">Chronic lung diseases</string>
+    <string name="medical_test_step_one_symptom_five">Cancer in the active treatment phase</string>
+    <string name="medical_test_step_one_symptom_six">Immunodeficiencies</string>
+    <string name="medical_test_step_one_symptom_seven">Pregnancy</string>
+
+    <string name="medical_test_step_three_symptom_one">Healthcare personnel</string>
+    <string name="medical_test_step_three_symptom_two">Orderlies</string>
+    <string name="medical_test_step_three_symptom_three">Auxiliary healthcare staff</string>
+    <string name="medical_test_step_three_symptom_four">Ambulance staff</string>
+
+
+    <string name="medical_test_final_step_risk_text">Risk group</string>
+    <string name="medical_test_final_step_diagnosed_text">Diagnosed with COVID-19</string>
+    <string name="medical_test_final_step_danger_work_text">High exposure at work</string>
+
+    <string name="medical_test_description_button_yes_text">Yes</string>
+    <string name="medical_test_description_button_no_text">No</string>
+    <string name="medical_test_description_button_confirm_form_text">Confirm details</string>
+    <string name="medical_test_skip_question">"I don't know, skip question"</string>
+
+    <string name="conclusion_no">No</string>
+    <string name="conclusion_yes">Yes</string>
+    <string name="conclusion_nsnc">-</string>
+
+
+    <!-- QR Code -->
+    <string name="qrcode_help_normal">Position code in front of reader</string>
+    <string name="qrcode_help_caducado">Code disabled. Renew your statement to enable QR</string>
+    <string name="qrcode_help_infectado">Code disabled as symptoms were observed</string>
+    <string name="qrcode_ill">I feel unwell</string>
+    <string name="qrcode_renew">Renew statement</string>
+    <string name="access_allowed">Access allowed</string>
+    <string name="access_not_allowed">Access not allowed</string>
+    <string name="qrcode_todo"><![CDATA[<u>What should I do now?</u>]]></string>
+    <string name="change_status_title">Your passport status has changed.</string>
+    <string name="change_status_subtitle">You may not access your work center. Please follow the instructions.</string>
+    <string name="change_status_button">What should I do now?</string>
+
+    <!-- Profile -->
+    <string name="profile_data_contact_description">Telephone and email</string>
+    <string name="profile_data_contact_title">Contact details</string>
+    <string name="profile_medical_data_title">Medical details</string>
+    <string name="profile_medical_data_description">Initial medical details</string>
+    <string name="profile_center_data_title">Working center</string>    
+    <string name="profile_logout_button_text">Close session</string>
+    <string name="profile_hello"><![CDATA[Hello, <b>{0}</b>]]></string>
+    <string name="profile_not_user">Are you not {0}?</string>
+
+    <!-- Contact Data -->
+    <string name="contact_data_fragment_title">Contact details</string>
+    <string name="contact_data_telephone_label">Mobile telephone</string>
+    <string name="contact_data_mail_label">Email</string>
+    <string name="contact_data_save_modify_data_button_text">Save details</string>
+    <string name="contact_data_save_modify_data_ok">Details saved correctly</string>
+
+
+    <!-- Medical Info -->
+    <string name="medical_info_description_two_text">Only classification as risk group member may be changed manually.</string>
+    <string name="medical_info_title">Medical details</string>
+    <string name="medical_info_button_text">Modify details</string>
+    <string name="alarm_skype_donwload_button">Download Skype for Business</string>
+    <string name="alarm_request_email_appointment">Request appointment via email</string>
+    <string name="alarm_fragment_point_one">Use the following email address to request an appointment, specifying your location:</string>
+    <string name="alarm_fragment_contact_mail">consultaMedica@foo.bar</string>
+    <string name="alarm_fragment_point_one_2">We need to know your location to establish your time zone.</string>
+    <string name="alarm_fragment_point_two">Your appointment will be confirmed and you will be seen according to availability.</string>
+    <string name="alarm_fragment_point_three">After your appointment is confirmed, your video-consultation will be held via Skype for Business. Please make sure that it is installed on your device.</string>
+
+
+    <!-- Offline -->
+    <string name="offline_name">Without connection</string>
+    <string name="offline_continue">Connect</string>
+    <string name="offline_error">Apparently still offline</string>
+    <string name="offline_qr_timeout">Renew your statement to enable QR</string>
+
+    <!-- Language -->
+    <string name="language_title">Language</string>
+    <string name="language_modify">Modify language</string>
+    <string name="language_spanish">Spanish</string>
+    <string name="language_english">English</string>
+    <string name="language_confirm">Application will be restarted to apply changes</string>
+
+     <!-- passport states -->
+    <string name="state_caducado"><![CDATA[<b>Disabled</b>]]></string>
+    <string name="state_multiple_days"><![CDATA[Valid for <b>dd days</b>]]></string>
+    <string name="state_single_day"><![CDATA[Valid until <b>mm dd</b>]]></string>
+    <string name="state_this_day"><![CDATA[Valid <b>mm dd</b>]]></string>
+
+    <!-- Working center -->
+    <string name="center_title">Working center</string>
+    <string name="center_modify">Save</string>
+    <string name="center_country">Country *</string>
+    <string name="center_city">City</string>
+    <string name="center_center">Center *</string>
+    <string name="center_other">Other</string>
+    <string name="center_mandatory">* Mandatory fields</string>
+    
+</resources>

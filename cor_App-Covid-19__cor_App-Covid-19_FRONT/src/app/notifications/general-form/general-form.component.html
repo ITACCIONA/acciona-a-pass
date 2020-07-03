@@ -1,0 +1,92 @@
+<app-loading [isLoading]="isLoading">
+  <form [formGroup]="form">
+    <div>
+      <h3>{{ 'NOTIFICATIONS.TARGET.TITLE' | i18next }}</h3>
+      <mat-form-field class="w-full" appearance="outline">
+        <mat-select formControlName="target">
+          <mat-select-trigger>
+            <mat-icon [svgIcon]="form.get('target').value" class="mr-1/2"></mat-icon>
+            {{ 'NOTIFICATIONS.TARGET.'+form.get('target').value | uppercase | i18next }}
+          </mat-select-trigger>
+
+          <mat-option value="all">
+            <mat-icon svgIcon="all"></mat-icon>{{ 'NOTIFICATIONS.TARGET.ALL' | i18next }}
+          </mat-option>
+          <mat-option value="country">
+            <mat-icon svgIcon="country"></mat-icon>{{ 'NOTIFICATIONS.TARGET.COUNTRY' | i18next }}
+          </mat-option>
+          <mat-option value="division">
+            <mat-icon svgIcon="division"></mat-icon>{{ 'NOTIFICATIONS.TARGET.DIVISION' | i18next }}
+          </mat-option>
+          <mat-option value="workcenter">
+            <mat-icon svgIcon="workcenter"></mat-icon>{{ 'NOTIFICATIONS.TARGET.WORKCENTER' | i18next }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div *ngIf="form.value.target === 'country'">
+      <h3>{{ 'NOTIFICATIONS.TARGET.COUNTRY_TITLE' | i18next }}</h3>
+      <mat-form-field class="w-full" appearance="outline">
+        <input type="text" aria-label="country" matInput formControlName="country" [matAutocomplete]="auto"
+          [placeholder]="'NOTIFICATIONS.TARGET.COUNTRY_PLACEHOLDER' | i18next">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let item of  filteredCountries | async" [value]="item.name">
+            {{item.name}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
+
+    <div *ngIf="form.value.target === 'division'">
+      <h3>{{ 'NOTIFICATIONS.TARGET.DIVISION_TITLE' | i18next }}</h3>
+      <mat-form-field class="w-full" appearance="outline">
+        <mat-select formControlName="division" [placeholder]="'NOTIFICATIONS.TARGET.DIVISION_PLACEHOLDER' | i18next">
+          <mat-option *ngFor="let item of divisions" [value]="item.idDivision">{{ item.name }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div *ngIf="form.value.target === 'workcenter'">
+      <h3>{{ 'NOTIFICATIONS.TARGET.WORKCENTER_TITLE' | i18next }}</h3>
+      <mat-form-field class="w-full" appearance="outline">
+        <input type="text" matInput formControlName="workcenter" [matAutocomplete]="autoWorkCenters"
+          [placeholder]="'NOTIFICATIONS.TARGET.WORKCENTER_PLACEHOLDER' | i18next">
+        <mat-autocomplete #autoWorkCenters="matAutocomplete" [displayWith]="displayFn">
+          <mat-option *ngFor="let item of  filteredWorkcenters | async; trackBy: trackById" [value]="item">
+            {{item.name}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-slide-toggle formControlName="interacciona">
+        {{ 'NOTIFICATIONS.FORM.INTERACCIONA' | i18next }}
+      </mat-slide-toggle>
+    </div>
+
+    <div>
+      <h3>{{ 'NOTIFICATIONS.FORM.EMPLOYEE_STATUS' | i18next }}</h3>
+
+      <mat-form-field class="w-full" appearance="outline">
+        <mat-select formControlName="status">
+          <mat-option [value]="0"> {{ 'COMMONS.ANY' | i18next }} </mat-option>
+
+          <mat-option *ngFor="let status of statuses" [value]="status.id"> {{ status.name }} </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <h3>{{ 'NOTIFICATIONS.FORM.TITLE' | i18next }}</h3>
+      <mat-form-field class="w-full" appearance="outline">
+        <input matInput formControlName="title" [placeholder]="'NOTIFICATIONS.FORM.TITLE_HELP' | i18next" />
+      </mat-form-field>
+
+      <h3 class="mt-0">{{ 'NOTIFICATIONS.FORM.CONTENT' | i18next }}</h3>
+      <mat-form-field class="w-full" appearance="outline">
+        <textarea matInput formControlName="comment"
+          [placeholder]="'NOTIFICATIONS.FORM.CONTENT_HELP' | i18next"></textarea>
+      </mat-form-field>
+    </div>
+  </form>
+</app-loading>

@@ -1,0 +1,28 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ 'EMPLOYEES.MEDICAL.SECTIONS.RESPONSIBLE_STATEMENT' | i18next }}
+      <a class="accent" (click)="openModal()">{{ "EMPLOYEES.MEDICAL.FEVER.VIEW_ALL" | i18next }} <mat-icon>
+          keyboard_arrow_right
+        </mat-icon></a>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-stepper [data]="dataPreview"></app-stepper>
+  </mat-card-content>
+</mat-card>
+
+<ng-template #dialog>
+  <a class="accent" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </a>
+  <h2 mat-dialog-title>
+    {{ 'EMPLOYEES.MEDICAL.SECTIONS.RESPONSIBLE_STATEMENT_LONG' | i18next }}</h2>
+  <div mat-dialog-content>
+    <app-loading [isLoading]="isLoading">
+      <app-stepper [data]="data"></app-stepper>
+    </app-loading>
+  </div>
+  <div class="actions" mat-dialog-actions>
+    <button mat-dialog-close color="accent" mat-flat-button>{{"COMMONS.CLOSE" |i18next }}</button>
+  </div>
+</ng-template>

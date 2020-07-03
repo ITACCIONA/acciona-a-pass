@@ -1,0 +1,71 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"   
+    android:id="@+id/rootFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+<LinearLayout
+   android:layout_width="match_parent"
+                android:layout_height="match_parent"
+android:orientation="vertical"
+             android:background="#FFFFFF">
+
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:padding="16dp" >
+                <ImageView
+                    android:id="@+id/buttonBack"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/back"
+                    android:adjustViewBounds="true" />
+                
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/health_statement"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#2E2E2E"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/back"                    
+                    android:adjustViewBounds="true"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EFEFEF"/>
+
+       
+
+<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <include
+        android:id="@+id/llHealthStepOne"
+        layout="@layout/health_fragment_step_one" />
+
+    <include
+        android:id="@+id/llHealthStepTwo"
+        layout="@layout/health_fragment_step_two"
+        android:visibility="gone"/>
+</RelativeLayout>
+</LinearLayout>
+</RelativeLayout>

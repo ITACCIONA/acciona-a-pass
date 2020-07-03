@@ -1,0 +1,127 @@
+<app-back-btn></app-back-btn>
+<mat-tab-group>
+  <mat-tab>
+    <ng-template mat-tab-label> {{ 'EMPLOYEE.TABS.PERSONAL' | i18next }}</ng-template>
+    <ng-template matTabContent>
+      <app-loading [isLoading]="isLoading">
+        <div class="flex mt-1">
+          <div class="w-2/3">
+
+            <mat-card class="passport">
+              <app-passport [id]="id" [showExpire]="true" [showGoRed]="true"></app-passport>
+            </mat-card>
+
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title class="card-header-text">{{ 'EMPLOYEES.PERSONAL.SECTIONS.PERSONAL' | i18next }}
+                </mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="flex employee-data">
+                  <div class="w-1/3"><strong>{{ 'EMPLOYEES.PERSONAL.NAME' | i18next }}</strong>
+                    <p>{{ data?.nombreEmpleado }}</p>
+                  </div>
+                  <div class="w-1/3"><strong>{{ 'EMPLOYEES.PERSONAL.SURNAMES' | i18next }}</strong>
+                    <p>{{ data?.apellidosEmpleado }}</p>
+                  </div>
+                  <div class="w-1/3"><strong>{{ 'EMPLOYEES.PERSONAL.DNI' | i18next }}</strong>
+                    <p>{{ data?.dni || "--" }}</p>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title class="card-header-text">{{ 'EMPLOYEES.PERSONAL.SECTIONS.LABOR' | i18next }}
+                </mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="flex employee-data">
+                  <div class="w-1/3">
+                    <strong>{{ 'EMPLOYEES.PERSONAL.DIVISION' | i18next }}</strong>
+                    <p>{{ data?.division || "--" }}</p>
+                  </div>
+                  <div class="w-1/3"> <strong>{{ 'EMPLOYEES.PERSONAL.WORKCENTER' | i18next }}</strong>
+                    <p>{{ data?.nameLocalizacion }}</p>
+                  </div>
+                  <div class="w-1/3"> <strong>{{ 'EMPLOYEES.PERSONAL.RESPONSIBLE' | i18next }}</strong>
+                    <p>{{ data?.responsable || "--" }}</p>
+                  </div>
+                </div>
+              </mat-card-content>
+
+            </mat-card>
+          </div>
+          <div class="ml-1 w-1/3">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title class="card-header-text">{{ 'OUTSOURCING.EMPLOYEE.PASSWORD' | i18next }}
+                </mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                {{ "OUTSOURCING.EMPLOYEE.RESET_PASSWORD_INSTRUCTIONS" | i18next }}
+                <div class="flex justify-center"> <button class="notifications-button" (click)="openReset()"
+                    mat-flat-button color="primary">
+                    {{ "OUTSOURCING.EMPLOYEE.RESET_PASSWORD" | i18next }}
+                  </button>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+
+      </app-loading>
+
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
+
+
+<ng-template #dialog>
+  <a class="accent" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </a>
+  <h2 mat-dialog-title>
+    {{ 'OUTSOURCING.EMPLOYEE.RESET_PASSWORD' | i18next }}
+  </h2>
+  <app-loading [isLoading]="modalLoading">
+    <div mat-dialog-content>
+      <div class="flex items-center">
+        <mat-icon class="risk-icon" svgIcon='risk'></mat-icon>
+        <strong>
+          {{ 'OUTSOURCING.EMPLOYEE.RESET_PASSWORD_QUESTION' | i18next }}
+        </strong>
+      </div>
+      <p class="subcontent">
+        {{ 'OUTSOURCING.EMPLOYEE.RESET_PASSWORD_MODAL_INFO' | i18next }}
+      </p>
+    </div>
+  </app-loading>
+  <div mat-dialog-actions class="flex">
+    <button mat-dialog-close mat-flat-button>{{"COMMONS.CANCEL" |i18next }}</button>
+    <button color="accent" mat-flat-button class="ml-auto btn-right"
+      (click)="resetPassword()">{{"COMMONS.CONTINUE" |i18next }}</button>
+  </div>
+</ng-template>
+
+<ng-template #dialogNewPass>
+  <a class="accent" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </a>
+  <h2 mat-dialog-title>
+    {{ 'OUTSOURCING.EMPLOYEE.RESET_PASSWORD' | i18next }}
+  </h2>
+  <div mat-dialog-content>
+    <div class="flex items-center">
+      <mat-icon class="risk-icon" svgIcon='risk'></mat-icon>
+      <strong>
+        {{ 'OUTSOURCING.EMPLOYEE.RESET_PASSWORD_ANNOTATE' | i18next }}
+      </strong>
+    </div>
+    <p class="new-pass">{{ password }}</p>
+  </div>
+  <div mat-dialog-actions class="flex">
+    <button mat-dialog-close mat-flat-button color="accent">{{"COMMONS.OK" |i18next }}</button>
+  </div>
+</ng-template>

@@ -1,0 +1,23 @@
+.icon {
+  justify-content: center;
+
+  .mat-icon {
+    width: 45px;
+    height: 58px;
+  }
+}
+
+.mat-card {
+  background-color: #fff7e5;
+  padding: 1.25em 0.75em 0.75em 0.75em !important;
+
+  .mat-card-title {
+    font-size: 1.0625em;
+    margin-top: 0.75em;
+    letter-spacing: normal;
+  }
+
+  .mat-card-subtitle {
+    font-size: 0.875em;
+  }
+}

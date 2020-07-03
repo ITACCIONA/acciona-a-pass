@@ -1,0 +1,17 @@
+<app-loading *ngIf="!isIframe && !error" [isLoading]="!appReady">
+  <app-sidenav *ngIf="appReady">
+    <app-header [avatar]="avatarName" (openNotifications)="openNotifications()"></app-header>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </app-sidenav>
+
+</app-loading>
+
+<div class="error" *ngIf="error">
+  <p>{{ "COMMONS.ERROR_APP" | i18next }}</p>
+
+  <button mat-flat-button color="accent" (click)="retry()">
+    {{ "COMMONS.RETRY" | i18next }}
+  </button>
+</div>

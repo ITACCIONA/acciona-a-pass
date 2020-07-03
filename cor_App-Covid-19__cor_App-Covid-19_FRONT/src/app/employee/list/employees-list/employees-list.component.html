@@ -1,0 +1,7 @@
+<app-employees-filters (searchEvent)="filter($event)" (export)="export()"></app-employees-filters>
+<mat-card>
+  <app-loading [isLoading]="isLoading">
+    <app-table [data]="data" [tableDef]="tableDef" [page]="page" [totalResults]="totalResults" [pageSize]="pageSize"
+      (sortEvent)="sort($event)" (pageChange)="pageChange($event)"></app-table>
+  </app-loading>
+</mat-card>

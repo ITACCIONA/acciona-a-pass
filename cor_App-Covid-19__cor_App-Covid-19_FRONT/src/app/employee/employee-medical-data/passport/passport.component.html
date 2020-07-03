@@ -1,0 +1,50 @@
+<app-loading [isLoading]="isLoading">
+  <div class="passport-status" [ngClass]="colorClass">
+    <div class="flex">
+      <div class="w-2/3">
+        <h3 *ngIf="showStatusName">{{ status | i18next | uppercase }}</h3>
+        <span *ngIf="!expires; else ExpiresIn">{{"EMPLOYEES.MEDICAL.PASSPORT.EXPIRED" |i18next }}</span>
+        <ng-template #ExpiresIn>{{"EMPLOYEES.MEDICAL.PASSPORT.EXPIRES" |i18next: {number: expires} }}</ng-template>
+      </div>
+      <div class="w-1/3 flex items-center flex-col actions">
+        <button *ngIf="showChange" mat-flat-button color="primary"
+          (click)="changeStatus()">{{ "EMPLOYEES.MEDICAL.PASSPORT.CHANGE_STATUS" | i18next }}</button>
+
+        <button *ngIf="showExpire" class="mb-1" mat-flat-button color="primary"
+          (click)="expire()">{{ "EMPLOYEES.MEDICAL.PASSPORT.EXPIRE" | i18next }}</button>
+
+        <button *ngIf="showGoRed" mat-flat-button color="primary"
+          (click)="goRed()">{{ "EMPLOYEES.MEDICAL.PASSPORT.GO_RED" | i18next }}</button>
+
+      </div>
+    </div>
+  </div>
+
+  <ng-container *ngIf="showInfo">
+    <div class="flex items-start mt-1 mb-1">
+      <div class="w-2/3">
+        <strong>{{ data?.nombreEmpleado }}</strong>
+        <p>ID / {{data?.numEmpleado}}</p>
+      </div>
+      <div class="w-1/3 flex items-center" *ngIf="showAge && age">
+        <strong>{{ "EMPLOYEES.MEDICAL.PASSPORT.AGE" | i18next : {number: age } }}</strong>
+      </div>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="flex">
+      <div class="w-1/3">
+        <strong class="details-title">{{ "EMPLOYEES.MEDICAL.PASSPORT.WORKCENTER" | i18next }}</strong>
+        <p>{{ data?.nameLocalizacion}}</p>
+      </div>
+      <div class="w-1/3">
+        <strong class="details-title">{{ "EMPLOYEES.MEDICAL.PASSPORT.LOCATION" | i18next }}</strong>
+        <p>{{ data?.direccion1}}</p>
+      </div>
+      <div class="w-1/3"><strong class="details-title">{{ "EMPLOYEES.MEDICAL.PASSPORT.DIVISION" | i18next }}</strong>
+        <p>{{ data?.division}}</p>
+      </div>
+    </div>
+  </ng-container>
+</app-loading>

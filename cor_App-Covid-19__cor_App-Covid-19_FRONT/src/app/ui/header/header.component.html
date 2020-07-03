@@ -1,0 +1,21 @@
+<div class="header">
+  <div class="container">
+    <a [routerLink]="'/'">
+      <img src="./assets/logo.png" />
+    </a>
+    <app-breadcrumbs></app-breadcrumbs>
+    <app-header-notifications *ngIf="role === 'ServicioMedico'" (openNotifications)="emitOpen()">
+    </app-header-notifications>
+    <mat-select
+      [ngStyle]="{ 'margin-left': role === 'ServicioMedico' ? 0 : 'auto' }"
+      (selectionChange)="onChangeLang($event)"
+      [value]="lang"
+      class="header-lang-select"
+    >
+      <mat-option *ngFor="let lang of langs" [value]="lang.value">
+        {{ lang.label }}
+      </mat-option>
+    </mat-select>
+    <app-avatar [name]="avatar"></app-avatar>
+  </div>
+</div>

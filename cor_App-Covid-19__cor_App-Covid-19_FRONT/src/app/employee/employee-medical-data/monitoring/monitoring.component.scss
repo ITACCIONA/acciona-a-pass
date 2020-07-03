@@ -1,0 +1,25 @@
+mat-card {
+  margin-bottom: 1em;
+}
+
+app-test-result {
+  display: block;
+  padding-bottom: 0.1em;
+}
+
+app-test-result+app-test-result {
+  border-top: 1px solid rgba(46, 91, 255, 0.08);
+}
+
+.actions {
+  margin-top: 1em;
+  display: flex;
+
+  .btn-right {
+    margin-left: auto;
+  }
+}
+
+.row {
+  margin: 0.5em 0;
+}

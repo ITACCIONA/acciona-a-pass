@@ -1,0 +1,31 @@
+mat-card {
+  width: 100%;
+  margin-bottom: 1em;
+  min-height: 85vh;
+  max-height: 85vh;
+  padding: 1.25em 0.625em 1.25em.625em !important;
+}
+
+app-loading {
+  margin-top: 30%;
+}
+
+:host ::ng-deep .dot {
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 50%;
+  float: left;
+  margin-right: 1em;
+
+  &.red {
+    background-color: var(--test-positive);
+  }
+
+  &.grey {
+    background-color: var(--secondary-color);
+  }
+
+  &.green {
+    background-color: var(--test-negative);
+  }
+}

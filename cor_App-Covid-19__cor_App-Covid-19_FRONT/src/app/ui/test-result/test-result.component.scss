@@ -1,0 +1,53 @@
+.result {
+  padding: 0.8em 1em 0.8em 0;
+  position: relative;
+  color: var(--font-color-lighter);
+
+  .list {
+    flex-wrap: wrap;
+  }
+}
+
+.color {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1em;
+
+  &.positive {
+    background-color: var(--test-positive)
+  }
+
+  &.negative {
+    background-color: var(--test-negative)
+  }
+}
+
+.single-test {
+  margin: 0 0.5em;
+}
+
+mat-icon {
+  margin: 0.2em
+}
+
+.remove-button {
+  margin: auto 1em;
+}
+
+.remove-icon {
+  color: var(--brand-color);
+}
+
+.risk-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 22px;
+}
+
+.subcontent {
+  font-size: 0.925em;
+  color: #666666;
+  margin: 10px 0;
+}

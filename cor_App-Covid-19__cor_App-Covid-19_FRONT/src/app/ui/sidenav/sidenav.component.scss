@@ -1,0 +1,18 @@
+.sidenav-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sidenav-content {
+  min-width: 30em;
+  padding: 2em;
+}
+
+.close {
+  font-size: 2em;
+  cursor: pointer;
+  float: right;
+}

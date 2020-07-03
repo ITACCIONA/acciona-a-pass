@@ -1,0 +1,73 @@
+{
+  "name": "covid-acciona",
+  "version": "0.0.10",
+  "scripts": {
+    "ng": "ng",
+    "start": "cross-env NODE_ENV=local ng serve -c local",
+    "build": "npm run build:dev && npm run build:pre && npm run build:pro",
+    "build:dev": "ng build -c development",
+    "build:pre": "ng build -c preproduction",
+    "build:pro": "ng build --prod",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "ng lint",
+    "e2e": "cypress open",
+    "docker": "docker build -t acciona-covid19-front:0.0.0 .",
+    "deploy": "npm run build:dev && npm run docker"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~9.1.1",
+    "@angular/cdk": "~9.2.0-next.0",
+    "@angular/common": "~9.1.1",
+    "@angular/compiler": "~9.1.1",
+    "@angular/core": "~9.1.1",
+    "@angular/forms": "~9.1.1",
+    "@angular/material": "~9.2.0-next.0",
+    "@angular/material-moment-adapter": "^9.2.2",
+    "@angular/platform-browser": "~9.1.1",
+    "@angular/platform-browser-dynamic": "~9.1.1",
+    "@angular/router": "~9.1.1",
+    "@azure/msal-angular": "1.0.0",
+    "angular-i18next": "9.0.1",
+    "i18next": "19.1.0",
+    "msal": "1.3.0",
+    "moment": "2.24.0",
+    "rxjs": "~6.5.4",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "@angular-builders/custom-webpack": "^8.4.0",
+    "@angular-builders/jest": "^9.0.1",
+    "@angular-devkit/build-angular": "~0.901.1",
+    "@angular/cli": "~9.0.1",
+    "@angular/compiler-cli": "~9.1.1",
+    "@angular/language-service": "~9.1.1",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/jest": "^24.0.23",
+    "@types/mockdate": "^2.0.0",
+    "@types/node": "^12.12.35",
+    "codelyzer": "^5.1.2",
+    "compression-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "cypress": "^4.5.0",
+    "husky": "^3.1.0",
+    "jest": "^25.5.4",
+    "jest-preset-angular": "^8.1.3",
+    "mockdate": "^2.0.5",
+    "prettier": "2.0.5",
+    "terser-webpack-plugin": "^2.2.2",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~3.8.3",
+    "zlib": "^1.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}

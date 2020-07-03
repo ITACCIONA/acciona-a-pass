@@ -1,0 +1,283 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rootFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"            
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:padding="16dp">
+            <ImageView
+                    android:id="@+id/buttonBack"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/back"
+                    android:adjustViewBounds="true"/>
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alarm_contact_title"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlackTwo"/>
+            <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+            <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/back"
+                    android:adjustViewBounds="true"
+                    android:visibility="invisible"/>
+        </LinearLayout>
+        
+        
+        <ScrollView 
+                android:layout_width="match_parent" 
+                android:layout_height="1dp" 
+                android:layout_weight="1" 
+                android:fillViewport="true">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+
+               
+                
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#EFEFEF"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:layout_width="70dp"
+						android:layout_height="70dp"
+						android:src="@drawable/call"
+						android:layout_marginTop="16dp"
+						android:layout_gravity="center"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="16dp"
+						android:paddingLeft="48dp"
+						android:paddingRight="48dp"
+						android:text="@string/alarm_decription_message"
+						android:textSize="18dp"
+						android:textStyle="bold"
+						android:textColor="@color/colorBlackTwo"
+						android:gravity="center"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="16dp"
+						android:orientation="vertical">
+
+						<!--Apartado 1-->
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:layout_marginLeft="12dp"
+							android:layout_marginRight="8dp">
+
+							<TextView
+								android:layout_width="30dp"
+								android:layout_height="30dp"
+								android:background="@drawable/shadow_circle"
+								android:text="1"
+								android:textColor="@color/colorRed"
+								android:textSize="16dp"
+								android:textStyle="bold"
+								android:gravity="center"/>
+
+							<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_marginLeft="16dp">
+
+								<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:textSize="16dp"
+									android:textColor="@color/colorBlack"
+									android:text="@string/alarm_fragment_point_one"/>
+
+								<TextView
+                                    android:id="@+id/btMail"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:textSize="16dp"
+									android:textStyle="bold"
+									android:drawableLeft="@drawable/mail"
+									android:textColor="@color/colorRed"
+									android:gravity="center_vertical"
+									android:drawablePadding="8dp"
+									android:text="@string/alarm_fragment_contact_mail"
+									android:layout_marginTop="12dp"/>
+
+								<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:textSize="16dp"
+									android:textColor="@color/colorBlack"
+									android:text="@string/alarm_fragment_point_one_2"
+									android:layout_marginTop="12dp"
+                                />
+
+							</LinearLayout>
+
+						</LinearLayout>
+
+						<!--Apartado 2-->
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:layout_marginTop="32dp"
+							android:layout_marginLeft="12dp"
+							android:layout_marginRight="8dp">
+
+							<TextView
+								android:layout_width="30dp"
+								android:layout_height="30dp"
+								android:background="@drawable/shadow_circle"
+								android:text="2"
+								android:textColor="@color/colorRed"
+								android:textSize="16dp"
+								android:textStyle="bold"
+								android:gravity="center"/>
+
+							<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_marginLeft="16dp">
+
+								<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:textSize="16dp"
+									android:textColor="@color/colorBlack"
+									android:text="@string/alarm_fragment_point_two"/>
+
+
+							</LinearLayout>
+
+						</LinearLayout>
+
+						<!--Apartado 3-->
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal"
+							android:layout_marginTop="32dp"
+							android:layout_marginLeft="12dp"
+							android:layout_marginRight="8dp">
+
+							<TextView
+								android:layout_width="30dp"
+								android:layout_height="30dp"
+								android:background="@drawable/shadow_circle"
+								android:text="3"
+								android:textColor="@color/colorRed"
+								android:textSize="16dp"
+								android:textStyle="bold"
+								android:gravity="center"/>
+
+							<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_marginLeft="16dp">
+
+								<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:textSize="16dp"
+									android:textColor="@color/colorBlack"
+									android:text="@string/alarm_fragment_point_three"/>
+
+							</LinearLayout>
+
+
+						</LinearLayout>
+
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/btEnterpriseSkype"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:layout_marginTop="23dp"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:layout_marginBottom="32dp"
+						android:gravity="center"
+						android:background="@drawable/edit_normal">
+
+						<TextView
+                            
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/alarm_skype_donwload_button"
+							android:textColor="@color/colorBlackTwo"
+							android:textSize="14dp"
+							android:drawableStart="@drawable/download"
+							android:layout_gravity="center"/>
+
+					</LinearLayout>
+
+
+				</LinearLayout>
+                
+            </LinearLayout>
+           
+            
+            
+        </ScrollView>
+
+
+
+        <TextView
+                android:id="@+id/btMailContact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/alarm_request_email_appointment"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp"
+                android:background="@drawable/button_red"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"/>
+
+
+    </LinearLayout>
+
+   
+</RelativeLayout>

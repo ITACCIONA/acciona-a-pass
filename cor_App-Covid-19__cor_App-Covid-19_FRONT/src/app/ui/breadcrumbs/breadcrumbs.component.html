@@ -1,0 +1,13 @@
+<ul>
+  <ng-container *ngFor="let breadcrumb of breadcrumbs$ | async; let i = index">
+    <li>
+      <a *ngIf="breadcrumb.url; else noLink" [routerLink]="[breadcrumb.url]">
+        {{ (breadcrumb.label | async) | i18next }}
+      </a>
+      <ng-template #noLink>{{ (breadcrumb.label | async) | i18next }}</ng-template>
+    </li>
+    <li class="arrow" *ngIf="(i+1) !== breadcrumbs$.value.length">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </li>
+  </ng-container>
+</ul>

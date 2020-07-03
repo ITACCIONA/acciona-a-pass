@@ -1,0 +1,31 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      {{ "EMPLOYEES.MEDICAL.SECTIONS.FEVER_RECORDS" | i18next }}
+
+      <a class="accent" (click)="openModal()">{{ "EMPLOYEES.MEDICAL.FEVER.VIEW_ALL" | i18next }} <mat-icon>
+          keyboard_arrow_right
+        </mat-icon></a>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-loading [isLoading]="isLoading">
+
+      <div class="last flex" *ngIf="last">
+        <div class="w-12">
+          <mat-icon class="thermometer" svgIcon="thermometer"></mat-icon>
+        </div>
+        <div>
+          <span class="date">{{ last.date | dateFormat }}</span><br>
+          {{"EMPLOYEES.MEDICAL.FEVER.LAST_TIME" |i18next: {threshold: threshold} }}
+        </div>
+      </div>
+
+      <div class="flex justify-center mt-1">
+        <button (click)="openModal()" class="w-full" mat-flat-button
+          color="secondary">{{ "EMPLOYEES.MEDICAL.REGISTER_FEVER" | i18next }}</button>
+      </div>
+
+    </app-loading>
+  </mat-card-content>
+</mat-card>
