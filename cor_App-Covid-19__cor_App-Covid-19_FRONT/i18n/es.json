@@ -1,0 +1,266 @@
+{
+  "BREADCRUMBS": {
+    "MEDICAL_SERVICES": "Servicios médicos",
+    "NOTIFICATIONS": "Notificaciones",
+    "NEW_USER": "Alta de usuarios",
+    "OUTSOURCING_LIST": "Trabajadores contratas"
+  },
+  "COMMONS": {
+    "CANCEL": "Cancelar",
+    "CLOSE": "Cerrar",
+    "SAVE": "Guardar",
+    "DATE": "Fecha",
+    "ADD": "Añadir",
+    "SEND": "Enviar",
+    "SUCCESS": "La operación se ha realizado con éxito",
+    "ERROR": "Se ha producido un error al realizar la operación",
+    "ANY": "Cualquiera",
+    "ERROR_APP": "Error en la carga de la aplicación.",
+    "RETRY": "Reintentar",
+    "BACK": "Volver atrás",
+    "REMOVE": "Eliminar",
+    "REQUIRED_FIELDS": "Campos obligatorios",
+    "CONTINUE": "Continuar",
+    "OK": "De acuerdo"
+  },
+  "NOTIFICATIONS": {
+    "TITLE": "Nueva notificación",
+    "RECEIVER": "Destinatario",
+    "TITLE_SINGLE": "Nueva notificación individual",
+    "TARGET": {
+      "TITLE": "Público objetivo",
+      "ALL": "Todo el mundo",
+      "COUNTRY": "Por paises",
+      "COUNTRY_TITLE": "Selección geográfica",
+      "COUNTRY_PLACEHOLDER": "Selecciona un país de la lista",
+      "DIVISION": "Por división",
+      "DIVISION_TITLE": "Selección por división",
+      "DIVISION_PLACEHOLDER": "Selecciona una división de la lista",
+      "WORKCENTER": "Por centro de trabajo",
+      "WORKCENTER_TITLE": "Selección por centro de trabajo",
+      "WORKCENTER_PLACEHOLDER": "Selecciona un centro de trabajo de la lista"
+    },
+    "FORM": {
+      "INTERACCIONA": "Marca para enviar solo a usuarios interAcciona",
+      "EMPLOYEE_STATUS": "Estado del empleado",
+      "TITLE": "Título",
+      "TITLE_HELP": "Añade un título corto y conciso a la notificación...",
+      "CONTENT": "Contenido",
+      "CONTENT_HELP": "Escribe aquí el contenido de la notificación..."
+    },
+    "SUCCESS": "La notificación se ha enviado con éxito."
+  },
+  "PASSPORT": {
+    "COLORS": {
+      "GREY": "Gris",
+      "RED": "Rojo",
+      "GREEN": "Verde"
+    }
+  },
+  "EMPLOYEE": {
+    "TABS": {
+      "MEDICAL": "Datos médicos",
+      "PERSONAL": "Datos del empleado",
+      "LABOUR": "Datos laborales",
+      "LOCATION": "Posicionamiento"
+    },
+    "TABLE": {
+      "NAME": "Nombre",
+      "ID": "ID de empleado",
+      "AGE": "Edad",
+      "GENDER": "Género",
+      "LAST_MOD": "Última modificación",
+      "STATUS": "Estado",
+      "COLOR": "Color pasaporte"
+    },
+    "PRL": {
+      "TITLE": "Registrar Información"
+    }
+  },
+  "SYMPTOMS": {
+    "FIEBRE": "Fiebre",
+    "DOLORCABEZA": "Dolor de cabeza",
+    "TOS": "Tos",
+    "FATIGA": "Fatiga",
+    "CONTACTO": "Contacto",
+    "OTROSSINTOMAS": "Otros síntomas"
+  },
+  "GENDERS": {
+    "DESCONOCIDO": "Desconocido",
+    "HOMBRE": "Hombre",
+    "MUJER": "Mujer"
+  },
+  "RISKFACTORS": {
+    "ALTAEXPOSICION": "Trabajo con alto grado de exposición",
+    "VULNERABLES": "Colectivo de riesgo",
+    "POSITIVO": "Positivo por Covid-19"
+  },
+  "TESTS": {
+    "RAPID": "Rápido",
+    "PCR": "PCR",
+    "CONTROL": "Control",
+    "POSITIVE": "Positivo",
+    "IGG_POSITIVE": "IgG Positivo",
+    "IGG_NEGATIVE": "IgG Negativo",
+    "IGM_POSITIVE": "IgM Positivo",
+    "IGM_NEGATIVE": "IgM Negativo",
+    "NEGATIVE": "Negativo"
+  },
+  "MONITORING": {
+    "LEUCOPENIA": "Leucopenia",
+    "VSG": "VSG",
+    "LDH": "LDH",
+    "DIMEROB": "Dimerob",
+    "PCR": "PCR",
+    "NEUNOMIA2": "Neumonía 2",
+    "NEUNOMIA1": "Neumonía 1",
+    "IGG": "IgG",
+    "IGM": "IgM"
+  },
+  "EMPLOYEES": {
+    "SEARCH": {
+      "PLACEHOLDER": "Buscar por nombre y apellidos del trabajador",
+      "SCANQR": "Escanear QR",
+      "ORDERBY": "Ordenar por",
+      "FILTERS": "Más filtros +",
+      "EXPORT": "Exportar",
+      "COMPLEX_FILTERS": {
+        "DIVISION": "División",
+        "DIVISION_PLACEHOLDER": "Selecciona divisiones de la lista",
+        "CENTER": "Centro",
+        "CENTER_PLACEHOLDER": "Selecciona centros de la lista",
+        "AREAS": "Provincia",
+        "AREAS_PLACEHOLDER": "Seleccione provincias de la lista",
+        "REGIONS": "Región",
+        "REGIONS_PLACEHOLDER": "Selecione regiones de la lista",
+        "COUNTRIES": "País",
+        "COUNTRIES_PLACEHOLDER": "Selecione paises de la lista",
+        "TITLE": "Más filtros",
+        "ACTION": "Filtrar"
+      }
+    },
+    "MEDICAL": {
+      "SECTIONS": {
+        "TEST": "Test",
+        "IMAGE": "Imagen",
+        "ANALYTICS": "Analítica",
+        "FEVER_RECORDS": "Registro de fiebre",
+        "RESPONSIBLE_STATEMENT": "Declaración responsable",
+        "RESPONSIBLE_STATEMENT_LONG": "Declaración responsable de salud",
+        "ADDITIONAL": "Información médica adicional"
+      },
+      "ADD_IMAGE": "Añadir imagen",
+      "ADD_ANALYTIC": "Añadir analítica",
+      "NO_RISK_FACTORS": "No hay factores de riesgo.",
+      "NO_TESTS_DONE": "No existen test realizados.",
+      "NO_IMAGES_DONE": "No existen registros de imagen.",
+      "NO_ANALYTICS_DONE": "No existen registros de analítica.",
+      "REGISTER_FEVER": "Registrar fiebre",
+      "FEVER": {
+        "LAST_TIME": "Última vez que se superó el umbral de temperatura ({{threshold}} ºC)",
+        "VIEW_ALL": "Ver todo",
+        "TITLE": "Registro de fiebre (>{{threshold}} ºC)",
+        "HISTORY": "Historial",
+        "DESCRIPTION": "Registro de los días en que se superó el umbral de temperatura definido de {{threshold}} ºC."
+      },
+      "ANALITYCS": {
+        "TITLE": "Nueva analítica",
+        "RESULTS": "Resultados"
+      },
+      "IMAGES": {
+        "TITLE": "Nueva imagen",
+        "TYPE": "Tipo de imagen",
+        "RESULTS": "Resultados"
+      },
+      "WARNING": {
+        "TITLE": "Revisa el estado del pasaporte",
+        "SUBTITLE": "Se han realizado cambios en los datos médicos. Revisa el estado del pasaporte y no olvides cambiar, si fuera necesario, el estado del mismo."
+      },
+      "PASSPORT": {
+        "WORKCENTER": "Centro de trabajo",
+        "LOCATION": "Localización",
+        "DIVISION": "División",
+        "AGE": "{{number}} años",
+        "CHANGE_STATUS": "Cambiar estado",
+        "GO_RED": "Pasar a rojo",
+        "EXPIRE": "Caducar",
+        "EXPIRES": "Caduca {{number}}",
+        "EXPIRED": "Caducado"
+      }
+    },
+    "PERSONAL": {
+      "SECTIONS": {
+        "PERSONAL": "Personales",
+        "LABOR": "Laborales",
+        "CONTACT": "Contacto"
+      },
+      "NAME": "Nombre",
+      "SURNAMES": "Apellidos",
+      "DNI": "DNI",
+      "GENRE": "Género",
+      "BIRTHDATE": "Fecha de nacimiento",
+      "DIVISION": "Negocio / División",
+      "DEPARTMENT": "Departamento",
+      "WORKCENTER": "Centro de trabajo",
+      "WORK": "Obra",
+      "RESPONSIBLE": "Responsable directo",
+      "SEND_NOTIFICATION": "Enviar notificación"
+    },
+    "CHANGEPASSPORTMODAL": {
+      "TITLE": "Selección de estado"
+    },
+    "ADDTESTMODAL": {
+      "TITLE": "Nuevo Test",
+      "DATE": "Fecha",
+      "CANCEL": "Cancelar",
+      "ADD": "Añadir",
+      "LINK": "Añadir test",
+      "FAST": "Rápido",
+      "PCR": "PCR",
+      "POSITIVE": "Positivo",
+      "NEGATIVE": "Negativo",
+      "CONTROL": "Control",
+      "IGG": "IGG",
+      "IGM": "IGM",
+      "RESULTSTITLE": "Resultados"
+    },
+    "REMOVETESTMODAL": {
+      "TITLE": "Eliminar elemento",
+      "CONTENT": "¿Estás seguro de que deseas eliminar este elemento?",
+      "SUBCONTENT": "Esta acción no se puede deshacer. Si lo eliminas, perderás toda la información asociada."
+    }
+  },
+  "PAGINATOR": {
+    "FIRSTPAGE": "Primera página",
+    "LASTPAGE": "Última página",
+    "NEXTPAGE": "Siguiente página",
+    "PREVIOUSPAGE": "Anterior página",
+    "SEPARATOR": "de",
+    "RESULTS": "resultados"
+  },
+  "NEW_USER": {
+    "TITLE": "Nueva alta de usuario",
+    "DNI": "DNI",
+    "NAME": "Nombre",
+    "SURNAME": "Primer apellido",
+    "SURNAME2": "Segundo apellido",
+    "DIVISION": "Negocio / División",
+    "DIVISION_PLACEHOLDER": "Selecciona una división de la lista",
+    "WORKCENTER": "Centro de trabajo",
+    "WORKCENTER_PLACEHOLDER": "Selecciona un centro de trabajo de la lista",
+    "SUPERIOR": "Responsable"
+  },
+  "OUTSOURCING": {
+    "EMPLOYEE": {
+      "PASSWORD": "Contraseña",
+      "RESET_PASSWORD": "Resetear contraseña",
+      "RESET_PASSWORD_INSTRUCTIONS": "Puede resetear la contraseña del empleado y comunicársela personalmente.",
+      "RESET_PASSWORD_QUESTION": "¿Estás seguro de que deseas resetear la contraseña de este usuario?",
+      "RESET_PASSWORD_MODAL_INFO": "Deberás apuntar y comunicar al usuario la nueva contraseña que genere el sistema.",
+      "RESET_PASSWORD_ANNOTATE": "Apunte y comunique al usuario su nueva contraseña de uso único:"
+    },
+    "LIST": {
+      "NEW": "Alta de usuarios"
+    }
+  }
+}

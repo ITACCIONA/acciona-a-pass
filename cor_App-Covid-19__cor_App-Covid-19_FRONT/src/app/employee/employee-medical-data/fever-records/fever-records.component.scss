@@ -1,0 +1,33 @@
+mat-card {
+  margin-bottom: 1em;
+}
+
+.date {
+  font-size: 1.075em;
+  font-weight: bold;
+}
+
+a {
+  float: right;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.last {
+  margin: 0 1em;
+}
+
+.thermometer {
+  width: 55px;
+  height: 55px;
+}
+
+.last.flex {
+  margin-left: 0;
+}
+
+.w-12 {
+  margin-right: 1em;
+  height: 65px;
+}

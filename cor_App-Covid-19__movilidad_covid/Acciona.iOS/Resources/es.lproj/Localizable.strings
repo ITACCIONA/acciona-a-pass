@@ -1,0 +1,171 @@
+﻿  "filter_date_format"="dd/MM/yyyy";
+  "msg_ok"="OK";
+  "msg_yes"="Sí";
+  "msg_no"="No";
+  "msg_not_known"="-";
+  "msg_cancel"="Cancelar";
+  "msg_retry"="Reintentar";
+  "no_connection"="La aplicación parece no tener conexión, por favor revise los ajustes de red.";
+  "error_401"="La sesión ha caducado. Por favor vuelva a identificarse";
+  "error_401_user"="El usuario no tiene permiso para usar la aplicación, por favor pongase en contacto con un administrador.";
+  "version"="Versión {0}";
+  "listedittext_search_hint"="Buscar...";
+  "listedittext_cancel"="Cancelar";
+
+  //Splash
+  "recomended_update"="Hay una nueva versión de la aplicación, te recomendamos actualizar antes de continuar";
+  "mandatory_update"="Hay una nueva versión de la aplicación, tienes que actualizarla para poder entrar";
+  "msg_continue"="Continuar";
+  "msg_download"="Descargar";
+
+  //Login
+  "login_error"="Algo ha salido mal...";
+  "login_loading"="Estamos trabajando en ello...";
+
+  //"wellcome"="BIENVENID@";
+  //"username"="NOMBRE DE USUARIO";
+  //"username_hint"="Usuario";
+  //"password"="CONTRASEÑA";
+  //"password_hint"="Contraseña";
+  //"init_session"="Iniciar sesión";
+  //"login_error"="Se ha producido un error, por favor verifique user y password";
+  //"no_file_permission"="La aplicación no tiene los permisos necesarios para gestionar ficheros. Revise los ajustes y vuelva a probar.";
+
+  //Main
+  "disconnect_ask"="¿Seguro que desea desconectar?";
+  "main_passport"="Pasaporte";
+  "main_alarm"="Me\nencuentro\nmal";
+  "main_profile"="Mi perfil";
+
+  //Alarm
+  "alarm_title"="Videoconsulta médica";
+  "alarm_description"="Servicio de Videoconsulta médica disponible";
+  "alarm_request_date_text_1"="<b>Solicita cita</b> enviando un correo, indicando tu ubicación, a la siguiente dirección:";
+  "alarm_request_date_text_2"="Es importante que nos indiques tu ubicación para conocer tu franja horaria.";
+  "alarm_confirm_date"="<b>Se confirmará tu cita</b> y se te atenderá según disponibilidad.";
+  "alarm_download_skype"="Tras confirmar tu cita, la videoconsulta se realizará por <b>Skype empresarial</b>. Recuerda tenerlo instalado.";
+  "alarm_download_skype_link"="Descarga Skype empresarial";
+  "alarm_request_button"="Solicitar cita mediante email";
+
+  "alarm_email"="consultaMedica@foo.bar";
+  "no_mail_app"="No se puede enviar email. No hay ninguna aplicación configurada para ello.";
+
+  //"alarm_contact"="Contacto";
+  //"alarm_needs_help"="¿Necesitas ayuda?";
+  //"alarm_call_to"="Llamar al {0}";
+  //"alarm_description"="El Centro de seguridad de Acciona está operativo y disponible las <b>24 horas</b> durante los <b>365 días</b> del año.";
+  //"alarm_phone"="+34 91 663 01112";
+  
+
+  //Alerts
+  "alerts_notifications"="Notificaciones";
+  "alerts_not_read"="Sin leer ({0})";
+  "alerts_read"="Leídas ({0})";
+
+  //Alert Detail
+
+  //Health
+  "health_statement"="Declaración responsable";
+  "health_step1_title"="¿Has tenido hoy alguno de los siguientes síntomas relacionados con COVID-19?";
+  "health_description"="Selecciona todos los síntomas que tengas. Si no tienes ninguno, haz click en \'No tengo síntomas\'.";  
+  "health_step1_sintoms1"="Fiebre";
+  "health_step1_sintoms2"="Otros síntomas";
+  "health_step1_sintomp2_help"="Fiebre: temperatura corporal superior a 37ºC.\nOtros síntomas: tos persistente, dificultad respiratoria, dolor de garganta, pérdida del olfato o del gusto, dolor de cabeza intenso, diarrea, erupciones en la piel.";
+  "health_step1_no_sintoms"="No tengo síntomas";
+  "health_step1_sintoms_communicate"="Sí, tengo síntomas";
+  "health_step2_title"="¿Ha tenido contacto estrecho* con alguna persona infectada confirmada en los últimos 14 días?";
+  "health_step2_subtitle"="<font color='#666666'>(Si dispone de una valoración médica que haya descartado el riesgo asociado a ese contacto estrecho, deberá marcar </font><b><font color='black'>NO</font></b>)";
+  "health_step2_help1"="*A estos efectos, se entiende como <b>contacto estrecho</b>:";
+  "health_step2_help2"="<ul><li>Haber proporcionado cuidados a la persona infectada: trabajadores sanitarios que no han utilizado las medidas de protección adecuadas, miembros familiares o personas que tengan otro tipo de contacto físico similar.<br/></li><li>Ser conviviente, familiar o personas que haya estado en el mismo lugar que la persona infectada a una distancia menor de 2 metros durante un tiempo de al menos 15 minutos.</li></ul>";
+  "health_fiebre_confirm"="- Fiebre > 37º";
+  "health_sintomas_confirm"="- Otros síntomas";
+  "health_contacto_confirm"="- Contacto estrecho";
+  "health_ask_confirm"="¿Desea confirmar los siguientes síntomas?\n";
+  "health_yes_confirm"="Sí, confirmar síntomas";
+
+  //QR Code
+  "qrcode_help"="Acerca el código al lector";
+  "qrcode_help_ill"="Código deshabilitado por observación de síntomas";
+  "qrcode_help_timeout"="Código deshabilitado. Renueva tu declaración para habilitar el QR";
+  "qrcode_ill"="Me encuentro mal";
+  "qrcode_renew"="Renovar declaración";
+  "access_allowed"="Con acceso";
+  "access_not_allowed"="Sin acceso";
+  "qrcode_todo"="<u>¿Qué hago ahora?</u>";
+  "change_status_title"="Tu pasaporte ha cambiado de estado.";
+  "change_status_subtitle"="No podrás acceder a tu centro de trabajo. Por favor, sigue las indicaciones.";
+  "change_status_button"="¿Qué hago ahora?";
+
+  //Profile
+  "profile_hello"="Hola, <b>{0}</b>";
+  "profile_contact_data"="Datos de contacto";
+  "profile_contact_data_descrip"="Número de teléfono y correo electrónico";
+  "profile_health_data"="Datos médicos";
+  "profile_health_data_descrip"="Información médica inicial";
+  "profile_close_name"="¿No eres {0}?";
+  "profile_close_session"="Cerrar sesión";
+  "profile_center_data_title"="Centro de trabajo";
+
+  //Contact Data
+  "contact_data_title"="Datos de contacto";
+  "contact_data_email"="CORREO ELECTRÓNICO";
+  "contact_data_phone"="TELÉFONO MÓVIL";
+  "contact_data_modify"="Guardar datos";
+  "contact_data_save_modify_data_ok"="Datos guardados correctamente";
+
+  //Medical Data
+  "medical_data_title"="Datos médicos";
+  "medical_data_description"="Solo puede modificar manualmente su pertenencia a colectivo de riesgo.";
+  "medical_data_button"="Modificar Datos";
+
+  //Medical Test
+  "medical_title"="Formulario de alta";
+  "medical_title_modify"="Modificar Datos médicos";
+  "medical_skip"="No lo sé, <u>omitir pregunta</u>";
+  "medical_text1"="Mayores de 60 años";
+  "medical_text2"="Diabetes";
+  "medical_text3"="Enfermedades cardiovasculares / HTA";
+  "medical_text4"="Enfermedades pulmonares crónicas";
+  "medical_text5"="Cáncer en fase de tratamiento activo";
+  "medical_text6"="Inmunodeficiencias";
+  "medical_text7"="Embarazo";
+
+  "medical_step3_text1"="Personal sanitario";
+  "medical_step3_text2"="Celadores";
+  "medical_step3_text3"="TIGAS";
+  "medical_step3_text4"="Personal de ambulancia";
+
+  "medical_step4_title"="¿Confirma que los datos son correctos?";
+  "medical_step4_description"="Si alguno de los datos no es correcto pulsa sobre el mismo para modificarlo.";
+  "medical_step4_risk"="Colectivo de riesgo";
+  "medical_step4_covid"="Diagnosticado de Covid-19";
+  "medical_step4_medical"="Trabajo con alto grado de exposición";
+  "medical_step4_button_confirm"="Confirmar datos";
+
+  //Offline
+  "offline_name"="Sin conexión";
+  "offline_continue"="Conectarse";
+  "offline_error"="Aparentemente continúa sin conexión";
+  "offline_qr_timeout"="Renueva tu declaración para habilitar el pasaporte";
+
+  //Language
+  "language_title"="Idioma";
+  "language_modify"="Modificar idioma";
+  "language_spanish"="Español";
+  "language_english"="Inglés";
+  "language_confirm"="Se va a proceder a reiniciar la aplicación para aplicar los cambios";
+
+  //passport states
+  "state_caducado"="<b>Caducado</b>";
+  "state_multiple_days"="Válido para <b>dd días </b>";
+  "state_single_day"="Válido hasta el <b>dd de mm</b>";
+  "state_this_day"="Válido el <b>dd de mm</b>";
+
+  //Working center
+  "center_title"="Centro de trabajo";
+  "center_modify"="Guardar";
+  "center_country"="País *";
+  "center_city"="Ciudad";
+  "center_center"="Centro *";
+  "center_other"="Otro";
+  "center_mandatory"="* Campos obligatorios";

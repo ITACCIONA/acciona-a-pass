@@ -1,0 +1,26 @@
+:host {
+  padding: 1rem;
+}
+
+mat-card {
+  max-width: 525px;
+  margin: 0 auto;
+}
+
+h4 {
+  margin: 0;
+}
+
+
+.actions {
+  margin-top: 1em;
+  display: flex;
+
+  .btn-right {
+    margin-left: auto;
+  }
+}
+
+.required {
+  color: var(--brand-color);
+}

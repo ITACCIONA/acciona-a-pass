@@ -1,0 +1,172 @@
+﻿  "filter_date_format"="MM/dd/yyyy";
+  "msg_ok"="OK";
+  "msg_yes"="Yes";
+  "msg_no"="No";
+  "msg_not_known"="-";
+  "msg_cancel"="Cancel";
+  "msg_retry"="Retry";
+  "no_connection"="No connection. Please check network settings.";
+  "error_401"="Session has expired. Please enter ID again";
+  "error_401_user"="User is not authorized to use the application. Please contact an administrator.";
+  "version"="Version {0}";
+  "listedittext_search_hint"="Search...";
+  "listedittext_cancel"="Cancel";
+
+  //Splash
+  "recomended_update"="A new version of the application is available. Please update before continuing";
+  "mandatory_update"="A new version of the application is available. Please update before entering";
+  "msg_continue"="Continue";
+  "msg_download"="Download";
+
+  //Login
+  "login_error"="Something went wrong...";
+  "login_loading"="We are working on it...";
+
+  //"wellcome"="BIENVENID@";
+  //"username"="NOMBRE DE USUARIO";
+  //"username_hint"="Usuario";
+  //"password"="CONTRASEÑA";
+  //"password_hint"="Contraseña";
+  //"init_session"="Iniciar sesión";
+  //"login_error"="Se ha producido un error, por favor verifique user y password";
+  //"no_file_permission"="La aplicación no tiene los permisos necesarios para gestionar ficheros. Revise los ajustes y vuelva a probar.";
+
+  //Main
+  "disconnect_ask"="Are you sure you want to leave?";
+  "main_passport"="Passport";
+  "main_alarm"="I\nfeel\nunwell";
+  "main_profile"="My profile";
+
+  //Alarm
+  "alarm_title"="Video-consultation";
+  "alarm_description"="Video-consultation service available";
+  "alarm_request_date_text_1"="Use the following email address to <b>request an appointment</b>, specifying your location:";
+  "alarm_request_date_text_2"="We need to know your location to establish your time zone.";
+  "alarm_confirm_date"="<b>Your appointment will be confirmed</b> and you will be seen according to availability.";
+  "alarm_download_skype"="After your appointment is confirmed, your video-consultation will be held via <b>Skype for Business</b>. Please make sure that it is installed on your device.";
+  "alarm_download_skype_link"="Download Skype for Business";
+  "alarm_request_button"="Request appointment via email";
+
+  "alarm_email"="consultaMedica@foo.bar";
+  "no_mail_app"="Email cannot be sent. There is no application set up to do so.";
+
+  //"alarm_contact"="Contacto";
+  //"alarm_needs_help"="¿Necesitas ayuda?";
+  //"alarm_call_to"="Llamar al {0}";
+  //"alarm_description"="El Centro de seguridad de Acciona está operativo y disponible las <b>24 horas</b> durante los <b>365 días</b> del año.";
+  //"alarm_phone"="+34 91 663 01112";
+  
+
+  //Alerts
+  "alerts_notifications"="Notifications";
+  "alerts_not_read"="Unread ({0})";
+  "alerts_read"="Read ({0})";
+
+  //Alert Detail
+
+  //Health
+  "health_statement"="Responsibility Statement";
+  "health_step1_title"="Have you had any of the following symptoms related to COVID-19 today?";
+  "health_description"="Select all current symptoms. If none, click on \’No symptoms\’.";  
+  "health_step1_sintoms1"="Fever";
+  "health_step1_sintoms2"="Other symptoms";
+  "health_step1_sintomp2_help"="Fever: A body temperature of over 37°C/98.6ºF.\nOther symptoms: persistent cough, breathing difficulty, throat pain, loss of smell or taste, intense headache, diarrhea, skin rashes.";
+  "health_step1_no_sintoms"="No symptoms";
+  "health_step1_sintoms_communicate"="Yes, I have symptoms";
+  "health_step2_title"="Have you had close contact* with any person with a confirmed infection in the last 14 days?";
+  "health_step2_subtitle"="<font color='#666666'>(If you have had a check that rules out the risk associated with this close contact, please select </font><b><font color='black'>NO</font></b>)";
+  "health_step2_help1"="*In this context, <b>close contact</b> is understood to mean:";
+  "health_step2_help2"="<ul><li>Having been a caregiver to an infected person: healthcare workers who have not used adequate protective measures, family members or persons who have another type of similar physical contact.<br/></li><li>Co-habitants, relatives or persons having been at a distance of less than 2 metres from an infected person for at least 15 minutes.</li></ul>";
+  "health_fiebre_confirm"="- Fever > 37º";
+  "health_sintomas_confirm"="- Other symptoms";
+  "health_contacto_confirm"="- Close contact";
+  "health_ask_confirm"="Do you want to confirm following symptoms?\n";
+  "health_yes_confirm"="Yes, confirm symptoms";
+
+  //QR Code
+  "qrcode_help"="Position code in front of reader";
+  "qrcode_help_ill"="Code disabled as symptoms were observed";
+  "qrcode_help_timeout"="Code disabled. Renew your statement to enable QR";
+  "qrcode_ill"="I feel unwell";
+  "qrcode_renew"="Renew statement";
+  "access_allowed"="Access allowed";
+  "access_not_allowed"="Access not allowed";
+  "qrcode_todo"="<u>What should I do now?</u>";
+  "change_status_title"="Your passport status has changed.";
+  "change_status_subtitle"="You may not access your work center. Please follow the instructions.";
+  "change_status_button"="What should I do now?";
+
+  //Profile
+  "profile_hello"="Hello, <b>{0}</b>";
+  "profile_contact_data"="Contact details";
+  "profile_contact_data_descrip"="Telephone and email";
+  "profile_health_data"="Medical details";
+  "profile_health_data_descrip"="Initial medical details";
+  "profile_close_name"="Are you not {0}?";
+  "profile_close_session"="Close session";
+  "profile_center_data_title"="Working center";
+
+  //Contact Data
+  "contact_data_title"="Contact details";
+  "contact_data_email"="EMAIL";
+  "contact_data_phone"="MOBILE TELEPHONE";
+  "contact_data_modify"="Save details";
+  "contact_data_save_modify_data_ok"="Details saved correctly";
+
+  //Medical Data
+  "medical_data_title"="Medical details";
+  "medical_data_description"="Only classification as risk group member may be changed manually.";
+  "medical_data_button"="Modify details";
+
+  //Medical Test
+  "medical_title"="Registration form";
+  "medical_title_modify"="Modify medical details";
+  "medical_skip"="I don't know, <u>skip question</u>";
+  "medical_text1"="People over the age of 60 years";
+  "medical_text2"="Diabetes";
+  "medical_text3"="Heart diseases / HBP";
+  "medical_text4"="Chronic lung diseases";
+  "medical_text5"="Cancer in the active treatment phase";
+  "medical_text6"="Immunodeficiencies";
+  "medical_text7"="Pregnancy";
+
+  "medical_step3_text1"="Healthcare personnel";
+  "medical_step3_text2"="Orderlies";
+  "medical_step3_text3"="Auxiliary healthcare staff";
+  "medical_step3_text4"="Ambulance staff";
+
+  "medical_step4_title"="Do you confirm that the details are correct?";
+  "medical_step4_description"="Please click on any incorrect information to change it.";
+  "medical_step4_risk"="Risk group";
+  "medical_step4_covid"="Diagnosed with COVID-19";
+  "medical_step4_medical"="High exposure at work";
+  "medical_step4_button_confirm"="Confirm details";
+
+  //Offline
+  "offline_name"="Without connection";
+  "offline_continue"="Connect";
+  "offline_error"="Apparently still offline";
+  "offline_qr_timeout"="Renew your statement to enable QR";
+
+  //Language
+  "language_title"="Language";
+  "language_modify"="Modify language";
+  "language_spanish"="Spanish";
+  "language_english"="English";
+  "language_confirm"="Application will be restarted to apply changes";
+
+  //passport states 
+  "state_caducado"="<b>Disabled</b>";
+  "state_multiple_days"="Valid for <b>dd days</b>";
+  "state_single_day"="Valid until <b>mm dd</b>";
+  "state_this_day"="Valid <b>mm dd</b>";
+
+  //Working center
+  "center_title"="Working center";
+  "center_modify"="Save";
+  "center_country"="Country *";
+  "center_city"="City";
+  "center_center"="Center *";
+  "center_other"="Other";
+  "center_mandatory"="* Mandatory fields";
+    

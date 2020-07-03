@@ -1,0 +1,48 @@
+@model RegisterViewModel
+@inject IViewLocalizer Localizer
+
+<div class="login-page">
+    <div class="page-header">
+        <h3>@Localizer["REGISTER"]</h3>
+    </div>
+
+    <partial name="_ValidationSummary" />
+
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-route="Register">
+                <input type="hidden" asp-for="ReturnUrl" />
+                <h5>@Localizer["CREATE"]</h5>
+                <hr />
+                <div class="form-group">
+                    <label asp-for="Email">@Localizer["EMAIL"]</label> <label class="requiered-field-asterisk">*</label>
+                    <input asp-for="Email" class="form-control" autocomplete="off" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                
+                <div class="form-group">
+                    <h6>@Localizer["CHECK_PASSWORD"]</h6>
+                    <label asp-for="Password">@Localizer["PASSWORD"]</label> <label class="requiered-field-asterisk">*</label>
+                    <input type="password" asp-for="Password" class="form-control" autocomplete="off" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ConfirmPassword">@Localizer["CONFIRM_PASSWORD"]</label> <label class="requiered-field-asterisk">*</label>
+                    <input type="password" asp-for="ConfirmPassword" class="form-control" autocomplete="off" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Telefono">@Localizer["PHONE"]</label>
+                    <input asp-for="Telefono" class="form-control" autocomplete="off" />
+                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DNI">@Localizer["DNI"]</label> <label class="requiered-field-asterisk">*</label>
+                    <input asp-for="DNI" class="form-control" autocomplete="off" />
+                    <span asp-validation-for="DNI" class="text-danger"></span>
+                </div>
+                <button class="btn btn-primary" name="button" value="Register">@Localizer["REGISTER"]</button>
+            </form>
+        </div>
+    </div>
+</div>

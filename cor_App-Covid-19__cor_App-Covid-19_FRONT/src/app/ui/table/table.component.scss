@@ -1,0 +1,34 @@
+mat-paginator {
+  width: 100%;
+  height: 5vh;
+  min-height: 5vh;
+}
+
+.table-container {
+  overflow: auto;
+  max-height: 80vh;
+  min-height: 80vh;
+
+  table {
+    width: 100%;
+  }
+
+  .headers {
+    font-weight: bold;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    color: #666666;
+  }
+
+  .texts {
+    color: #666666
+  }
+
+  .row:hover {
+    background-color: rgba(0, 0, 0, .05);
+  }
+
+  .row-clickable {
+    cursor: pointer;
+  }
+}

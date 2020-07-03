@@ -1,0 +1,25 @@
+<app-passport-warning></app-passport-warning>
+<div class="flex">
+  <div class="w-2/3 mt-1 mr-1">
+    <mat-card class="passport">
+      <app-passport [id]="id" [showExpire]="showExpire" [showGoRed]="showGoRed" [showInfo]="true"></app-passport>
+    </mat-card>
+  </div>
+  <div class="w-1/3 mt-1">
+    <mat-card *ngIf="showButtons">
+      <h2>{{ 'EMPLOYEE.PRL.TITLE' | i18next }}</h2>
+      <div class="flex">
+        <div class="w-1/2 mr-1/2">
+          <button mat-stroked-button color="primary" class="prl-button" (click)="openModalFever()">
+            <mat-icon svgIcon="thermometer"></mat-icon>&nbsp;{{ 'SYMPTOMS.FIEBRE' | i18next }}
+          </button>
+        </div>
+        <div class="w-1/2 ml-1/2">
+          <button mat-stroked-button color="primary" class="prl-button" (click)="openModalTest()">
+            <mat-icon svgIcon="test"></mat-icon>&nbsp;{{ 'EMPLOYEES.MEDICAL.SECTIONS.TEST' | i18next }}
+          </button>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Acciona.Presentation</AssemblyName>
+    <RootNamespace>Acciona.Presentation</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BasePresentation\BasePresentation.csproj" />
+    <ProjectReference Include="..\Acciona.Domain\Acciona.Domain.csproj" />
+    <ProjectReference Include="..\ServiceLocator\ServiceLocator.csproj" />
+    <ProjectReference Include="..\Messenger\Messenger.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UI\Features\Passport\" />
+    <Folder Include="UI\Features\QRcode\" />
+    <Folder Include="UI\Features\Profile\" />
+    <Folder Include="UI\Features\Alarm\" />
+    <Folder Include="UI\Features\Alerts\" />
+    <Folder Include="UI\Features\AlertDetail\" />
+    <Folder Include="UI\Features\Health\" />
+    <Folder Include="UI\Features\DataContact\" />
+    <Folder Include="UI\Features\MedicalTest\" />
+    <Folder Include="UI\Features\Registered\" />
+    <Folder Include="UI\Features\MedicalInfo\" />
+    <Folder Include="UI\Features\MedicalInfoEdit\" />
+    <Folder Include="UI\Features\Web\" />
+    <Folder Include="UI\Features\Offline\" />
+    <Folder Include="UI\Features\Language\" />
+    <Folder Include="UI\Features\WorkingCenter\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="3.2.1" />
+    <PackageReference Include="Microsoft.AppCenter" Version="3.2.1" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="3.2.1" />
+  </ItemGroup>
+</Project>

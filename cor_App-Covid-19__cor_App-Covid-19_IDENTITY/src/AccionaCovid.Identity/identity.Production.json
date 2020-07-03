@@ -1,0 +1,191 @@
+﻿{
+  "ApiResource": [
+    {
+      "ApiSecrets": [
+        {
+          "Description": null,
+          "Value": "SharedSecret1",
+          "Expiration": null,
+          "Type": "SharedSecret"
+        }
+      ],
+      "Scopes": [ { "Name": "acciona-covid-webapi" } ],
+      "Enabled": true,
+      "Name": "acciona-covid-webapi",
+      "DisplayName": "Acciona Covid WebApi",
+      "Description": "Acciona Covid WebApi",
+      "UserClaims": [ "acciona-covid-webapi" ]
+    }
+  ],
+  "Client": [
+    {
+      "Enabled": true,
+      "ClientId": "swagger-ui",
+      "ProtocolType": "oidc",
+      "ClientSecrets": [
+        {
+          "Value": "SharedSecret2",
+          "Type": "SharedSecret"
+        }
+      ],
+      "RequireClientSecret": true,
+      "RequireConsent": false,
+      "AllowRememberConsent": true,
+      "AllowedGrantTypes": [ "implicit" ],
+      "RequirePkce": false,
+      "AllowPlainTextPkce": false,
+      "AllowAccessTokensViaBrowser": true,
+      "RedirectUris": [
+        "http://localhost:5000/swagger/oauth2-redirect.html",
+        "https://localhost:5001/swagger/oauth2-redirect.html",
+        "http://foo-webapi.bar/swagger/oauth2-redirect.html",
+        "https://foo-webapi.bar/swagger/oauth2-redirect.html"
+      ],
+      "PostLogoutRedirectUris": [
+        "http://localhost:5000/swagger",
+        "https://localhost:5001/swagger",
+        "http://foo-webapi.bar/swagger",
+        "https://foo-webapi.bar/swagger"
+      ],
+      "FrontChannelLogoutSessionRequired": true,
+      "BackChannelLogoutSessionRequired": true,
+      "AllowOfflineAccess": false,
+      "AllowedScopes": [
+        "openid",
+        "profile",
+        "email",
+        "role",
+        "acciona-covid-webapi"
+      ],
+      "AlwaysIncludeUserClaimsInIdToken": false,
+      "IdentityTokenLifetime": 604800,
+      "AccessTokenLifetime": 604800,
+      "AuthorizationCodeLifetime": 60,
+      "AbsoluteRefreshTokenLifetime": 2592000,
+      "SlidingRefreshTokenLifetime": 1296000,
+      "RefreshTokenUsage": 1,
+      "UpdateAccessTokenClaimsOnRefresh": false,
+      "RefreshTokenExpiration": 1,
+      "AccessTokenType": 0,
+      "EnableLocalLogin": true,
+      "IdentityProviderRestrictions": [],
+      "IncludeJwtId": false,
+      "Claims": [],
+      "AlwaysSendClientClaims": false,
+      "ClientClaimsPrefix": "client_",
+      "AllowedCorsOrigins": [
+        "http://localhost:5000",
+        "https://localhost:5001",
+        "http://foo-webapi.bar",
+        "https://foo-webapi.bar"
+      ],
+      "Properties": {}
+    },
+    {
+      "Enabled": true,
+      "ClientId": "193b7f43-ef3d-4339-98d8-15300c2686f5",
+      "ProtocolType": "oidc",
+      "ClientSecrets": [
+        {
+          "Value": "SharedSecret2",
+          "Type": "SharedSecret"
+        }
+      ],
+      "RequireClientSecret": true,
+      "RequireConsent": false,
+      "AllowRememberConsent": true,
+      "AllowedGrantTypes": [ "implicit" ],
+      "RequirePkce": false,
+      "AllowPlainTextPkce": true,
+      "AllowAccessTokensViaBrowser": true,
+      "RedirectUris": [
+        "https://appCovid19Movilidad",
+        "https://www.acciona.com/es/",
+        "https://www.acciona.com/_style/_css/_gfx/logo-acciona@2x.png",
+        "https://foo-web-med.bar/",
+        "https://foo-web-med.bar/",
+        "https://blank.org/"
+      ],
+      "PostLogoutRedirectUris": [
+        "https://appCovid19Movilidad",
+        "https://www.acciona.com/es/",
+        "https://www.acciona.com/_style/_css/_gfx/logo-acciona@2x.png",
+        "https://foo-web-med.bar/",
+        "https://foo-web-med.bar/",
+        "https://blank.org/"
+      ],
+      "FrontChannelLogoutSessionRequired": true,
+      "BackChannelLogoutSessionRequired": true,
+      "AllowOfflineAccess": false,
+      "AllowedScopes": [
+        "openid",
+        "profile",
+        "email",
+        "role",
+        "acciona-covid-webapi"
+      ],
+      "AlwaysIncludeUserClaimsInIdToken": false,
+      "IdentityTokenLifetime": 604800,
+      "AccessTokenLifetime": 604800,
+      "AuthorizationCodeLifetime": 60,
+      "AbsoluteRefreshTokenLifetime": 2592000,
+      "SlidingRefreshTokenLifetime": 1296000,
+      "RefreshTokenUsage": 1,
+      "UpdateAccessTokenClaimsOnRefresh": false,
+      "RefreshTokenExpiration": 1,
+      "AccessTokenType": 0,
+      "EnableLocalLogin": true,
+      "IdentityProviderRestrictions": [],
+      "IncludeJwtId": false,
+      "Claims": [],
+      "AlwaysSendClientClaims": false,
+      "ClientClaimsPrefix": "client_",
+      "AllowedCorsOrigins": [
+        "https://appCovid19Movilidad",
+        "https://www.acciona.com",
+        "https://foo-web-med.bar",
+        "https://foo-web-med.bar",
+        "https://blank.org"
+      ],
+      "Properties": {}
+    }
+  ],
+  "IdentityResource": [
+    {
+      "Required": true,
+      "Emphasize": false,
+      "ShowInDiscoveryDocument": true,
+      "Enabled": true,
+      "Name": "openid",
+      "DisplayName": "User Identifier",
+      "UserClaims": [ "sub" ]
+    },
+    {
+      "Required": false,
+      "Emphasize": true,
+      "ShowInDiscoveryDocument": true,
+      "Enabled": true,
+      "Name": "profile",
+      "DisplayName": "User profile",
+      "Description": "Your user profile information (first name, last name, etc.)",
+      "UserClaims": [ "name", "family_name", "given_name", "middle_name", "nickname", "preferred_username", "profile", "picture", "website", "gender", "birthdate", "zoneinfo", "locale", "updated_at" ]
+    },
+    {
+      "Required": false,
+      "Emphasize": true,
+      "ShowInDiscoveryDocument": true,
+      "Enabled": true,
+      "Name": "email",
+      "DisplayName": "Email",
+      "UserClaims": [ "email", "email_verified" ]
+    },
+    {
+      "Required": false,
+      "Emphasize": false,
+      "ShowInDiscoveryDocument": true,
+      "Enabled": true,
+      "Name": "role",
+      "UserClaims": [ "role" ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<a class="accent" mat-dialog-close>
+  <mat-icon>close</mat-icon>
+</a>
+<h1 mat-dialog-title>{{ 'EMPLOYEES.CHANGEPASSPORTMODAL.TITLE' | i18next }}</h1>
+<mat-divider></mat-divider>
+<app-loading [isLoading]="isLoading">
+  <form [formGroup]="form">
+    <div mat-dialog-content>
+      <div class="mb-1 mt-1 flex items-center simple-change-status">
+
+        <mat-button-toggle-group formControlName="status" class="ml-auto mr-auto" vertical style="border: none;">
+          <mat-button-toggle [value]="status.id" [class]="'mat-button-toggle__' + getClassColor(status.color)"
+            [ngClass]="{ selected: form.get('status').value === status.id }" *ngFor="let status of statuses">
+            <strong>{{ colorLabel(status.color) | i18next }}</strong>
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div mat-dialog-actions class>
+      <button mat-flat-button mat-dialog-close>{{ 'COMMONS.CANCEL' | i18next }}</button>
+      <button mat-flat-button color="accent" [disabled]="!form.valid" (click)="submit()" class="ml-auto btn-right">
+        {{ 'COMMONS.SAVE' | i18next }}
+      </button>
+    </div>
+  </form>
+</app-loading>

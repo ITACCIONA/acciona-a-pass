@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"            
+            android:background="#F9F9F9">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+                android:background="#FFFFFF" >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/config"
+                    android:adjustViewBounds="true"
+                    android:visibility="invisible"/>         
+                <ImageView
+                    android:layout_width="0dp"
+                android:layout_weight="1"
+                    android:layout_height="36dp"
+                    android:src="@drawable/logo_main"
+                    android:adjustViewBounds="true" />
+            <ImageView
+                    android:id="@+id/config"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/config"
+                    android:adjustViewBounds="true"/>         
+            </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efefef"
+            />
+            <LinearLayout
+                android:id="@+id/touch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#5a5a5a">
+            <TextView
+                    android:id="@+id/center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="18dp"
+                    android:padding="16dp"
+                    android:hint="Working center"
+                    android:drawableRight="@drawable/edit"
+                    android:gravity="center_vertical|left"
+                    android:drawablePadding="16dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:background="@drawable/button_white"
+                    android:layout_margin="16dp" />
+                <include
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    layout="@layout/wait_scan_view" />
+                <TextView
+                    android:id="@+id/manual"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="@string/manual_button"
+                    android:gravity="center"
+                    android:background="@drawable/button_black"
+                    android:layout_margin="16dp"/>
+            </LinearLayout>
+        </LinearLayout>                
+</RelativeLayout>

@@ -1,0 +1,27 @@
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 0.5em 0;
+  .header-lang-select {
+    width: 3.5rem;
+    line-height: 3rem;
+    margin-right: 1rem;
+  }
+}
+
+.container {
+  display: flex;
+}
+
+img {
+  height: 42px;
+}
+
+app-breadcrumbs {
+  margin-left: 1.5em;
+}
+
+app-header-notifications {
+  margin-left: auto;
+  margin-right: 0.5em;
+}

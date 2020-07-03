@@ -1,0 +1,10 @@
+<app-loading [isLoading]="isLoading">
+  <mat-list *ngIf="factors.length">
+    <mat-list-item *ngFor="let item of factors">
+      <mat-icon [svgIcon]="item.icon" class="additional-icon"></mat-icon> {{ item.name | i18next}}
+    </mat-list-item>
+  </mat-list>
+
+  <span *ngIf="!factors.length">{{ "EMPLOYEES.MEDICAL.NO_RISK_FACTORS" | i18next}}</span>
+
+</app-loading>

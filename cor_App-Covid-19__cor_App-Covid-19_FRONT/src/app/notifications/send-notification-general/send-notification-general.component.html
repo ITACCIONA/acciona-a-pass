@@ -1,0 +1,15 @@
+<a class="accent" mat-dialog-close>
+  <mat-icon>close</mat-icon>
+</a>
+<h2 mat-dialog-title>{{ 'NOTIFICATIONS.TITLE' | i18next }}</h2>
+<div mat-dialog-content>
+
+  <app-general-form (sentSuccess)="close()"></app-general-form>
+
+</div>
+<div class="actions" mat-dialog-actions>
+  <button mat-flat-button mat-dialog-close>{{ 'COMMONS.CANCEL' | i18next }}</button>
+  <button class="btn-right" color="accent" (click)="send()" [disabled]="!isValid()" mat-flat-button>
+    {{ 'COMMONS.SEND' | i18next }}
+  </button>
+</div>

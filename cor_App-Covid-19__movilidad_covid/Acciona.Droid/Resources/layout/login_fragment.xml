@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rootFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="#F1F1F1">
+
+
+    <ImageView
+            android:layout_width="156dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="44dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+    />
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_centerInParent="true" android:orientation="vertical">
+
+        <ImageView
+                android:id="@+id/ivLoginState"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:src="@drawable/img_login_loading"/>
+
+        <TextView
+                android:id="@+id/tvStateLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_connecting_message"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackTwo"
+                android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+    <TextView
+            android:id="@+id/btRetryConnect"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Reintentar conexión"
+            android:background="@drawable/button_red"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

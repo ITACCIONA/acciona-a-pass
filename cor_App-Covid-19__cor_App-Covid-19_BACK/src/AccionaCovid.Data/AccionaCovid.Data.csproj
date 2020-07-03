@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200417090414_NewFieldValoracionRiesgo.cs" />
+    <Compile Remove="Migrations\20200417090414_NewFieldValoracionRiesgo.Designer.cs" />
+    <Compile Remove="Migrations\20200508110833_AddTableResultadosIntegracion.cs" />
+    <Compile Remove="Migrations\20200508110833_AddTableResultadosIntegracion.Designer.cs" />
+    <Compile Remove="Migrations\20200528084132_ContratasAdaptacionCampos_Act.cs" />
+    <Compile Remove="Migrations\20200528084132_ContratasAdaptacionCampos_Act.Designer.cs" />
+    <Compile Remove="Migrations\20200529090400_AddTablaTecnologia.cs" />
+    <Compile Remove="Migrations\20200529090400_AddTablaTecnologia.Designer.cs" />
+    <Compile Remove="Migrations\20200529090533_FiltradoPRL.cs" />
+    <Compile Remove="Migrations\20200529090533_FiltradoPRL.Designer.cs" />
+    <Compile Remove="Migrations\20200529091300_FiltradoPRL.cs" />
+    <Compile Remove="Migrations\20200529091300_FiltradoPRL.Designer.cs" />
+    <Compile Remove="Migrations\20200602123323_NuevoCampoTecnologiaEmpleados.cs" />
+    <Compile Remove="Migrations\20200602123323_NuevoCampoTecnologiaEmpleados.Designer.cs" />
+    <Compile Remove="Migrations\20200602142800_Test01.cs" />
+    <Compile Remove="Migrations\20200602142800_Test01.Designer.cs" />
+    <Compile Remove="Migrations\20200602142841_Test01.cs" />
+    <Compile Remove="Migrations\20200602142841_Test01.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EFCore.BulkExtensions" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccionaCovid.Crosscutting\AccionaCovid.Crosscutting.csproj" />
+    <ProjectReference Include="..\AccionaCovid.Domain\AccionaCovid.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,41 @@
+<app-passport-warning></app-passport-warning>
+
+<div class="grid">
+  <div class="col-span-2">
+    <mat-card class="passport">
+      <app-passport [id]="id" [showAge]="true" [showStatusName]="true" [showChange]="true" [showInfo]="true">
+      </app-passport>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-header class="mb-1/2">
+        <mat-card-title class="card-header-text">{{ 'EMPLOYEES.MEDICAL.SECTIONS.TEST' | i18next }}
+          <a class="accent" (click)="openModal()">
+            <mat-icon>add</mat-icon>
+            {{ 'EMPLOYEES.ADDTESTMODAL.LINK' | i18next }}
+          </a>
+        </mat-card-title>
+
+      </mat-card-header>
+      <mat-card-content>
+        <app-tests [id]="id"></app-tests>
+      </mat-card-content>
+    </mat-card>
+
+    <app-monitoring [id]="id"></app-monitoring>
+  </div>
+  <div>
+    <app-fever-records [id]="id"></app-fever-records>
+
+    <app-responsible-statement [id]="id"></app-responsible-statement>
+
+    <!-- <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ 'EMPLOYEES.MEDICAL.SECTIONS.ADDITIONAL' | i18next }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <app-risk-factors [id]="id"></app-risk-factors>
+      </mat-card-content>
+    </mat-card> -->
+  </div>
+</div>

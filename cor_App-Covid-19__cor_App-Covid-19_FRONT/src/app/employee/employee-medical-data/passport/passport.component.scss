@@ -1,0 +1,52 @@
+app-loading>.flex {
+  padding: 0 1.25em 0 1.25em;
+}
+
+.passport-status {
+  padding: 1.25em;
+
+  &.green {
+    background-color: var(--test-negative)
+  }
+
+  &.grey {
+    background-color: var(--secondary-color)
+  }
+
+  &.red {
+    background-color: var(--test-positive)
+  }
+}
+
+mat-divider {
+  position: relative !important;
+  margin-bottom: 1em;
+}
+
+h3 {
+  margin: 0.2em 0;
+}
+
+.actions {
+  button {
+    width: 100%;
+  }
+
+  button:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+}
+
+.details-title {
+  font-size: 0.625em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 0.95px;
+}
+
+p {
+  margin: 0.5em 0 0 0;
+  color: var(--font-color-lighter)
+}

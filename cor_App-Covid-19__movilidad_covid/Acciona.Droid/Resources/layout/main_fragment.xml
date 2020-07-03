@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rootFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:padding="10dp">
+            <ImageView
+                    android:id="@+id/buttonPhone"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/call"
+                    android:layout_marginLeft="6dp"
+                    android:adjustViewBounds="true"/>
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="1dp"/>
+            <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_main"
+                    android:adjustViewBounds="true"/>
+            <View
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="1dp"/>
+            <ImageView
+                    android:id="@+id/buttonBell"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="6dp"
+                    android:adjustViewBounds="true"/>
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EFEFEF"/>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <FrameLayout
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="100dp"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:orientation="horizontal"
+                    android:gravity="bottom"
+                    android:layout_alignParentBottom="true">
+                <FrameLayout
+                        android:id="@+id/framePassport"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="80dp"
+                        android:background="@drawable/main_button_back">
+                    <TextView
+                            android:id="@+id/passport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlackTwo"
+                            android:text="@string/main_passport"
+                            android:drawablePadding="8dp"
+                            android:drawableTop="@drawable/ico_passport"/>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="5dp"
+                          android:layout_gravity="bottom"
+                          android:background="@color/colorRed"/>
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/frameQrcode"
+                        android:layout_width="145dp"   
+                        android:background="@drawable/button_middle_bottom_navigator"
+                        android:layout_height="96dp">
+                    <TextView
+                            android:id="@+id/qrcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:text="@string/main_panic"
+                            android:textAlignment="textStart"
+                            android:drawablePadding="8dp"
+                            android:drawableLeft="@drawable/thermometer_negative"/>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="5dp"
+                          android:layout_gravity="bottom"
+                          android:background="@color/colorRed"/>
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/frameProfile"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="80dp"
+                        android:background="@drawable/main_button_back">
+                    <TextView
+                            android:id="@+id/profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlackTwo"
+                            android:text="@string/main_profile"
+                            android:drawablePadding="8dp"
+                            android:drawableTop="@drawable/ico_user"/>
+                    
+                    <View android:layout_width="match_parent"
+                          android:layout_height="5dp"
+                          android:layout_gravity="bottom"
+                          android:background="@color/colorRed"/>
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

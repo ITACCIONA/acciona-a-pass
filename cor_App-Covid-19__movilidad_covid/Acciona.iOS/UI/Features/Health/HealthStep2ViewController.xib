@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HealthStep2ViewController">
+            <connections>
+                <outlet property="buttonNo" destination="6712" id="name-outlet-6712"/>
+                <outlet property="buttonYes" destination="6769" id="name-outlet-6769"/>
+                <outlet property="indicator" destination="651" id="name-outlet-651"/>
+                <outlet property="labelSubtitle" destination="18258" id="name-outlet-18258"/>
+                <outlet property="labelTitle" destination="1469" id="name-outlet-1469"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="labelHelp1" destination="20629" id="name-outlet-20629"/>
+                <outlet property="labelHelp2" destination="21086" id="name-outlet-21086"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="651" customClass="IndicatorBar">
+                    <rect key="frame" x="8" y="30" width="399" height="5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="1302"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¿Has tenido contacto estrecho con algún infectado o sintomático recientemente?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1469">
+                    <rect key="frame" x="8" y="65" width="399" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="1473"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4P5-pb-qYf">
+                    <rect key="frame" x="8" y="647" width="399" height="1"/>
+                    <color key="backgroundColor" red="0.90204250809999997" green="0.90201544759999996" blue="0.90203082560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Y8e-of-yxr"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6712">
+                    <rect key="frame" x="8" y="664" width="195.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6884"/>
+                    </constraints>
+                    <state key="normal" title="No">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6769">
+                    <rect key="frame" x="211.5" y="664" width="195.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7000"/>
+                    </constraints>
+                    <state key="normal" title="Sí">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18725" ambiguous="YES">
+                    <rect key="frame" x="0.0" y="120" width="415" height="528"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19064" misplaced="YES">
+                            <rect key="frame" x="0.0" y="0.0" width="415" height="330"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Si dispone de una valoración médica que haya descartado el riesgo asociado a ese contacto estrecho, deberá marcar &lt;b&gt;NO&lt;/b&gt;)" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18258">
+                                    <rect key="frame" x="8" y="0.0" width="399" height="56"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="18259"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <color key="textColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="0.4" alpha="1"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_hands" translatesAutoresizingMaskIntoConstraints="NO" id="16997">
+                                    <rect key="frame" x="87.5" y="79" width="240" height="240"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="240" id="16998"/>
+                                        <constraint firstAttribute="width" constant="240" id="16999"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* A estos efectos, se entiende como contacto estrecho:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20629">
+                                    <rect key="frame" x="8" y="250" width="399" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="20630"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <color key="textColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="0.4" alpha="1"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21086" misplaced="YES">
+                                    <rect key="frame" x="36" y="283" width="371" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="21087"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <color key="textColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="0.4" alpha="1"/>
+                                    <nil key="highlightedColor"/>
+                                    <string key="text">Haber proporcionado cuidados a la persona infectada: trabajadores sanitarios que no han utilizado las medidas de protección adecuadas, familiares o personas que tengan otro tipo de contacto físico similar.
+
+Ser conviviente, familiar o persona que haya estado en el mismo lugar que se la persona infectada a una distancia menor de 2 metros durante un tiempo de al menos 15 minutos.</string>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="18258" firstAttribute="top" secondItem="19064" secondAttribute="topMargin" id="19074" constant="-8"/>
+                                <constraint firstItem="18258" firstAttribute="leading" secondItem="19064" secondAttribute="leadingMargin" id="19075"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="18258" secondAttribute="trailing" id="19076"/>
+                                <constraint firstItem="16997" firstAttribute="top" secondItem="18258" secondAttribute="bottom" constant="23" id="19077"/>
+                                <constraint firstItem="16997" firstAttribute="centerX" secondItem="19064" secondAttribute="centerX" id="19078"/>
+                                <constraint id="20632" firstItem="20629" firstAttribute="leading" secondItem="19064" secondAttribute="leading" constant="8"/>
+                                <constraint id="20633" firstAttribute="trailing" secondItem="20629" secondAttribute="trailing" constant="8"/>
+                                <constraint id="20634" firstItem="16997" firstAttribute="bottom" secondItem="20629" secondAttribute="top" constant="69"/>
+                                <constraint id="21089" firstItem="21086" firstAttribute="top" secondItem="20629" secondAttribute="bottom" constant="12"/>
+                                <constraint id="21090" firstItem="21086" firstAttribute="leading" secondItem="19064" secondAttribute="leading" constant="36"/>
+                                <constraint id="21091" firstAttribute="trailing" secondItem="21086" secondAttribute="trailing" constant="8"/>
+                                <constraint id="21092" firstAttribute="bottom" secondItem="21086" secondAttribute="bottom" constant="26"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint id="20405" firstItem="19064" firstAttribute="top" secondItem="18725" secondAttribute="top"/>
+                        <constraint id="20627" firstItem="19064" firstAttribute="centerX" secondItem="18725" secondAttribute="centerX"/>
+                        <constraint id="21336" firstAttribute="bottom" secondItem="19064" secondAttribute="bottom"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="651" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="1300"/>
+                <constraint firstAttribute="trailing" secondItem="651" secondAttribute="trailing" constant="8" id="1301"/>
+                <constraint firstItem="651" firstAttribute="top" secondItem="2" secondAttribute="top" constant="30" id="1303"/>
+                <constraint firstItem="1469" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="1470"/>
+                <constraint firstAttribute="trailing" secondItem="1469" secondAttribute="trailing" constant="8" id="1471"/>
+                <constraint firstItem="1469" firstAttribute="top" secondItem="651" secondAttribute="bottom" constant="30" id="1472"/>
+                <constraint firstItem="18725" firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="18729"/>
+                <constraint firstItem="18725" firstAttribute="bottom" secondItem="4P5-pb-qYf" secondAttribute="centerY" id="18730"/>
+                <constraint firstItem="18725" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="18731"/>
+                <constraint firstItem="18725" firstAttribute="top" secondItem="1469" secondAttribute="bottom" constant="12" id="18732"/>
+                <constraint firstAttribute="bottomMargin" secondItem="6769" secondAttribute="bottom" constant="14" id="7yT-gT-h4c"/>
+                <constraint firstItem="6769" firstAttribute="leading" secondItem="6712" secondAttribute="trailing" constant="8" id="M6m-FO-1WV"/>
+                <constraint firstItem="6712" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="QbW-hx-Nb8"/>
+                <constraint firstItem="6712" firstAttribute="width" secondItem="6769" secondAttribute="width" id="VGJ-vo-fhQ"/>
+                <constraint firstItem="4P5-pb-qYf" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="are-26-CDn"/>
+                <constraint firstAttribute="bottomMargin" secondItem="6712" secondAttribute="bottom" constant="14" id="cd4-5B-dkV"/>
+                <constraint firstAttribute="trailing" secondItem="4P5-pb-qYf" secondAttribute="trailing" constant="8" id="hDJ-y8-F4a"/>
+                <constraint firstItem="6712" firstAttribute="top" secondItem="4P5-pb-qYf" secondAttribute="bottom" constant="16" id="nTA-Uu-UMZ"/>
+                <constraint firstAttribute="trailing" secondItem="6769" secondAttribute="trailing" constant="8" id="ozH-1f-VRp"/>
+                <constraint firstItem="19064" firstAttribute="width" secondItem="2" secondAttribute="width" id="zTE-0v-tS4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="34" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_hands" width="240" height="217"/>
+    </resources>
+</document>

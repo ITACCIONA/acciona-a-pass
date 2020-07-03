@@ -1,0 +1,70 @@
+<app-back-btn></app-back-btn>
+
+<mat-card>
+  <app-loading [isLoading]="isLoading">
+    <div class="flex">
+      <h2>{{ 'NEW_USER.TITLE' | i18next }}</h2>
+      <p class="ml-auto"><span class="required">*</span> {{ 'COMMONS.REQUIRED_FIELDS' | i18next}}</p>
+    </div>
+
+    <form [formGroup]="form">
+      <h4>{{ 'NEW_USER.DNI' | i18next }} <span class="required">*</span></h4>
+      <mat-form-field class="w-full" appearance="outline">
+        <input matInput formControlName="dni" [placeholder]="'NEW_USER.DNI' | i18next" />
+      </mat-form-field>
+
+      <h4>{{ 'NEW_USER.NAME' | i18next }} <span class="required">*</span></h4>
+      <mat-form-field class="w-full" appearance="outline">
+        <input matInput formControlName="name" [placeholder]="'NEW_USER.NAME' | i18next" />
+      </mat-form-field>
+
+      <h4>{{ 'NEW_USER.SURNAME' | i18next }} <span class="required">*</span></h4>
+      <mat-form-field class="w-full" appearance="outline">
+        <input matInput formControlName="surname" [placeholder]="'NEW_USER.SURNAME' | i18next" />
+      </mat-form-field>
+
+      <h4>{{ 'NEW_USER.SURNAME2' | i18next }}</h4>
+      <mat-form-field class="w-full" appearance="outline">
+        <input matInput formControlName="surname2" [placeholder]="'NEW_USER.SURNAME2' | i18next" />
+      </mat-form-field>
+
+      <h4>{{ 'NEW_USER.DIVISION' | i18next }}</h4>
+      <mat-form-field class="w-full" appearance="outline">
+        <mat-select formControlName="division" [placeholder]="'NEW_USER.DIVISION_PLACEHOLDER' | i18next">
+          <mat-option *ngFor="let item of divisions" [value]="item.idDivision">{{ item.name }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+      <h4>{{ 'NEW_USER.WORKCENTER' | i18next }} <span class="required">*</span></h4>
+      <mat-form-field class="w-full" appearance="outline">
+        <input type="text" matInput formControlName="workcenter" [matAutocomplete]="autoWorkCenters"
+          [placeholder]="'NEW_USER.WORKCENTER_PLACEHOLDER' | i18next">
+        <mat-autocomplete #autoWorkCenters="matAutocomplete" [displayWith]="displayFn">
+          <mat-option *ngFor="let item of  filteredWorkcenters | async; trackBy: trackById" [value]="item">
+            {{item.name}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+
+
+      <h4>{{ 'NEW_USER.SUPERIOR' | i18next }} <span class="required">*</span></h4>
+      <mat-form-field class="w-full" appearance="outline">
+        <input type="text" matInput formControlName="superior" [matAutocomplete]="autoSuperior"
+          [placeholder]="'NEW_USER.SUPERIOR' | i18next">
+        <mat-autocomplete #autoSuperior="matAutocomplete" [displayWith]="displaySuperiors">
+          <mat-option *ngFor="let item of  filteredSuperiors | async; trackBy: trackById" [value]="item">
+            {{item.completeName}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+
+    </form>
+    <div class="actions">
+      <button mat-flat-button (click)="reset()">{{ 'COMMONS.CANCEL' | i18next }}</button>
+      <button class="btn-right" color="accent" (click)="send()" [disabled]="!form.valid" mat-flat-button>
+        {{ 'COMMONS.SEND' | i18next }}
+      </button>
+    </div>
+  </app-loading>
+</mat-card>

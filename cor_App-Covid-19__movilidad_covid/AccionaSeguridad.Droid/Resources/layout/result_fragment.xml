@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorStateCaducado">    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:padding="30dp">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:src="@drawable/ok"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+        <TextView
+            android:id="@+id/label1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="24dp"
+                  android:textColor="#000000"
+                  android:gravity="center"
+                  tools:text="Acceso permitido"
+                android:layout_marginTop="20dp" />
+        <TextView
+            android:id="@+id/label2"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:textSize="16dp"
+  android:textColor="#333333"
+  android:gravity="center"
+  tools:text="Este empleado tiene permitido el libre acceso por las instalaciones"
+            android:layout_marginTop="20dp" />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:layout_alignParentBottom="true">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/touch"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="16dp"
+      android:textColor="#ffffff"
+      android:text="@string/scan_another"
+     android:layout_marginLeft="30dp"/>
+</LinearLayout>
+    <ImageView
+                android:id="@+id/offline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/offline"
+                android:scaleType="fitCenter"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"/>
+</RelativeLayout>

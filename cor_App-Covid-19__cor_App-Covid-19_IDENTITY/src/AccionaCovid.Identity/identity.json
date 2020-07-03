@@ -1,0 +1,108 @@
+﻿{
+  "ApiResource": [
+    {
+      "ApiSecrets": [
+        {
+          "Description": null,
+          "Value": "T9BetiRUZx4LsOucWEzPPdgNmEcwQ49o7nQvY6wi6yY=",
+          "Expiration": null,
+          "Type": "SharedSecret"
+        }
+      ],
+      "Scopes": [ { "Name": "acciona-covid-webapi" } ],
+      "Enabled": true,
+      "Name": "acciona-covid-webapi",
+      "DisplayName": "Acciona Covid WebApi",
+      "Description": "Acciona Covid WebApi",
+      "UserClaims": [ "acciona-covid-webapi" ]
+    }
+  ],
+  "Client": [
+    {
+      "Enabled": true,
+      "ClientId": "swagger-ui",
+      "ProtocolType": "oidc",
+      "ClientSecrets": [
+        {
+          "Value": "SharedSecret2",
+          "Type": "SharedSecret"
+        }
+      ],
+      "RequireClientSecret": true,
+      "RequireConsent": false,
+      "AllowRememberConsent": true,
+      "AllowedGrantTypes": [ "implicit" ],
+      "RequirePkce": false,
+      "AllowPlainTextPkce": false,
+      "AllowAccessTokensViaBrowser": true,
+      "RedirectUris": [ "http://localhost:5000/swagger/oauth2-redirect.html", "https://localhost:5001/swagger/oauth2-redirect.html" ],
+      "PostLogoutRedirectUris": [ "http://localhost:5000/swagger", "https://localhost:5001/swagger" ],
+      "FrontChannelLogoutSessionRequired": true,
+      "BackChannelLogoutSessionRequired": true,
+      "AllowOfflineAccess": false,
+      "AllowedScopes": [
+        "openid",
+        "profile",
+        "email",
+        "role",
+        "acciona-covid-webapi"
+      ],
+      "AlwaysIncludeUserClaimsInIdToken": false,
+      "IdentityTokenLifetime": 60,
+      "AccessTokenLifetime": 1800,
+      "AuthorizationCodeLifetime": 60,
+      "AbsoluteRefreshTokenLifetime": 2592000,
+      "SlidingRefreshTokenLifetime": 1296000,
+      "RefreshTokenUsage": 1,
+      "UpdateAccessTokenClaimsOnRefresh": false,
+      "RefreshTokenExpiration": 1,
+      "AccessTokenType": 0,
+      "EnableLocalLogin": true,
+      "IdentityProviderRestrictions": [],
+      "IncludeJwtId": false,
+      "Claims": [],
+      "AlwaysSendClientClaims": false,
+      "ClientClaimsPrefix": "client_",
+      "AllowedCorsOrigins": [ "http://localhost:5000", "https://localhost:5001" ],
+      "Properties": {}
+    }
+  ],
+  "IdentityResource": [
+    {
+      "Required": true,
+      "Emphasize": false,
+      "ShowInDiscoveryDocument": true,
+      "Enabled": true,
+      "Name": "openid",
+      "DisplayName": "User Identifier",
+      "UserClaims": [ "sub" ]
+    },
+    {
+      "Required": false,
+      "Emphasize": true,
+      "ShowInDiscoveryDocument": true,
+      "Enabled": true,
+      "Name": "profile",
+      "DisplayName": "User profile",
+      "Description": "Your user profile information (first name, last name, etc.)",
+      "UserClaims": [ "name", "family_name", "given_name", "middle_name", "nickname", "preferred_username", "profile", "picture", "website", "gender", "birthdate", "zoneinfo", "locale", "updated_at" ]
+    },
+    {
+      "Required": false,
+      "Emphasize": true,
+      "ShowInDiscoveryDocument": true,
+      "Enabled": true,
+      "Name": "email",
+      "DisplayName": "Email",
+      "UserClaims": [ "email", "email_verified" ]
+    },
+    {
+      "Required": false,
+      "Emphasize": false,
+      "ShowInDiscoveryDocument": true,
+      "Enabled": true,
+      "Name": "role",
+      "UserClaims": [ "role" ]
+    }
+  ]
+}

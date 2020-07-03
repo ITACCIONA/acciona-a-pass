@@ -1,0 +1,118 @@
+<ng-container *ngIf="isLoading">
+  <mat-card>
+    <app-loading [isLoading]="true"></app-loading>
+  </mat-card>
+</ng-container>
+
+<mat-card *ngIf="!isLoading">
+  <mat-card-header>
+    <mat-card-title>{{ "EMPLOYEES.MEDICAL.SECTIONS.IMAGE" | i18next }}
+      <a class="accent" (click)="openModal()">
+        <mat-icon>add</mat-icon> {{ "EMPLOYEES.MEDICAL.ADD_IMAGE" | i18next }}
+      </a>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-test-result *ngFor="let img of images" [data]="img" [id]="id" (fetch)="fetch()"></app-test-result>
+    <span *ngIf="!images.length">{{ "EMPLOYEES.MEDICAL.NO_IMAGES_DONE" | i18next}}</span>
+  </mat-card-content>
+</mat-card>
+
+<mat-card *ngIf="!isLoading">
+  <mat-card-header>
+    <mat-card-title>{{ "EMPLOYEES.MEDICAL.SECTIONS.ANALYTICS" | i18next }}
+      <a class="accent" (click)="openModal('analytics')">
+        <mat-icon>add</mat-icon> {{ "EMPLOYEES.MEDICAL.ADD_ANALYTIC" | i18next }}
+      </a>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-test-result *ngFor="let analytic of analytics" [data]="analytic" [id]="id" (fetch)="fetch()"></app-test-result>
+    <span *ngIf="!analytics.length">{{ "EMPLOYEES.MEDICAL.NO_ANALYTICS_DONE" | i18next}}</span>
+  </mat-card-content>
+</mat-card>
+
+
+<ng-template #imageModal>
+  <a class="accent" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </a>
+  <h2 mat-dialog-title>{{ "EMPLOYEES.MEDICAL.IMAGES.TITLE" | i18next }}</h2>
+  <div mat-dialog-content>
+    <app-loading [isLoading]="isLoading">
+      <form [formGroup]="imageForm">
+        <h3>{{"COMMONS.DATE" |i18next }}</h3>
+        <mat-form-field class="date-picker">
+          <input matInput [matDatepicker]="picker" formControlName="date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <h3>{{"EMPLOYEES.MEDICAL.IMAGES.TYPE" |i18next }}</h3>
+        <mat-button-toggle-group formControlName="type">
+          <mat-button-toggle *ngFor="let param of imagesConfig?.parameters" [value]="param.idParameter">
+            {{ getI18nLabel(param.name) |i18next  }}
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+
+        <h3>{{"EMPLOYEES.MEDICAL.IMAGES.RESULTS" |i18next }}</h3>
+        <mat-button-toggle-group formControlName="result">
+          <mat-button-toggle [value]="true">
+            {{ "TESTS.POSITIVE" |i18next  }}
+          </mat-button-toggle>
+          <mat-button-toggle [value]="false">
+            {{ "TESTS.NEGATIVE" |i18next  }}
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+      </form>
+
+    </app-loading>
+  </div>
+  <div *ngIf="!isLoading" class="actions" mat-dialog-actions>
+    <button mat-flat-button mat-dialog-close>{{"COMMONS.CANCEL" |i18next }}</button>
+    <button class="btn-right" (click)="addImage()" color="accent" [disabled]="!imageForm.valid"
+      mat-flat-button>{{"COMMONS.SAVE" |i18next }}</button>
+  </div>
+</ng-template>
+
+
+<ng-template #analyticsModal>
+  <a class="accent" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </a>
+  <h2 mat-dialog-title>{{ "EMPLOYEES.MEDICAL.ANALITYCS.TITLE" | i18next }}</h2>
+  <div mat-dialog-content>
+    <form [formGroup]="analyticForm">
+      <h3>{{"COMMONS.DATE" |i18next }}</h3>
+      <mat-form-field class="date-picker">
+        <input matInput [matDatepicker]="picker" formControlName="date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+
+      <h3>{{"EMPLOYEES.MEDICAL.IMAGES.RESULTS" |i18next }}</h3>
+
+      <mat-list>
+        <mat-list-item class="flex row" *ngFor="let test of analyticsConfig.parameters">
+          <div class="w-1/3">{{ getI18nLabel(test.name) |i18next  }}</div>
+          <div class="w-2/3">
+            <mat-button-toggle-group [formControlName]="test.name">
+              <mat-button-toggle [value]="true">
+                {{ "TESTS.POSITIVE" |i18next  }}
+              </mat-button-toggle>
+              <mat-button-toggle [value]="false">
+                {{ "TESTS.NEGATIVE" |i18next  }}
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </mat-list-item>
+      </mat-list>
+    </form>
+  </div>
+  <div *ngIf="!isLoading" class="actions" mat-dialog-actions>
+    <button mat-flat-button mat-dialog-close>{{"COMMONS.CANCEL" |i18next }}</button>
+    <button (click)="addAnalytic()" [disabled]="!analyticForm.valid" class="btn-right" color="accent"
+      mat-flat-button>{{"COMMONS.SAVE" |i18next }}</button>
+  </div>
+</ng-template>

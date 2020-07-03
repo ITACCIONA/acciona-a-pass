@@ -1,0 +1,9 @@
+<mat-card>
+  <h2>{{ 'NOTIFICATIONS.TITLE' | i18next }}</h2>
+  <app-general-form></app-general-form>
+  <div class="actions">
+    <button class="btn-right" color="accent" (click)="send()" [disabled]="!isValid()" mat-flat-button>
+      {{ 'COMMONS.SEND' | i18next }}
+    </button>
+  </div>
+</mat-card>

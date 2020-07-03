@@ -1,0 +1,5 @@
+<app-loading [isLoading]="isLoading">
+  <app-test-result *ngFor="let test of tests" [data]="test" [id]="id" (fetch)="fetch()"></app-test-result>
+
+  <span *ngIf="!tests.length">{{ "EMPLOYEES.MEDICAL.NO_TESTS_DONE" | i18next}}</span>
+</app-loading>

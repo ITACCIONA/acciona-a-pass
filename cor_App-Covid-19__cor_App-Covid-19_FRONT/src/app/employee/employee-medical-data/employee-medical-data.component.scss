@@ -1,0 +1,22 @@
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.passport {
+  padding: 0.3125em 0.3125em 1.25em 0.3125em !important;
+}
+
+mat-card {
+  margin-bottom: 1em;
+}
+
+app-passport-warning {
+  display: block;
+  margin: 1em 0;
+}

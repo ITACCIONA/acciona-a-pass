@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HealthStep1ViewController">
+            <connections>
+                <outlet property="DescriptionLabel" destination="Ndq-DP-unD" id="name-outlet-Ndq-DP-unD"/>
+                <outlet property="SymptonLabel1" destination="nH7-7p-Lh2" id="name-outlet-nH7-7p-Lh2"/>
+                <outlet property="SymptonLabel2" destination="4l1-7G-Hj0" id="name-outlet-4l1-7G-Hj0"/>
+                <outlet property="SymptonView1" destination="nbw-v9-hZ1" id="name-outlet-nbw-v9-hZ1"/>
+                <outlet property="SymptonView2" destination="n5f-D6-714" id="name-outlet-n5f-D6-714"/>
+                <outlet property="buttonConfirm" destination="18093" id="name-outlet-18093"/>
+                <outlet property="indicator" destination="651" id="name-outlet-651"/>
+                <outlet property="labelTitle" destination="1469" id="name-outlet-1469"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="labelSymptomsHelp" destination="19733" id="name-outlet-19733"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="651" customClass="IndicatorBar">
+                    <rect key="frame" x="8" y="30" width="399" height="5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="1302"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Tienes alguno de los siguientes síntomas?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1469">
+                    <rect key="frame" x="8" y="65" width="399" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="1473"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona todos los síntomas que tengas. Si no tienes ninguno, haz click en &quot;No tengo síntomas&quot;." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndq-DP-unD">
+                    <rect key="frame" x="8" y="119" width="399" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WSA-Sg-YTr">
+                    <rect key="frame" x="8" y="190" width="399" height="195.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qrY-HN-NOL">
+                            <rect key="frame" x="0.0" y="0.0" width="399" height="195.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbw-v9-hZ1">
+                                    <rect key="frame" x="0.0" y="0.0" width="195.5" height="195.5"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_fever" translatesAutoresizingMaskIntoConstraints="NO" id="cVl-xa-0sr">
+                                            <rect key="frame" x="75" y="52" width="46" height="46"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="cVl-xa-0sr" secondAttribute="height" multiplier="1:1" id="CZH-RG-CRc"/>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="46" id="UrM-6B-WSK"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiebre" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nH7-7p-Lh2">
+                                            <rect key="frame" x="20" y="106" width="155.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="nH7-7p-Lh2" firstAttribute="top" secondItem="cVl-xa-0sr" secondAttribute="bottom" constant="8" id="7wR-q9-d3B"/>
+                                        <constraint firstAttribute="trailing" secondItem="nH7-7p-Lh2" secondAttribute="trailing" constant="20" id="Edn-Ln-ll8"/>
+                                        <constraint firstItem="cVl-xa-0sr" firstAttribute="centerX" secondItem="nbw-v9-hZ1" secondAttribute="centerX" id="G6U-Cu-CFq"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nH7-7p-Lh2" secondAttribute="bottom" constant="20" id="Nqw-Hy-J1A"/>
+                                        <constraint firstItem="cVl-xa-0sr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nbw-v9-hZ1" secondAttribute="top" constant="20" id="O72-Mt-Hl2"/>
+                                        <constraint firstItem="cVl-xa-0sr" firstAttribute="bottom" secondItem="nbw-v9-hZ1" secondAttribute="centerY" id="Q9O-lz-FPw"/>
+                                        <constraint firstAttribute="width" secondItem="nbw-v9-hZ1" secondAttribute="height" multiplier="1:1" id="WoS-j2-1mL"/>
+                                        <constraint firstItem="nH7-7p-Lh2" firstAttribute="leading" secondItem="nbw-v9-hZ1" secondAttribute="leading" constant="20" id="bD9-m8-exA"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5f-D6-714">
+                                    <rect key="frame" x="203.5" y="0.0" width="195.5" height="195.5"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_headache" translatesAutoresizingMaskIntoConstraints="NO" id="rf9-HH-iS2">
+                                            <rect key="frame" x="75" y="52" width="46" height="46"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="rf9-HH-iS2" secondAttribute="height" multiplier="1:1" id="Qut-hV-F8K"/>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="46" id="d8W-EU-DXh"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiebre" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l1-7G-Hj0">
+                                            <rect key="frame" x="20" y="106" width="155.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="rf9-HH-iS2" firstAttribute="centerX" secondItem="n5f-D6-714" secondAttribute="centerX" id="0lF-J0-9m5"/>
+                                        <constraint firstItem="4l1-7G-Hj0" firstAttribute="top" secondItem="rf9-HH-iS2" secondAttribute="bottom" constant="8" id="5To-Jb-mwh"/>
+                                        <constraint firstItem="rf9-HH-iS2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="n5f-D6-714" secondAttribute="top" constant="20" id="Bg4-Yb-TTQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="4l1-7G-Hj0" secondAttribute="trailing" constant="20" id="D7B-oA-zeM"/>
+                                        <constraint firstAttribute="width" secondItem="n5f-D6-714" secondAttribute="height" multiplier="1:1" id="R6n-fk-MGI"/>
+                                        <constraint firstItem="4l1-7G-Hj0" firstAttribute="leading" secondItem="n5f-D6-714" secondAttribute="leading" constant="20" id="cZl-Fw-MWO"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4l1-7G-Hj0" secondAttribute="bottom" constant="20" id="ggS-Rb-482"/>
+                                        <constraint firstItem="rf9-HH-iS2" firstAttribute="bottom" secondItem="n5f-D6-714" secondAttribute="centerY" id="kYG-nm-9Eb"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="n5f-D6-714" firstAttribute="width" secondItem="n5f-D6-714" secondAttribute="height" multiplier="1:1" id="agO-RW-MIN"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgm-Tl-fgP">
+                    <rect key="frame" x="8" y="651" width="399" height="1"/>
+                    <color key="backgroundColor" red="0.90204250809999997" green="0.90201544759999996" blue="0.90203082560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="WEj-oX-4Aw"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18093">
+                    <rect key="frame" x="8" y="664" width="399" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="18094"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <state key="normal" title="No tengo síntomas">
+                        <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Cefalea intensa (dolor de cabeza intenso), tos persistente o disnea (dificultad respiratoria)" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="19733" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="0">
+                    <rect key="frame" x="8" y="582" width="399" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="0.4" alpha="1"/>
+                    <constraints>
+                        <constraint id="19737" firstAttribute="height" constant="48" relation="greaterThanOrEqual"/>
+                    </constraints>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="651" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="1300"/>
+                <constraint firstAttribute="trailing" secondItem="651" secondAttribute="trailing" constant="8" id="1301"/>
+                <constraint firstItem="651" firstAttribute="top" secondItem="2" secondAttribute="top" constant="30" id="1303"/>
+                <constraint firstItem="1469" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="1470"/>
+                <constraint firstAttribute="trailing" secondItem="1469" secondAttribute="trailing" constant="8" id="1471"/>
+                <constraint firstItem="1469" firstAttribute="top" secondItem="651" secondAttribute="bottom" constant="30" id="1472"/>
+                <constraint firstAttribute="bottomMargin" secondItem="18093" secondAttribute="bottom" constant="14" id="18412"/>
+                <constraint firstAttribute="trailing" secondItem="18093" secondAttribute="trailing" constant="8" id="18435"/>
+                <constraint firstItem="18093" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="18458"/>
+                <constraint firstItem="kgm-Tl-fgP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WSA-Sg-YTr" secondAttribute="bottom" constant="15" id="2s5-jS-e75"/>
+                <constraint firstAttribute="trailing" secondItem="Ndq-DP-unD" secondAttribute="trailing" constant="8" id="4oJ-ZD-I9P"/>
+                <constraint firstAttribute="trailing" secondItem="WSA-Sg-YTr" secondAttribute="trailing" constant="8" id="Bz6-V0-lfN"/>
+                <constraint firstAttribute="trailing" secondItem="kgm-Tl-fgP" secondAttribute="trailing" constant="8" id="IRp-HC-jaw"/>
+                <constraint firstItem="Ndq-DP-unD" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="WrO-gU-tzX"/>
+                <constraint firstItem="WSA-Sg-YTr" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="bZz-Wm-I53"/>
+                <constraint firstItem="Ndq-DP-unD" firstAttribute="top" secondItem="1469" secondAttribute="bottom" constant="30" id="kGz-fW-Xif"/>
+                <constraint firstItem="18093" firstAttribute="top" secondItem="kgm-Tl-fgP" secondAttribute="bottom" constant="12" id="ufB-6k-w9K"/>
+                <constraint firstItem="WSA-Sg-YTr" firstAttribute="top" secondItem="Ndq-DP-unD" secondAttribute="bottom" constant="30" id="uy9-nA-QFG"/>
+                <constraint firstItem="kgm-Tl-fgP" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="xZz-at-YeE"/>
+                <constraint id="19734" firstItem="19733" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8"/>
+                <constraint id="19735" firstAttribute="trailing" secondItem="19733" secondAttribute="trailing" constant="8"/>
+                <constraint id="19736" firstItem="kgm-Tl-fgP" firstAttribute="centerY" secondItem="19733" secondAttribute="bottom" constant="21"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="32.799999999999997" y="53.973013493253376"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_fever" width="46" height="46"/>
+        <image name="ico_headache" width="46" height="46"/>
+    </resources>
+</document>

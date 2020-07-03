@@ -1,0 +1,44 @@
+mat-card {
+  margin-bottom: 1em;
+}
+
+.passport {
+  padding: 0.3125em !important;
+}
+
+
+.notifications-button {
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+.employee-data strong {
+  font-size: 0.725em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 0.95px;
+}
+
+p {
+  font-size: 1.1em;
+  margin: 0.5em 0 0.5em 0;
+  color: var(--font-color-lighter)
+}
+
+.risk-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 22px;
+}
+
+.subcontent {
+  font-size: 0.925em;
+  color: #666666;
+  margin: 10px 0;
+}
+
+.new-pass {
+  text-align: center;
+  font-size: 1.5em;
+}

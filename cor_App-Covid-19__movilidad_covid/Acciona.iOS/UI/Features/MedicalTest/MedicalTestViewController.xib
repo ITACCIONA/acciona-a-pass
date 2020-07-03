@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MedicalTestViewController">
+            <connections>
+                <outlet property="buttonBack" destination="578" id="name-outlet-578"/>
+                <outlet property="contentView" destination="3608" id="name-outlet-3608"/>
+                <outlet property="labelTitle" destination="581" id="name-outlet-581"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="577">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="578">
+                            <rect key="frame" x="16" y="48" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="579"/>
+                                <constraint firstAttribute="width" constant="24" id="580"/>
+                            </constraints>
+                            <color key="tintColor" red="0.84313725490000002" green="0.22352941179999999" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="back"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formulario de alta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="581">
+                            <rect key="frame" x="77.5" y="49.5" width="220" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="582"/>
+                                <constraint firstAttribute="width" constant="220" id="583"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="584"/>
+                        <constraint firstItem="578" firstAttribute="leading" secondItem="577" secondAttribute="leading" constant="16" id="585"/>
+                        <constraint firstItem="578" firstAttribute="centerY" secondItem="577" secondAttribute="centerY" constant="15" id="586"/>
+                        <constraint firstItem="581" firstAttribute="centerY" secondItem="577" secondAttribute="centerY" constant="15" id="587"/>
+                        <constraint firstItem="581" firstAttribute="centerX" secondItem="577" secondAttribute="centerX" id="588"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="589">
+                    <rect key="frame" x="0.0" y="90" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.90204250812530518" green="0.90201544761657715" blue="0.9020308256149292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="590"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3608">
+                    <rect key="frame" x="0.0" y="90.5" width="375" height="576.5"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="577" firstAttribute="top" secondItem="2" secondAttribute="top" id="1509"/>
+                <constraint firstItem="577" firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="1663"/>
+                <constraint firstItem="577" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="1817"/>
+                <constraint firstItem="589" firstAttribute="top" secondItem="577" secondAttribute="bottom" id="1971"/>
+                <constraint firstItem="589" firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="2125"/>
+                <constraint firstItem="589" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="2279"/>
+                <constraint firstItem="3608" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="3682"/>
+                <constraint firstItem="3608" firstAttribute="bottom" secondItem="2" secondAttribute="bottom" id="3707"/>
+                <constraint firstItem="3608" firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="3732"/>
+                <constraint firstItem="3608" firstAttribute="top" secondItem="589" secondAttribute="centerY" id="5672"/>
+            </constraints>
+            <point key="canvasLocation" x="34" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="20" height="20"/>
+    </resources>
+</document>

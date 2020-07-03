@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"            
+        android:background="#FFFFFF">
+
+
+     <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">            
+
+                <LinearLayout
+                android:id="@+id/llStepBars"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"            
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="3dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="4dp"
+                            android:backgroundTint="@color/colorRed"
+                            android:background="@drawable/button_red"/>
+
+                                    <View
+                            android:layout_width="1dp"
+                            android:layout_height="3dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="4dp"
+                            android:backgroundTint="@color/colorRed"
+                            android:background="@drawable/button_red"/>
+
+                                 <View
+                            android:layout_width="1dp"
+                            android:layout_height="3dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="4dp"
+                            android:backgroundTint="@color/colorVeryLightPink"
+                            android:background="@drawable/button_red"/>
+
+                                    <View
+                            android:layout_width="1dp"
+                            android:layout_height="3dp"
+                            android:layout_weight="1"                
+                            android:backgroundTint="@color/colorVeryLightPink"
+                            android:background="@drawable/button_red"/>
+
+
+                </LinearLayout>
+
+         <TextView
+                android:id="@+id/tvDescription"
+                android:layout_below="@+id/llStepBars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="@string/medical_test_description_step_two"
+                />
+
+
+        <ImageView
+                android:id="@+id/ivStep"
+                android:layout_below="@id/tvDescription"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:background="@drawable/img_covid"/>
+
+        </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"  
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"    
+        android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/btNo"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/medical_test_description_button_no_text"
+                android:background="@drawable/button_white"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/btYes"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"   
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/medical_test_description_button_yes_text"
+                android:background="@drawable/button_white"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+         </LinearLayout>
+
+    <TextView
+        android:id="@+id/btSkipQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/medical_test_skip_question"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"/>
+
+    </LinearLayout>

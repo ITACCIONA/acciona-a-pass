@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">A-Pass</string>
+    <string name="filter_date_format">dd/MM/yyyy</string>
+    <string name="msg_ok">OK</string>
+    <string name="msg_yes">Sí</string>
+    <string name="msg_no">No</string>
+    <string name="msg_cancel">Cancelar</string>
+    <string name="login_error">Se ha producido un error, por favor verifique user y password</string>
+    <string name="no_permission">La aplicación no tiene los permisos necesarios para realizar esta operación. Revise los ajustes y vuelva a probar.</string>
+    <string name="host_error">Por favor verifique su conexión</string>
+    <string name="generic_error">Se ha producido un error realizando la operación</string>
+    <string name="close">Cerrar</string>
+    <string name="no_connection">La aplicación parece no tener conexión, por favor revise los ajustes de red.</string>
+    <string name="error_401">La sesión ha caducado. Por favor vuelva a identificarse</string>
+    <string name="error_401_user">El usuario no tiene permiso para usar la aplicación, por favor pongase en contacto con un administrador.</string>
+    <string name="no_file_permission">La aplicación no tiene los permisos necesarios para gestionar ficheros. Revise los ajustes y vuelva a probar.</string>
+    <string name="send_email">Enviar email</string>
+    <string name="version">Versión {0}</string>
+    <string name="listedittext_search_hint">Buscar...</string>
+    <string name="listedittext_cancel">Cancelar</string>
+
+    <!-- Splash -->
+    <string name="recomended_update">Hay una nueva versión de la aplicación, te recomendamos actualizar antes de continuar</string>
+    <string name="mandatory_update">Hay una nueva versión de la aplicación, tienes que actualizarla para poder entrar</string>
+    <string name="msg_continue">Continuar</string>
+    <string name="msg_download">Descargar</string>
+
+    <!-- Login -->
+    <string name="wellcome">BIENVENID@</string>
+    <string name="username">NOMBRE DE USUARIO</string>
+    <string name="username_hint">Usuario</string>
+    <string name="password">CONTRASEÑA</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="init_session">Iniciar sesión</string>
+    <string name="login_connecting_message">Estamos trabajando en ello…</string>
+    <string name="login_error_message">Algo ha salido mal…</string>
+
+
+    <!-- Main -->
+    <string name="disconnect_ask">¿Seguro que desea desconectar?</string>
+    <string name="main_passport">Pasaporte</string>
+    <string name="main_panic">Me\nencuentro\nmal</string>
+    <string name="main_profile">Mi perfil</string>
+
+    <!-- Alarm -->
+    <string name="alarm_contact_title">Videoconsulta médica</string>
+    <string name="alarm_decription_message">Servicio de Videoconsulta médica disponible</string>
+    <string name="alarm_needs_help">¿Necesitas ayuda?</string>
+    <string name="alarm_call_to">Llamar al {0}</string>
+    <string name="alarm_description">El Centro de seguridad de Acciona está operativo y disponible las <b>24 horas</b> durante los <b>365 días</b> del año.</string>
+    <string name="alarm_phone">+34 91 663 01112</string>
+    <string name="alarm_email">seguridadCorporativa@foo.bar</string>
+
+    <!-- Alerts -->
+    <string name="alerts_notifications">Notificaciones</string>
+    <string name="alerts_not_read">Sin leer (<b>{0}</b>)</string>
+    <string name="alerts_read">Leídas (<b>{0}</b>)</string>
+
+    <!-- Alert Detail -->
+
+    <!-- Health -->
+    <string name="health_statement">Declaración responsable</string>
+    <string name="health_title">¿Has tenido hoy alguno de los siguientes síntomas relacionados con COVID-19?</string>
+    <string name="health_description">Selecciona todos los sintomas que tengas.\nSi no tienes niguno, haz click en \'No tengo síntomas\'</string>
+    <string name="health_symptom_1">Fiebre</string>
+    <string name="health_symptom_2">Otros Síntomas</string>
+    <string name="health_symptom_2_help">Fiebre: temperatura corporal superior a 37ºC.\nOtros síntomas: tos persistente, dificultad respiratoria, dolor de garganta, pérdida del olfato o del gusto, dolor de cabeza intenso, diarrea, erupciones en la piel</string>
+    <string name="health_symptom_3">Fatiga. Dificultad repiratoria</string>
+    <string name="health_symptom_4">Tos</string>
+    <string name="health_button_first_no_symptoms">No tengo síntomas</string>
+    <string name="health_button_first_yes_symptoms">Sí, tengo síntomas</string>
+    <string name="health_step_two_description">¿Ha tenido contacto estrecho* con alguna persona infectada confirmada en los últimos 14 días?</string>
+    <string name="health_step_two_description_subtitle"><![CDATA[(Si dispone de una valoración médica que haya descartado el riesgo asociado a ese contacto estrecho, deberá marcar <b><font color="black">NO</font></b>)]]></string>
+    <string name="health_step_two_help1"><![CDATA[*A estos efectos, se entiende como <b>contacto estrecho</b>:]]></string>
+    <string name="health_step_two_help2"><![CDATA[<ul><li>Haber proporcionado cuidados a la persona infectada: trabajadores sanitarios que no han utilizado las medidas de protección adecuadas, miembros familiares o personas que tengan otro tipo de contacto físico similar.<br/></li><li>Ser conviviente, familiar o personas que haya estado en el mismo lugar que la persona infectada a una distancia menor de 2 metros durante un tiempo de al menos 15 minutos.</li></ul>]]></string>
+    <string name="health_step_two_button_yes">Sí</string>
+    <string name="health_step_two_button_no">No</string>
+    <string name="health_fiebre_confirm">"- Fiebre > 37º"</string>
+    <string name="health_sintomas_confirm">"- Otros síntomas"</string>
+    <string name="health_contacto_confirm">"- Contacto estrecho"</string>
+    <string name="health_ask_confirm">"¿Desea confirmar los siguientes síntomas?\n"</string>
+    <string name="health_yes_confirm">"Sí, confirmar síntomas"</string>
+
+    <!-- medical test -->
+    <string name="medical_test_title_steps">Formulario de alta</string>
+    <string name="medical_test_title_steps_modify">Modificar Datos médicos</string>
+    <string name="medical_test_title_step_final">Confirmación</string>
+
+    
+    <string name="medical_test_description_step_one">¿Perteneces a alguno de los siguientes colectivos?</string>
+    <string name="medical_test_description_step_two">¿Has sido diagnosticado por Covid-19 en algún momento?</string>
+    <string name="medical_test_description_step_three">¿Realizas alguno de los siguientes trabajos?</string>
+    <string name="medical_test_description_step_final">¿Confirma que los datos son correctos?</string>
+    <string name="medical_test_description_two_step_final">Si alguno de los datos no es correcto pulsa sobre el mismo para modificarlo.</string>
+
+    <string name="medical_test_step_one_symptom_one">Mayores de 60 años</string>
+    <string name="medical_test_step_one_symptom_two">Diabetes</string>
+    <string name="medical_test_step_one_symptom_three">Enfermedades cardiovasculares / HTA</string>
+    <string name="medical_test_step_one_symptom_four">Enfermedades pulmonares crónicas</string>
+    <string name="medical_test_step_one_symptom_five">Cáncer en fase de tratamiento activo</string>
+    <string name="medical_test_step_one_symptom_six">Inmunodeficiencias</string>
+    <string name="medical_test_step_one_symptom_seven">Embarazo</string>
+
+    <string name="medical_test_step_three_symptom_one">Personal sanitario</string>
+    <string name="medical_test_step_three_symptom_two">Celadores</string>
+    <string name="medical_test_step_three_symptom_three">TIGAS</string>
+    <string name="medical_test_step_three_symptom_four">Personal de ambulancia</string>
+
+
+    <string name="medical_test_final_step_risk_text">Colectivo de riesgo</string>
+    <string name="medical_test_final_step_diagnosed_text">Diagnosticado de Covid-19</string>
+    <string name="medical_test_final_step_danger_work_text">Trabajo con alto grado de exposición</string>
+
+    <string name="medical_test_description_button_yes_text">Sí</string>
+    <string name="medical_test_description_button_no_text">No</string>
+    <string name="medical_test_description_button_confirm_form_text">Confirmar datos</string>
+    <string name="medical_test_skip_question">No lo sé, omitir pregunta</string>
+
+    <string name="conclusion_no">No</string>
+    <string name="conclusion_yes">Sí</string>
+    <string name="conclusion_nsnc">-</string>
+
+
+    <!-- QR Code -->
+    <string name="qrcode_help_normal">Acerca el código al lector</string>
+    <string name="qrcode_help_caducado">Código deshabilitado. Renueva tu declaración para habilitar el QR</string>
+    <string name="qrcode_help_infectado">Código deshabilitado por observación de síntomas</string>
+    <string name="qrcode_ill">Me encuentro mal</string>
+    <string name="qrcode_renew">Renovar declaración</string>
+    <string name="access_allowed">Con acceso</string>
+    <string name="access_not_allowed">Sin acceso</string>
+    <string name="qrcode_todo"><![CDATA[<u>¿Qué hago ahora?</u>]]></string>
+    <string name="change_status_title">Tu pasaporte ha cambiado de estado.</string>
+    <string name="change_status_subtitle">No podrás acceder a tu centro de trabajo. Por favor, sigue las indicaciones.</string>
+    <string name="change_status_button">¿Qué hago ahora?</string>
+
+    <!-- Profile -->
+    <string name="profile_data_contact_description">Número de teléfono y correo electrónico</string>
+    <string name="profile_data_contact_title">Datos de contacto</string>
+    <string name="profile_medical_data_title">Datos médicos</string>
+    <string name="profile_medical_data_description">Información médica inicial</string>
+    <string name="profile_center_data_title">Centro de trabajo</string>
+    <string name="profile_logout_button_text">Cerrar sesión</string>
+    <string name="profile_hello"><![CDATA[Hola, <b>{0}</b>]]></string>
+    <string name="profile_not_user">¿No eres {0}?</string>
+
+    <!-- Contact Data -->
+    <string name="contact_data_fragment_title">Datos de contacto</string>
+    <string name="contact_data_telephone_label">Teléfono móvil</string>
+    <string name="contact_data_mail_label">Correo electrónico</string>
+    <string name="contact_data_save_modify_data_button_text">Guardar datos</string>
+    <string name="contact_data_save_modify_data_ok">Datos guardados correctamente</string>
+
+
+    <!-- Medical Info -->
+    <string name="medical_info_description_two_text">Solo puede modificar manualmente su pertenecencia a colectivo de riesgo.</string>
+    <string name="medical_info_title">Datos médicos</string>
+    <string name="medical_info_button_text">Modificar datos</string>
+    <string name="alarm_skype_donwload_button">Descarga Skype empresarial</string>
+    <string name="alarm_request_email_appointment">Solicitar cita mediante email</string>
+    <string name="alarm_fragment_point_one">Solicita cita enviando un correo, indicando tu ubicación, a la siguiente dirección:</string>
+    <string name="alarm_fragment_contact_mail">consultaMedica@foo.bar</string>
+    <string name="alarm_fragment_point_one_2">Es importante que nos indiques tu ubicación para conocer tu franja horaria.</string>
+    <string name="alarm_fragment_point_two">Se confirmará tu cita y se te atenderá según disponibilidad.</string>
+    <string name="alarm_fragment_point_three">Tras confirmar la cita, la Videoconsulta se realizará por Skype empresarial. Recuerda tenerlo instalado.</string>
+
+    <!-- Offline -->
+    <string name="offline_name">Sin conexión</string>
+    <string name="offline_continue">Conectarse</string>
+    <string name="offline_error">Aparentemente continúa sin conexión</string>
+    <string name="offline_qr_timeout">Renueva tu declaración para habilitar el pasaporte</string>
+
+        <!-- Language -->
+    <string name="language_title">Idioma</string>
+    <string name="language_modify">Modificar idioma</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_english">Inglés</string>
+    <string name="language_confirm">Se va a proceder a reiniciar la aplicación para aplicar los cambios</string>
+
+    <!-- passport states -->
+    <string name="state_caducado"><![CDATA[<b>Caducado</b>]]></string>
+    <string name="state_multiple_days"><![CDATA[Válido para <b>dd días </b>]]></string>
+    <string name="state_single_day"><![CDATA[Válido hasta el <b>dd de mm</b>]]></string>
+    <string name="state_this_day"><![CDATA[Válido el <b>dd de mm</b>]]></string>
+
+    <!-- Working center -->
+    <string name="center_title">Centro de trabajo</string>
+    <string name="center_modify">Guardar</string>
+    <string name="center_country">"País *"</string>
+    <string name="center_city">Ciudad</string>
+    <string name="center_center">Centro *</string>
+    <string name="center_other">Otro</string>
+    <string name="center_mandatory">* Campos obligatorios</string>
+</resources>

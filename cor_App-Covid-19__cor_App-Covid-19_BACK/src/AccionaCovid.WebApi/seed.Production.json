@@ -1,0 +1,1928 @@
+﻿{
+  "ColorEstado": [
+    {
+      "Nombre": "Gris",
+      "Prioridad": 20,
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Verde",
+      "Prioridad": 10,
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Rojo",
+      "Prioridad": 0,
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    }
+  ],
+  "TipoEstado": [
+    {
+      "Nombre": "EstadoInicial",
+      "Prioridad": 70,
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Infectado",
+      "Prioridad": 10,
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "NoSintomas",
+      "Prioridad": 60,
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Sintomas",
+      "Prioridad": 30,
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Contacto",
+      "Prioridad": 40,
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Traceo",
+      "Prioridad": 50,
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Recaido",
+      "Prioridad": 20,
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "DeclaracionCaducada",
+      "Prioridad": 80,
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "EstadosEspeciales",
+      "Prioridad": 0,
+      "LastActionDate": "05/19/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "VerdePapel",
+      "Prioridad": 65,
+      "LastActionDate": "05/19/2020",
+      "LastAction": "CREATE"
+    }
+  ],
+  "EstadoPasaporte": [
+    {
+      "Nombre": "EstadoInicial",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": false,
+      "IdTipoEstado": 1,
+      "IdColorEstado": 1,
+      "EstadoId": 0,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Estado Inicial",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Initial State",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Afectado",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": true,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": false,
+      "IdTipoEstado": 2,
+      "IdColorEstado": 3,
+      "EstadoId": 1,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Afectado",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Affected",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "NoSintomas1",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": true,
+      "Pcrult": false,
+      "TestInmuneIgG": false,
+      "TestInmuneIgM": false,
+      "Comment": false,
+      "IdTipoEstado": 3,
+      "IdColorEstado": 2,
+      "EstadoId": 2,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Asintomatico PCR reconvertido no AC",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Asymptomatic non-AC reconverted PCR",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "NoSintomas2",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": true,
+      "Pcrult": false,
+      "TestInmuneIgG": true,
+      "TestInmuneIgM": false,
+      "Comment": false,
+      "IdTipoEstado": 3,
+      "IdColorEstado": 2,
+      "EstadoId": 3,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Asintomatico PCR reconvertido IGG+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Asymptomatic reconverted IGG+ PCR",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "NoSintomas3",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": true,
+      "TestInmuneIgM": false,
+      "Comment": false,
+      "IdTipoEstado": 3,
+      "IdColorEstado": 2,
+      "EstadoId": 4,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Asintomatico no PCR IGG+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Asymptomatic non-PCR IGG+",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "NoSintomas4",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": false,
+      "TestInmuneIgM": false,
+      "Comment": false,
+      "IdTipoEstado": 3,
+      "IdColorEstado": 2,
+      "EstadoId": 5,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Asintomatico no PCR no AC",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Asymptomatic no PCR no AC",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "NoSintomas5",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": false,
+      "IdTipoEstado": 3,
+      "IdColorEstado": 2,
+      "EstadoId": 6,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Asintomatico no PCR no test",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Asymptomatic no PCR no test",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "NoSintomas6",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": true,
+      "Pcrult": false,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": false,
+      "IdTipoEstado": 3,
+      "IdColorEstado": 2,
+      "EstadoId": 7,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Asintomatico PCR reconvertido no test",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Asymptomatic reconverted PCR no test",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "NoSintomas7",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": true,
+      "TestInmuneIgM": true,
+      "Comment": false,
+      "IdTipoEstado": 3,
+      "IdColorEstado": 3,
+      "EstadoId": 8,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Asintomatico no PCR IGG+ IGM+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Asymptomatic non-PCR IGG+ IGM+",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "NoSintomas8",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": false,
+      "TestInmuneIgM": true,
+      "Comment": false,
+      "IdTipoEstado": 3,
+      "IdColorEstado": 3,
+      "EstadoId": 9,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Asintomatico no PCR IGM+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Asymptomatic non-PCR IGM+",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Sintomas1",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": true,
+      "Pcrult": false,
+      "TestInmuneIgG": false,
+      "TestInmuneIgM": false,
+      "Comment": true,
+      "IdTipoEstado": 4,
+      "IdColorEstado": 3,
+      "EstadoId": 11,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Sintomatico PCR reconvertido no AC",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Symptomatic reconverted non-AC PCR",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Sintomas2",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": true,
+      "Pcrult": false,
+      "TestInmuneIgG": true,
+      "TestInmuneIgM": false,
+      "Comment": false,
+      "IdTipoEstado": 4,
+      "IdColorEstado": 2,
+      "EstadoId": 10,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Sintomatico PCR reconvertido IGG+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Symptomatic reconverted PCR IGG+",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Sintomas3",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": true,
+      "IdTipoEstado": 4,
+      "IdColorEstado": 3,
+      "EstadoId": 12,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Sintomatico no PCR no test",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Symptomatic no PCR no test",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Sintomas4",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": true,
+      "Pcrult": false,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": true,
+      "IdTipoEstado": 4,
+      "IdColorEstado": 3,
+      "EstadoId": 13,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Sintomatico PCR reconvertido no test",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Symptomatic reconverted PCR no test",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Sintomas5",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": true,
+      "TestInmuneIgM": false,
+      "Comment": false,
+      "IdTipoEstado": 4,
+      "IdColorEstado": 2,
+      "EstadoId": 14,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Sintomatico no PCR IGG+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Symptomatic non PCR IGG+",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Sintomas6",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": true,
+      "TestInmuneIgM": true,
+      "Comment": true,
+      "IdTipoEstado": 4,
+      "IdColorEstado": 3,
+      "EstadoId": 15,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Sintomatico no PCR IGG+ IGM+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Symptomatic non PCR IGG+ IGM+",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Sintomas7",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": false,
+      "TestInmuneIgM": false,
+      "Comment": true,
+      "IdTipoEstado": 4,
+      "IdColorEstado": 3,
+      "EstadoId": 16,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Sintomatico no PCR no AC",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Symptomatic no PCR no AC",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Sintomas8",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": false,
+      "TestInmuneIgM": true,
+      "Comment": true,
+      "IdTipoEstado": 4,
+      "IdColorEstado": 3,
+      "EstadoId": 17,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Sintomatico no PCR IGM+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Symptomatic non-PCR IGM+",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Contacto1",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": true,
+      "Pcrult": false,
+      "TestInmuneIgG": true,
+      "TestInmuneIgM": false,
+      "Comment": false,
+      "IdTipoEstado": 5,
+      "IdColorEstado": 2,
+      "EstadoId": 18,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto estrecho PCR reconvertido IGG+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Close contact reconverted PCR IGG+",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Contacto2",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": true,
+      "Pcrult": false,
+      "TestInmuneIgG": false,
+      "TestInmuneIgM": false,
+      "Comment": true,
+      "IdTipoEstado": 5,
+      "IdColorEstado": 3,
+      "EstadoId": 19,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto estrecho PCR reconvertido no AC",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Close contact reconverted non-AC PCR",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Contacto3",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": true,
+      "IdTipoEstado": 5,
+      "IdColorEstado": 3,
+      "EstadoId": 31,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto estrecho no PCR no test",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Close contact no PCR no test",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Contacto4",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": true,
+      "Pcrult": false,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": false,
+      "IdTipoEstado": 5,
+      "IdColorEstado": 2,
+      "EstadoId": 27,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto estrecho PCR reconvertido no test",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Close contact reconverted PCR no test",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Contacto5",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": true,
+      "TestInmuneIgM": false,
+      "Comment": false,
+      "IdTipoEstado": 5,
+      "IdColorEstado": 2,
+      "EstadoId": 28,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto estrecho no PCR IGG+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Close contact no PCR IGG+",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Contacto6",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": true,
+      "TestInmuneIgM": true,
+      "Comment": true,
+      "IdTipoEstado": 5,
+      "IdColorEstado": 3,
+      "EstadoId": 29,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto estrecho no PCR IGG+ IGM+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Close contact no PCR IGG+ IGM+",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Contacto7",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": false,
+      "TestInmuneIgM": false,
+      "Comment": true,
+      "IdTipoEstado": 5,
+      "IdColorEstado": 3,
+      "EstadoId": 20,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto estrecho no PCR no AC",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Close contact no PCR no AC",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Contacto8",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": false,
+      "TestInmuneIgM": true,
+      "Comment": true,
+      "IdTipoEstado": 5,
+      "IdColorEstado": 3,
+      "EstadoId": 30,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto estrecho no PCR IGM+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Close contact no PCR IGM+",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Tracking1",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": true,
+      "Pcrult": false,
+      "TestInmuneIgG": true,
+      "TestInmuneIgM": false,
+      "Comment": true,
+      "IdTipoEstado": 6,
+      "IdColorEstado": 2,
+      "EstadoId": 21,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto traceado PCR reconvertido IGG+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "IGG+ reconverted PCR traced contact",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Tracking2",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": true,
+      "Pcrult": false,
+      "TestInmuneIgG": false,
+      "TestInmuneIgM": false,
+      "Comment": true,
+      "IdTipoEstado": 6,
+      "IdColorEstado": 2,
+      "EstadoId": 22,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto traceado PCR reconvertido no AC",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Non-AC reconverted PCR traced contact",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Tracking3",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": true,
+      "IdTipoEstado": 6,
+      "IdColorEstado": 2,
+      "EstadoId": 36,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto traceado no PCR no test",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Traced contact no PCR no test",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Tracking4",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": true,
+      "Pcrult": false,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": true,
+      "IdTipoEstado": 6,
+      "IdColorEstado": 2,
+      "EstadoId": 32,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto traceado PCR reconvertido no test",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Traced contact reconverted PCR no test",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Tracking5",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": true,
+      "TestInmuneIgM": false,
+      "Comment": true,
+      "IdTipoEstado": 6,
+      "IdColorEstado": 2,
+      "EstadoId": 33,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto traceado no PCR IGG+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Traced contact no PCR IGG+",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Tracking6",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": true,
+      "TestInmuneIgM": true,
+      "Comment": true,
+      "IdTipoEstado": 6,
+      "IdColorEstado": 3,
+      "EstadoId": 34,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto traceado no PCR IGG+ IGM+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Non-PCR traced contact IGG+ IGM+",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Tracking7",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": false,
+      "TestInmuneIgM": false,
+      "Comment": true,
+      "IdTipoEstado": 6,
+      "IdColorEstado": 2,
+      "EstadoId": 23,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto traceado no PCR no AC",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Traced contact no PCR no AC",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Tracking8",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": false,
+      "TestInmuneIgM": true,
+      "Comment": true,
+      "IdTipoEstado": 6,
+      "IdColorEstado": 3,
+      "EstadoId": 35,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Contacto traceado no PCR IGM+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Traced non-PCR IGM+ contact",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Recaida1",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": true,
+      "Pcrult": true,
+      "TestInmuneIgG": true,
+      "TestInmuneIgM": null,
+      "Comment": false,
+      "IdTipoEstado": 7,
+      "IdColorEstado": 3,
+      "EstadoId": 24,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Recaida AC+",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Relapse AC+",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Recaida2",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": true,
+      "Pcrult": true,
+      "TestInmuneIgG": false,
+      "TestInmuneIgM": null,
+      "Comment": false,
+      "IdTipoEstado": 7,
+      "IdColorEstado": 3,
+      "EstadoId": 25,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Recaida no AC",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Relapse not AC",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "DeclaracionCaducada1",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": false,
+      "IdTipoEstado": 8,
+      "IdColorEstado": 3,
+      "EstadoId": 26,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Declaración Caducada",
+          "Idioma": "es",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Expired Declaration",
+          "Idioma": "en",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Rojo-PRL",
+      "LastActionDate": "05/19/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": false,
+      "IdTipoEstado": 9,
+      "IdColorEstado": 3,
+      "EstadoId": 37,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Rojo PRL",
+          "Idioma": "es",
+          "LastActionDate": "05/19/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "PRL Red",
+          "Idioma": "en",
+          "LastActionDate": "05/19/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Rojo-Baja",
+      "LastActionDate": "05/19/2020",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": false,
+      "IdTipoEstado": 9,
+      "IdColorEstado": 1,
+      "EstadoId": 38,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Rojo Baja",
+          "Idioma": "es",
+          "LastActionDate": "05/19/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Down Red",
+          "Idioma": "en",
+          "LastActionDate": "05/19/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "VerdePapel",
+      "LastActionDate": "2020-05-19",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": false,
+      "IdTipoEstado": 10,
+      "IdColorEstado": 2,
+      "EstadoId": 39,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Verde Papel",
+          "Idioma": "es",
+          "LastActionDate": "2020-05-19",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Green Paper",
+          "Idioma": "en",
+          "LastActionDate": "2020-05-19",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "RojoPapel",
+      "LastActionDate": "2020-05-19",
+      "LastAction": "CREATE",
+      "DiasValidez": 1,
+      "Pcrant": null,
+      "Pcrult": null,
+      "TestInmuneIgG": null,
+      "TestInmuneIgM": null,
+      "Comment": false,
+      "IdTipoEstado": 4,
+      "IdColorEstado": 3,
+      "EstadoId": 40,
+      "EstadoPasaporteIdioma": [
+        {
+          "Nombre": "Rojo Papel",
+          "Idioma": "es",
+          "LastActionDate": "2020-05-19",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Red Paper",
+          "Idioma": "en",
+          "LastActionDate": "2020-05-19",
+          "LastAction": "CREATE"
+        }
+      ]
+    }
+  ],
+  "Division": [
+    {
+      "IdWorkday": "55000000",
+      "Nombre": "Grupo",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "IdWorkday": "55000001",
+      "Nombre": "Construcción",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "IdWorkday": "55006472",
+      "Nombre": "Industrial",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "IdWorkday": "55006625",
+      "Nombre": "Concesiones",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "IdWorkday": "55007299",
+      "Nombre": "Inmobiliaria",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "IdWorkday": "55010986",
+      "Nombre": "Agua",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "IdWorkday": "55011885",
+      "Nombre": "APD",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "IdWorkday": "55011906",
+      "Nombre": "Bodegas ",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "IdWorkday": "55012100",
+      "Nombre": "Bestinver",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "IdWorkday": "55012185",
+      "Nombre": "Corporación",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "IdWorkday": "55224132",
+      "Nombre": "Energía",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "IdWorkday": "55228276",
+      "Nombre": "Service",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "IdWorkday": "55242066",
+      "Nombre": "Otras Actividades",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "IdWorkday": "55250209",
+      "Nombre": "Infraestructuras",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    }
+  ],
+  "TipoParametroMedico": [
+    {
+      "Nombre": "Analitica",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "ParametroMedico": [
+        {
+          "Nombre": "Leucopenia",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "VSG",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "LDH",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Dimerob",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "PCR",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "IgG",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "IgM",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Imagen",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "ParametroMedico": [
+        {
+          "Nombre": "Neunomia1",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        },
+        {
+          "Nombre": "Neunomia2",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    },
+    {
+      "Nombre": "Otros",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "ParametroMedico": [
+        {
+          "Nombre": "TemperaturaAlta",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE"
+        }
+      ]
+    }
+  ],
+  "TipoSintomas": [
+    {
+      "Nombre": "Fiebre",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "OtrosSintomas",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Contacto",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    }
+  ],
+  "FactorRiesgo": [
+    {
+      "Nombre": "AltaExposicion",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Vulnerables",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Positivo",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    }
+  ],
+  "Role": [
+    {
+      "Nombre": "ServicioMedico",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "PRL",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Empleado",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Administrator",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Comunicacion",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "RRHHDesc",
+      "LastActionDate": "05/19/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "RRHHCent",
+      "LastActionDate": "05/19/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "GestorContratas",
+      "LastActionDate": "05/27/2020",
+      "LastAction": "CREATE"
+    }
+  ],
+  "Pais": [
+    {
+      "Nombre": "Spain",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE",
+      "Region": [
+        {
+          "Nombre": "Andalucía",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Almería",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Cádiz",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Córdoba",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Granada",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Huelva",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Jaén",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Málaga",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Sevilla",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Aragón",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Huesca",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Teruel",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Zaragoza",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Asturias, Principado de",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Asturias",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Balears, Illes",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Balears, Illes",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Canarias",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Palmas, Las",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Santa Cruz de Tenerife",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Cantabria",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Cantabria",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Castilla y León",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Ávila",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Burgos",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "León",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Palencia",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Salamanca",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Segovia",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Soria",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Valladolid",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Zamora",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Castilla-La Mancha",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Albacete",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Ciudad Real",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Cuenca",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Guadalajara",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Toledo",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Cataluña",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Barcelona",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Girona",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Lleida",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Tarragona",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Comunitat Valenciana",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Alicante/Alacant",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Castellón/Castelló",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Valencia/València",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Extremadura",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Badajoz",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Cáceres",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Galicia",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Coruña, A",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Lugo",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Ourense",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Pontevedra",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Madrid, Comunidad de",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Madrid",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Murcia, Región de",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Murcia",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Navarra, Comunidad Foral de",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Navarra",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "País Vasco",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Araba/Álava",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Bizkaia",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            },
+            {
+              "Nombre": "Gipuzkoa",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Rioja, La",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Rioja, La",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Ceuta",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Ceuta",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        },
+        {
+          "Nombre": "Melilla",
+          "LastActionDate": "12/12/2020",
+          "LastAction": "CREATE",
+          "Area": [
+            {
+              "Nombre": "Melilla",
+              "LastActionDate": "12/12/2020",
+              "LastAction": "CREATE"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Tecnologia": [
+    {
+      "Nombre": "Biocombustibles",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Biomasa",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Cogeneración",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Eólica",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Fotovoltaica",
+      "LastActionDate": "12/12/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Hidráulica",
+      "LastActionDate": "05/19/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Termosolar",
+      "LastActionDate": "05/19/2020",
+      "LastAction": "CREATE"
+    },
+    {
+      "Nombre": "Transversal",
+      "LastActionDate": "05/19/2020",
+      "LastAction": "CREATE"
+    }
+  ],
+  "EstadoObra": [
+    {
+      "Nombre": "En curso"
+    },
+    {
+      "Nombre": "Finalizada"
+    },
+    {
+      "Nombre": "Mantenimiento"
+    },
+    {
+      "Nombre": "Parada"
+    }
+  ]
+}
+  

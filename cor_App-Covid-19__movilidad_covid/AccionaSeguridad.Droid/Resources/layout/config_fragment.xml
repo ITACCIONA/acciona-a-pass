@@ -1,0 +1,146 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rootFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:padding="16dp">
+            <ImageView
+                    android:id="@+id/buttonBack"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/back"
+                    android:adjustViewBounds="true"/>
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/config_title"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+            <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+            <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/back"
+                    android:adjustViewBounds="true"
+                    android:visibility="invisible"/>
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EFEFEF"/>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="18dp"
+              android:textColor="#000000"
+              android:layout_margin="8dp"
+              android:text="@string/config_language" />
+           <LinearLayout
+                    android:id="@+id/buttonLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp"                    
+                    android:padding="16dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/button_lang">
+
+                <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/language_title"
+                            android:textSize="16dp"                            
+                            android:textStyle="bold"
+                            android:textColor="#000000"/>
+
+                <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/next"
+                        android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="18dp"
+              android:textColor="#000000"
+              android:layout_margin="8dp"
+              android:text="@string/config_center" />
+           <LinearLayout
+                    android:id="@+id/buttonCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp"                    
+                    android:padding="16dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/button_lang">
+
+                <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/center_title"
+                            android:textSize="16dp"                            
+                            android:textStyle="bold"
+                            android:textColor="#000000"/>
+
+                <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/next"
+                        android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+    <TextView
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="Versión 1.0.0"
+            android:textColor="#FF000000"
+            android:textSize="14dp"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+    </LinearLayout>  
+
+</RelativeLayout>

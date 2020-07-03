@@ -1,0 +1,83 @@
+@model LoginViewModel
+@inject IViewLocalizer Localizer
+
+<div class="login-page">
+
+
+    @if (Model.IsLocalLogin == null)
+    {
+        <div class="page-header">
+            <h3>@Localizer["WELCOME"]</h3>
+            <p class="legal">@Localizer["PRIVACITY"]<a href="@Localizer["PRIVACY_POLICY_URL"]">@Localizer["PRIVACY_POLICY"]</a>@Localizer["PRIVACITY2"]<a href="@Localizer["LEGAL_NOTE_URL"]">@Localizer["LEGAL_NOTE"]</a></p>
+
+            @*<h6 style="text-decoration:underline; font-weight:bolder; font-style:italic;">
+                    @Localizer["PRIVACITY"]<a href="@Localizer["PRIVACY_POLICY_URL"]">@Localizer["PRIVACY_POLICY"]</a>@Localizer["PRIVACITY2"]<a href="@Localizer["LEGAL_NOTE_URL"]">@Localizer["LEGAL_NOTE"]</a>
+
+                </h6>*@
+            @*<h6 style="font-weight:bolder; font-style:italic"
+                    ><a href="@Localizer["LEGAL_NOTE_URL"]">@Localizer["LEGAL_NOTE"]</a>
+                </h6>*@
+        </div>
+
+        <partial name="_ValidationSummary" />
+        <h5>@Localizer["SELECT_TYPE"]</h5>
+
+        <div class="row">
+
+            <div class="col-sm-12">
+                <form asp-controller="Account" asp-action="Login">
+                    <input type="hidden" asp-for="ReturnUrl" />
+                    <div class="form-group">
+                        <button class="btn btn-primary" name="button" value="external">@Localizer["EXTERNAL"]</button>
+                        <button class="btn btn-primary" name="button" value="employee">@Localizer["EMPLOYEE"]</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    }
+
+    @if (Model.IsLocalLogin == true)
+    {
+        <div class="page-header">
+            <h3>Login</h3>
+        </div>
+
+        <partial name="_ValidationSummary" />
+
+        <div class="row">
+
+            <form asp-controller="Account" asp-action="LocalLogin">
+                <input type="hidden" asp-for="ReturnUrl" />
+                <input type="hidden" asp-for="IsLocalLogin" />
+
+                <fieldset>
+                    <div class="form-group">
+                        <label asp-for="Username">@Localizer["USERNAME"]</label>
+                        <input class="form-control" placeholder='@Localizer["USERNAME"]' asp-for="Username" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password">@Localizer["PASSWORD"]</label>
+                        <input type="password" class="form-control" placeholder='@Localizer["PASSWORD"]' asp-for="Password" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            <a id="forgot-password" asp-action="ForgotPassword">@Localizer["FORGOTTEN_PASSWORD"]</a>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-default" name="button" value="login">@Localizer["LOGIN"]</button>
+                        <button class="btn btn-primary" name="button" value="cancel">@Localizer["CANCEL"]</button>
+                    </div>
+                    <div class="form-group">
+                        <h5>@Localizer["NO_ACCOUNT"]</h5>
+                        <p>
+                            <a class="btn btn-primary" name="button" asp-action="RegisterExternal" asp-route-returnUrl="@Model.ReturnUrl">@Localizer["NEW_USER"]</a>
+                        </p>
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+    }
+</div>

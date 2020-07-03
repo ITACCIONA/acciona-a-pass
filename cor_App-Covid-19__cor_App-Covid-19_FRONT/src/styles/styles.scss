@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'mat-theme.scss';
+@import 'utils.scss';
+
+:root {
+  --brand-color: #ff0000;
+  --secondary-color: #bbb;
+  --font-color: #333333;
+  --font-color-lighter: #666666;
+  --test-negative: #86ea8b;
+  --test-positive: #eb5e5e;
+  --test-indeterminate: #e6ed69;
+}
+
+body,
+a {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--font-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+
+a.accent {
+  font-weight: normal;
+  color: #ea202c;
+  float: right;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-transform: none;
+}

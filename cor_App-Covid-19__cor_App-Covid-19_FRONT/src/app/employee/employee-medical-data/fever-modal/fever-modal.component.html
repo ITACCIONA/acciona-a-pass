@@ -1,0 +1,26 @@
+  <a class="accent" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </a>
+  <h2 mat-dialog-title>{{"EMPLOYEES.MEDICAL.FEVER.TITLE" |i18next: {threshold: threshold} }}</h2>
+  <div mat-dialog-content>
+    <app-loading [isLoading]="isLoading">
+      <h3>{{"COMMONS.DATE" |i18next }}</h3>
+      <mat-form-field class="date-picker">
+        <input matInput [matDatepicker]="picker" [formControl]="date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <button (click)="registerFever()" mat-flat-button>{{ "EMPLOYEES.MEDICAL.REGISTER_FEVER" | i18next }}</button>
+
+      <ng-container *ngIf="showRecords">
+        <h3>{{"EMPLOYEES.MEDICAL.FEVER.HISTORY" |i18next }}</h3>
+        {{"EMPLOYEES.MEDICAL.FEVER.DESCRIPTION" |i18next: {threshold: threshold} }}
+
+        <app-stepper [data]="records$ | async"></app-stepper>
+      </ng-container>
+
+    </app-loading>
+  </div>
+  <div class="actions" mat-dialog-actions>
+    <button class="btn-right" color="accent" mat-flat-button mat-dialog-close>{{"COMMONS.CLOSE" |i18next }}</button>
+  </div>

@@ -1,0 +1,81 @@
+<h2>{{ 'EMPLOYEES.SEARCH.COMPLEX_FILTERS.TITLE' | i18next }}</h2>
+<form [formGroup]="form">
+  <mat-list>
+    <mat-list-item>
+      <h3>{{ 'EMPLOYEES.SEARCH.COMPLEX_FILTERS.DIVISION' | i18next }}</h3>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+
+    <section>
+      <mat-form-field class="w-full" appearance="outline">
+        <mat-select formControlName="division"
+          [placeholder]="'EMPLOYEES.SEARCH.COMPLEX_FILTERS.DIVISION_PLACEHOLDER' | i18next" multiple>
+          <mat-option *ngFor="let item of divisions" [value]="item.idDivision">{{ item.name }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </section>
+
+    <mat-list-item>
+      <h3>{{ 'EMPLOYEES.SEARCH.COMPLEX_FILTERS.CENTER' | i18next }}</h3>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+
+    <section>
+      <mat-form-field class="w-full" appearance="outline">
+        <mat-select formControlName="location"
+          [placeholder]="'EMPLOYEES.SEARCH.COMPLEX_FILTERS.CENTER_PLACEHOLDER' | i18next" multiple>
+          <mat-option *ngFor="let item of locations; trackBy: trackByLocationId" [value]="item.idLocation">{{
+            item.name
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </section>
+
+    <mat-list-item>
+      <h3>{{ 'EMPLOYEES.SEARCH.COMPLEX_FILTERS.COUNTRIES' | i18next }}</h3>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+
+    <section>
+      <mat-form-field class="w-full" appearance="outline">
+        <mat-select formControlName="countries"
+          [placeholder]="'EMPLOYEES.SEARCH.COMPLEX_FILTERS.COUNTRIES_PLACEHOLDER' | i18next" multiple>
+          <mat-option *ngFor="let item of countries; trackBy: trackByName" [value]="item">{{ item.name }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </section>
+
+    <mat-list-item>
+      <h3>{{ 'EMPLOYEES.SEARCH.COMPLEX_FILTERS.REGIONS' | i18next }}</h3>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+
+    <section>
+      <mat-form-field class="w-full" appearance="outline">
+        <mat-select formControlName="regions"
+          [placeholder]="'EMPLOYEES.SEARCH.COMPLEX_FILTERS.REGIONS_PLACEHOLDER' | i18next" multiple>
+          <mat-option *ngFor="let item of filteredRegions; trackBy: trackById" [value]="item">{{ item.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </section>
+
+    <mat-list-item>
+      <h3>{{ 'EMPLOYEES.SEARCH.COMPLEX_FILTERS.AREAS' | i18next }}</h3>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+
+    <section>
+      <mat-form-field class="w-full" appearance="outline">
+        <mat-select formControlName="areas"
+          [placeholder]="'EMPLOYEES.SEARCH.COMPLEX_FILTERS.AREAS_PLACEHOLDER' | i18next" multiple>
+          <mat-option *ngFor="let item of filteredAreas; trackBy: trackById" [value]="item">{{ item.name }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </section>
+
+  </mat-list>
+</form>
+<button (click)="doFilter()" mat-raised-button color="primary">
+  {{ 'EMPLOYEES.SEARCH.COMPLEX_FILTERS.ACTION' | i18next }}
+</button>

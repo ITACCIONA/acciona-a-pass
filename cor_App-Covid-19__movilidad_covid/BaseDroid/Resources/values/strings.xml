@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">BaseDroid</string>
+  <string name="progress_default_message">Por favor, espere...</string>
+</resources>

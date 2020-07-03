@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#3f3f3f</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorAccent">#D73937</color>
+    <color name="colorButton">#ff0000</color>
+    <color name="colorButtonPressed">#A53937</color>
+    <color name="colorButtonPressedAlpha">#7FA53937</color>
+    <color name="colorButtonRedDisabled">#7FD73937</color>
+    <color name="colorButtonDisabled">#6e6e6e</color>
+    <color name="colorButton2">#666666</color>
+    <color name="textGray">#646464</color>
+    <color name="textDarkGray">#232323</color>
+    <color name="colorStateInmune">#8dee8a</color>
+    <color name="colorStateLibre">#fdd34e</color>
+    <color name="colorStateSintomas">#f56f6f</color>
+    <color name="colorStateCaducado">#999999</color>
+    <color name="colorButtonDark">#5A5A5A</color>
+    <color name="colorButtonDarkPressed">#7F5A5A5A</color>
+    <color name="colorButtonDarkDisabled">#e6e6e6</color>
+    <color name="colorRead">#ffffff</color>
+    <color name="colorNotRead">#fff7e5</color>
+    <color name="colorVeryLightPink">#f3f3f3</color>
+    <color name="colorBlackTwo">#000000</color>
+    <color name="veryLightPinkTwo">#d8d8d8</color>
+    <color name="colorBlack">#333333</color>
+    <color name="colorBrownGrey">#999999</color>
+    <color name="listBackground">#FFFFFF</color>
+
+</resources>

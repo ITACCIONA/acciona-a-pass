@@ -1,0 +1,100 @@
+<resources>
+  <string name="app_name">COVID Security</string>    
+  <string name="filter_date_format">MM/dd/yyyy</string>
+  <string name="msg_ok">OK</string>
+  <string name="msg_yes">Yes</string>
+  <string name="msg_no">No</string>
+  <string name="msg_cancel">Cancel</string>
+  <string name="login_error">An error has occurred, please verify user and password</string>
+  <string name="no_permission">The application does not have the required permissions to carry out this operation. Check the settings and try again</string>  
+  <string name="host_error">Please check your connection</string>
+  <string name="generic_error">An error has occurred while performing the operation</string>
+  <string name="close">Close</string>
+  <string name="no_connection">The application seems to have no connection, please check network settings</string>
+  <string name="error_401">The session has expired. Please log in again</string>
+  <string name="error_401_user">The user does not have permission to use the application, please contact with an administrator</string>
+  <string name="error_401_key">The application is not authorized to use web services, please contact an administrator.</string>
+  <string name="no_file_permission">The application does not have the required permissions to manage files. Check the settings and try again</string>
+  <string name="listedittext_search_hint">Search...</string>
+  <string name="listedittext_cancel">Cancel</string>
+
+  <!-- Splash -->
+  <string name="recomended_update">There is a new version of the application, we recommend you to update before continuing</string>
+  <string name="mandatory_update">There is a new version of the application, you have to update it to be able to enter</string>
+  <string name="msg_continue">Continue</string>
+  <string name="msg_download">Download</string>
+
+    <!-- Login -->
+  <string name="wellcome">Welcome</string>
+  <string name="username">USERNAME</string>
+  <string name="username_hint">User</string>
+  <string name="password">PASSWORD</string>
+  <string name="password_hint">Password</string>
+  <string name="init_session">Login</string>
+
+  
+  <!-- Main -->
+  <string name="disconnect_ask">Are you sure that you want to disconnect?</string>
+  <string name="qr_no_valid">"The code doesn't look like a valid passport."</string>
+    <string name="manual_button">Paper statement</string>
+    <string name="touch_start">Touch screen to start</string>
+    <string name="qr_closer">Put device closer to QR code</string>
+
+  <!-- Result -->
+    <string name="title_pasar">Access permitted</string>
+    <string name="title_mascarilla">Access permitted</string>
+    <string name="title_nopasar">Access denied</string>
+    <string name="subtitle_pasar">This employee is allowed free access to the facilities</string>
+    <string name="subtitle_mascarilla"></string>
+    <string name="subtitle_nopasar">"You can't access the center. Contact a health centre for an assessment"</string>
+    <string name="needs_protection">Uso de protección obligatorio</string>
+    <string name="temperature">Temperature</string>
+    <string name="temperature_help">"Indicates if the employee's temperature is lower or higher than 37ºC/98.6ºF"</string>
+    <string name="temperature_low">"Less or equal 37ºC/98.6ºF"</string>
+    <string name="temperature_high">"Over 37ºC/98.6ºF"</string>
+    <string name="temperature_skip">Cannot take, omit data</string>
+    <string name="subtitle_caducado">The employee must renew the passport</string>
+    <string name="scan_another">Touch screen to scan another</string>
+
+    <!-- Manual -->
+    <string name="personal_data">Personal data</string>
+    <string name="personal_data_help">"Enter worker's ID card and/or mobile phone to continue"</string>
+    <string name="mandatory_document">ID Card</string>
+    <string name="mandatory">Mandatory</string>
+    <string name="document_hint">ID card with number and letter</string>
+    <string name="document_error">The ID field is required</string>
+    <string name="phone">Mobile phone</string>
+    <string name="phone_hint">Enter your personal mobile</string>
+    <string name="next">Next</string>
+
+    <!-- ManualResult -->
+    <string name="ask_symptoms">Do you have any of the following symptoms?</string>
+    <string name="result_temperature"><![CDATA[Have you had a <b>body temperature of over 37ºC/98.6ºF today</b>?]]></string>
+    <string name="result_sympthoms"><![CDATA[<b>Have you had any of the following symptoms</b> related to COVID-19 today: Severe headache, persistent cough, breathing difficulties, sore throat, loss of taste or smell, severe headache, diarrhoea or skin rashes?]]></string>
+    <string name="result_contact"><![CDATA[Have you had <b>close contact with any person with a confirmed infection</b> during the last 14 days?<br/>(If you have a medical evaluation that has ruled out the risk associated with that close contact, you must answer `NO´)]]></string>
+    <string name="help_contact_1"></string>
+    <string name="help_contact_2"></string>
+       <!-- Language -->
+    <string name="language_title">Language</string>
+    <string name="language_modify">Change language</string>
+    <string name="language_spanish">Spanish</string>
+    <string name="language_english">English</string>
+    <string name="language_confirm">The application will be restarted to implement the changes</string>
+
+    <!-- Config -->
+    <string name="config_title">Settings</string>
+    <string name="version">Version {0}</string>
+    <string name="config_language">Select language</string>
+    <string name="config_center">Select working center</string>
+
+    <!-- Working center -->
+    <string name="center_title">Working center</string>
+    <string name="center_modify">Save</string>
+    <string name="center_country">Country *</string>
+    <string name="center_city">City</string>
+    <string name="center_center">Center *</string>
+    <string name="center_other">Other</string>
+    <string name="center_other_text">Other, please specify:</string>
+    <string name="center_mandatory">* Mandatory fields</string>
+
+</resources>

@@ -1,0 +1,35 @@
+mat-card {
+  margin-bottom: 1em;
+}
+
+mat-divider {
+  position: relative !important;
+  margin-bottom: 1em;
+}
+
+.additional-icon {
+  margin: 0 0.5em 0 1em;
+}
+
+.notifications-button {
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+strong {
+  font-size: 0.725em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 0.95px;
+}
+
+p {
+  font-size: 1.1em;
+  margin: 0.5em 0 0.5em 0;
+  color: var(--font-color-lighter)
+}
+
+::ng-deep .bell svg path {
+  fill: #fff
+}
